@@ -37,6 +37,25 @@
   }
 })();
 </script>
+<style>
+/* 兜底样式：外部样式表加载失败时保证页面可读（正常加载时会被 site.css 覆盖） */
+html,body{margin:0;padding:0;background:#f4f5f7;color:#1f2933;}
+body{font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;font-size:16px;line-height:1.75;-webkit-text-size-adjust:100%;padding:0 16px 40px;}
+a{color:#0f6e62;text-decoration:none;}
+img,svg{max-width:100%;height:auto;}
+svg{width:16px;height:16px;vertical-align:-2px;}
+nav,header,main,footer{display:block;max-width:960px;margin:0 auto;}
+nav a{display:inline-block;margin:3px 4px;padding:6px 10px;border-radius:8px;background:#fff;border:1px solid #e2e6ea;font-size:14px;}
+h1{font-size:22px;line-height:1.35;margin:16px 0 10px;}
+h2{font-size:19px;margin:22px 0 8px;}
+h3{font-size:16px;margin:14px 0 6px;}
+p{margin:8px 0;}
+ol,ul{padding-left:22px;}
+li{margin:4px 0;}
+table{border-collapse:collapse;width:100%;font-size:14px;}
+th,td{border:1px solid #e2e6ea;padding:6px 8px;text-align:left;}
+.card,section{background:#fff;border:1px solid #e2e6ea;border-radius:12px;padding:14px;margin:12px 0;}
+</style>
 <link rel="stylesheet" href="assets/site.css">
 <link rel="manifest" href="manifest.webmanifest">
 <link rel="apple-touch-icon" href="assets/icons/apple-touch-icon.png">
@@ -73,9 +92,6 @@
       <a class="nav-link" href="diagnose/">诊断</a>
       <a class="nav-link" href="children/">档案</a>
       <a class="nav-link" href="https://github.com/xiaoyang111222/cn-math-taxonomy" target="_blank" rel="noopener noreferrer">关于</a>
-      <a class="nav-link resource-search-btn" href="https://pansgo.com" target="_blank" rel="noopener noreferrer" title="网盘资源搜索">
-        <svg class="resource-search-ico" viewBox="0 0 16 16" aria-hidden="true"><path fill="currentColor" d="M11.5 10.4a5.5 5.5 0 1 0-1.1 1.1l3 3a.75.75 0 0 0 1.06-1.06zM7 11.5A4.5 4.5 0 1 1 7 2.5a4.5 4.5 0 0 1 0 9z"/></svg>资源搜索
-      </a>
     </div>
   </nav>
 </header>
