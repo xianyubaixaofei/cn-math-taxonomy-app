@@ -1,6 +1,61 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
+<script>
+/* [cnm 目录兜底重定向] Capacitor 的本地资源服务不提供目录索引：请求 /explore/ 会拿到首页 HTML，
+ * 页面里的相对资源路径随之全部 404。这里在 <head> 最前面内联一段重定向，
+ * 把任何以目录名结尾的站内路径改写成显式 index.html。
+ * 不依赖任何外部脚本，所以即使其它资源全挂了这里也能生效。 */
+(function () {
+  try {
+    var p = location.pathname || '';
+    var m = /\/(explore|diagnose|children)\/?$/.exec(p);
+    if (!m) return;
+    var base = p.replace(/\/(explore|diagnose|children)\/?$/, '/');
+    location.replace(base + m[1] + '/index.html' + location.search + location.hash);
+  } catch (e) { /* 任何异常都不要挡住页面 */ }
+})()
+</script>
+<script>
+/* [cnm 兼容层] Android WebView 8x 缺 Element.replaceChildren（Chrome 86+ 才有）。
+ * 知识点列表、诊断结果、首页年级卡片全用它渲染，缺了会抛 TypeError，
+ * 而调用点通常在 Promise 的 catch 里，错误被吞掉 → 页面永远停在「正在加载」。
+ * 这里补一份等价实现，必须在任何业务脚本之前执行。 */
+(function () {
+  var proto = window.Element && Element.prototype;
+  if (!proto) return;
+  if (!proto.replaceChildren) {
+    proto.replaceChildren = function () {
+      while (this.firstChild) { this.removeChild(this.firstChild); }
+      for (var i = 0; i < arguments.length; i++) {
+        var node = arguments[i];
+        if (node == null || node === false) continue;
+        if (typeof node === 'string') node = document.createTextNode(node);
+        this.appendChild(node);
+      }
+    };
+  }
+  if (window.DocumentFragment && !DocumentFragment.prototype.replaceChildren) {
+    DocumentFragment.prototype.replaceChildren = proto.replaceChildren;
+  }
+  if (window.Document && !Document.prototype.replaceChildren) {
+    Document.prototype.replaceChildren = proto.replaceChildren;
+  }
+  /* 顺带补几个同一代的缺口，成本极低 */
+  if (!String.prototype.replaceAll) {
+    String.prototype.replaceAll = function (find, rep) {
+      return this.split(find).join(rep);
+    };
+  }
+  if (!Object.hasOwn) {
+    Object.hasOwn = function (obj, key) {
+      return Object.prototype.hasOwnProperty.call(obj, key);
+    };
+  }
+})()
+</script>
+
+
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>盲区与历史 · 中小学·高中知识图谱</title>
@@ -27,8 +82,8 @@
   <nav class="site-nav" aria-label="主导航">
     <div class="page-links">
       <a class="nav-link" href="../">首页</a>
-      <a class="nav-link" href="../explore/">知识图谱</a>
-      <a class="nav-link" href="../diagnose/">诊断</a>
+      <a class="nav-link" href="../explore/index.html">知识图谱</a>
+      <a class="nav-link" href="../diagnose/index.html">诊断</a>
       <a class="nav-link active" href="./" aria-current="page">档案</a>
       <a class="nav-link" href="https://github.com/xiaoyang111222/cn-math-taxonomy" target="_blank" rel="noopener noreferrer">关于</a>
     </div>

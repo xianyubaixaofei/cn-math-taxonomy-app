@@ -290,7 +290,7 @@
   /* ------------------------------------------------------------ 孩子档案 */
   const CC = window.CnmChildren;
   function childLabel(c) { return c.name + (c.grade ? '（' + c.grade + '）' : ''); }
-  function childrenHref(path) { return '../children/' + (path || ''); }
+  function childrenHref(path) { return '../children/index.html' + (path || ''); }
   function fromQuery() { return '?from=diagnose' + (subject !== 'math' ? '&subject=' + subject : ''); }
   function childSelect(onPick) {
     const cur = CC.current();
@@ -373,7 +373,7 @@
     const rows = window.CnmBlind.list({ subject: subject, limit: 6 });
     if (!rows.length) return null;
     const cur = CC.current();
-    const more = window.CnmBlind.historyHref(cur && cur.id, '../children/');
+    const more = window.CnmBlind.historyHref(cur && cur.id, '../children/index.html');
     return h('div', { class: 'card', id: 'blind-start' },
       h('h2', { text: '本机盲区（最近薄弱点）' }),
       h('p', { class: 'muted small' }, '根据本机诊断记录汇总，数据只留在这台浏览器。点「再测」会按该知识点重新诊断。'),
@@ -396,7 +396,7 @@
     const shakyIds = (sum.shaky || []).slice();
     if (!weakIds.length && !shakyIds.length) return null;
     const cur = CC.current();
-    const hist = window.CnmBlind ? window.CnmBlind.historyHref(cur && cur.id, '../children/') : '../children/history.html';
+    const hist = window.CnmBlind ? window.CnmBlind.historyHref(cur && cur.id, '../children/index.html') : '../children/history.html';
     return h('div', { class: 'card no-print', id: 'blind-result' },
       h('h2', { text: '盲区再测' }),
       h('p', { class: 'muted small' }, '把本轮判为薄弱或不稳的知识点收进本机盲区汇总，可一键再测。不会上传答题内容。'),
@@ -1664,7 +1664,7 @@
       clearRoot();
       root.append(h('div', { class: 'card' }, h('h2', { class: 'err', text: '数据加载失败' }),
         h('p', null, String(e.message || e)),
-        h('p', null, '请在项目根目录运行 ', h('code', { text: 'python3 -m http.server 8000' }), '，再访问 http://localhost:8000/diagnose/ （不能直接用 file:// 打开）。')));
+        h('p', null, '请在项目根目录运行 ', h('code', { text: 'python3 -m http.server 8000' }), '，再访问 http://localhost:8000/diagnose/index.html （不能直接用 file:// 打开）。')));
       return;
     }
     const params = new URLSearchParams(location.search);

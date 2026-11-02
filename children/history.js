@@ -22,7 +22,7 @@
   }
   function exploreHref(id) {
     var sub = subjectOfId(id);
-    return '../explore/' + (sub === 'math' ? '' : '?subject=' + sub) + '#' + encodeURIComponent(id);
+    return '../explore/index.html' + (sub === 'math' ? '' : '?subject=' + sub) + '#' + encodeURIComponent(id);
   }
   function pad(n) { return ('0' + n).slice(-2); }
   function fmt(iso) {
@@ -35,12 +35,12 @@
   function tag(cls, text) { return el('span', 'kid-tag ' + cls, text); }
 
   function retestHref(ids, sub) {
-    if (window.CnmBlind) return window.CnmBlind.diagnoseHref(ids, sub || subjectOfId(ids[0]), '../diagnose/');
+    if (window.CnmBlind) return window.CnmBlind.diagnoseHref(ids, sub || subjectOfId(ids[0]), '../diagnose/index.html');
     ids = (ids || []).filter(Boolean);
     var s = sub || subjectOfId(ids[0]);
     var q = 'target=' + ids.map(encodeURIComponent).join(',');
     if (s && s !== 'math') q = 'subject=' + encodeURIComponent(s) + '&' + q;
-    return '../diagnose/?' + q;
+    return '../diagnose/index.html?' + q;
   }
 
   function enrichInfo(id, info) {
@@ -201,7 +201,7 @@
       recs.forEach(function (r) { sec.appendChild(recordCard(child, r)); });
     }
     var go = el('a', 'btn btn-primary', '去做一次诊断');
-    go.href = '../diagnose/' + (subjectSel === 'english' || subjectSel === 'physics' || subjectSel === 'chinese' || subjectSel === 'science' || subjectSel === 'morality' || subjectSel === 'history' || subjectSel === 'geography' ? '?subject=' + subjectSel : '');
+    go.href = '../diagnose/index.html' + (subjectSel === 'english' || subjectSel === 'physics' || subjectSel === 'chinese' || subjectSel === 'science' || subjectSel === 'morality' || subjectSel === 'history' || subjectSel === 'geography' ? '?subject=' + subjectSel : '');
     sec.appendChild(go);
     return sec;
   }

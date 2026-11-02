@@ -40,11 +40,11 @@
     if (eye) eye.textContent = '英语：三年级到高中';
     var primary = document.querySelector('.hero-actions a.btn-primary');
     var browse = document.querySelector('.hero-actions a.btn:not(.btn-primary)');
-    if (primary) primary.setAttribute('href', 'diagnose/?subject=english');
-    if (browse) browse.setAttribute('href', 'explore/?subject=english');
+    if (primary) primary.setAttribute('href', 'diagnose/index.html?subject=english');
+    if (browse) browse.setAttribute('href', 'explore/index.html?subject=english');
     var demo = document.querySelector('.quiet-link a');
     if (demo) {
-      demo.setAttribute('href', 'diagnose/?subject=english&grade=' + encodeURIComponent('四上') + '&demo=1');
+      demo.setAttribute('href', 'diagnose/index.html?subject=english&grade=' + encodeURIComponent('四上') + '&demo=1');
       demo.textContent = '先看一遍演示：四年级上册英语';
     }
   } else if (subject === 'physics') {
@@ -53,11 +53,11 @@
     if (peye) peye.textContent = '物理：初中八、九年级 · 高中必修与选择性必修';
     var pprimary = document.querySelector('.hero-actions a.btn-primary');
     var pbrowse = document.querySelector('.hero-actions a.btn:not(.btn-primary)');
-    if (pprimary) pprimary.setAttribute('href', 'diagnose/?subject=physics');
-    if (pbrowse) pbrowse.setAttribute('href', 'explore/?subject=physics');
+    if (pprimary) pprimary.setAttribute('href', 'diagnose/index.html?subject=physics');
+    if (pbrowse) pbrowse.setAttribute('href', 'explore/index.html?subject=physics');
     var pdemo = document.querySelector('.quiet-link a');
     if (pdemo) {
-      pdemo.setAttribute('href', 'diagnose/?subject=physics&grade=' + encodeURIComponent('八上') + '&demo=1');
+      pdemo.setAttribute('href', 'diagnose/index.html?subject=physics&grade=' + encodeURIComponent('八上') + '&demo=1');
       pdemo.textContent = '先看一遍演示：八年级上册物理';
     }
   } else if (subject === 'chinese') {
@@ -66,11 +66,11 @@
     if (zeye) zeye.textContent = '语文：小学一至六年级 · 统编版';
     var zprimary = document.querySelector('.hero-actions a.btn-primary');
     var zbrowse = document.querySelector('.hero-actions a.btn:not(.btn-primary)');
-    if (zprimary) zprimary.setAttribute('href', 'diagnose/?subject=chinese');
-    if (zbrowse) zbrowse.setAttribute('href', 'explore/?subject=chinese');
+    if (zprimary) zprimary.setAttribute('href', 'diagnose/index.html?subject=chinese');
+    if (zbrowse) zbrowse.setAttribute('href', 'explore/index.html?subject=chinese');
     var zdemo = document.querySelector('.quiet-link a');
     if (zdemo) {
-      zdemo.setAttribute('href', 'diagnose/?subject=chinese&grade=' + encodeURIComponent('一上') + '&demo=1');
+      zdemo.setAttribute('href', 'diagnose/index.html?subject=chinese&grade=' + encodeURIComponent('一上') + '&demo=1');
       zdemo.textContent = '先看一遍演示：一年级上册语文';
     }
   } else if (subject === 'science') {
@@ -79,11 +79,11 @@
     if (seye) seye.textContent = '科学：小学一至六年级 · 教科版';
     var sprimary = document.querySelector('.hero-actions a.btn-primary');
     var sbrowse = document.querySelector('.hero-actions a.btn:not(.btn-primary)');
-    if (sprimary) sprimary.setAttribute('href', 'diagnose/?subject=science');
-    if (sbrowse) sbrowse.setAttribute('href', 'explore/?subject=science');
+    if (sprimary) sprimary.setAttribute('href', 'diagnose/index.html?subject=science');
+    if (sbrowse) sbrowse.setAttribute('href', 'explore/index.html?subject=science');
     var sdemo = document.querySelector('.quiet-link a');
     if (sdemo) {
-      sdemo.setAttribute('href', 'diagnose/?subject=science&grade=' + encodeURIComponent('一上') + '&demo=1');
+      sdemo.setAttribute('href', 'diagnose/index.html?subject=science&grade=' + encodeURIComponent('一上') + '&demo=1');
       sdemo.textContent = '先看一遍演示：一年级上册科学';
     }
   } else if (subject === 'morality') {
@@ -92,11 +92,11 @@
     if (meye) meye.textContent = '道德与法治：小学一至六年级 · 统编版';
     var mprimary = document.querySelector('.hero-actions a.btn-primary');
     var mbrowse = document.querySelector('.hero-actions a.btn:not(.btn-primary)');
-    if (mprimary) mprimary.setAttribute('href', 'diagnose/?subject=morality');
-    if (mbrowse) mbrowse.setAttribute('href', 'explore/?subject=morality');
+    if (mprimary) mprimary.setAttribute('href', 'diagnose/index.html?subject=morality');
+    if (mbrowse) mbrowse.setAttribute('href', 'explore/index.html?subject=morality');
     var mdemo = document.querySelector('.quiet-link a');
     if (mdemo) {
-      mdemo.setAttribute('href', 'diagnose/?subject=morality&grade=' + encodeURIComponent('一上') + '&demo=1');
+      mdemo.setAttribute('href', 'diagnose/index.html?subject=morality&grade=' + encodeURIComponent('一上') + '&demo=1');
       mdemo.textContent = '先看一遍演示：一年级上册道德与法治';
     }
   } else if (subject === 'history') {
@@ -105,11 +105,11 @@
     if (heye) heye.textContent = '历史：初中七至九年级 · 统编版';
     var hprimary = document.querySelector('.hero-actions a.btn-primary');
     var hbrowse = document.querySelector('.hero-actions a.btn:not(.btn-primary)');
-    if (hprimary) hprimary.setAttribute('href', 'diagnose/?subject=history');
-    if (hbrowse) hbrowse.setAttribute('href', 'explore/?subject=history');
+    if (hprimary) hprimary.setAttribute('href', 'diagnose/index.html?subject=history');
+    if (hbrowse) hbrowse.setAttribute('href', 'explore/index.html?subject=history');
     var hdemo = document.querySelector('.quiet-link a');
     if (hdemo) {
-      hdemo.setAttribute('href', 'diagnose/?subject=history&grade=' + encodeURIComponent('七上') + '&demo=1');
+      hdemo.setAttribute('href', 'diagnose/index.html?subject=history&grade=' + encodeURIComponent('七上') + '&demo=1');
       hdemo.textContent = '先看一遍演示：七年级上册历史';
     }
   } else if (subject === 'geography') {
@@ -118,11 +118,11 @@
     if (geye) geye.textContent = '地理：初中七至八年级 · 人教版';
     var gprimary = document.querySelector('.hero-actions a.btn-primary');
     var gbrowse = document.querySelector('.hero-actions a.btn:not(.btn-primary)');
-    if (gprimary) gprimary.setAttribute('href', 'diagnose/?subject=geography');
-    if (gbrowse) gbrowse.setAttribute('href', 'explore/?subject=geography');
+    if (gprimary) gprimary.setAttribute('href', 'diagnose/index.html?subject=geography');
+    if (gbrowse) gbrowse.setAttribute('href', 'explore/index.html?subject=geography');
     var gdemo = document.querySelector('.quiet-link a');
     if (gdemo) {
-      gdemo.setAttribute('href', 'diagnose/?subject=geography&grade=' + encodeURIComponent('七上') + '&demo=1');
+      gdemo.setAttribute('href', 'diagnose/index.html?subject=geography&grade=' + encodeURIComponent('七上') + '&demo=1');
       gdemo.textContent = '先看一遍演示：七年级上册地理';
     }
   }
@@ -176,7 +176,7 @@
     var cur = window.CnmChildren && window.CnmChildren.current && window.CnmChildren.current();
     var all = document.createElement('a');
     all.className = 'btn';
-    all.href = window.CnmBlind.historyHref(cur && cur.id, 'children/');
+    all.href = window.CnmBlind.historyHref(cur && cur.id, 'children/index.html');
     all.textContent = '查看全部盲区';
     actions.appendChild(all);
     var weakIds = rows.filter(function (r) { return r.status === 'weak'; }).slice(0, 5).map(function (r) { return r.id; });
@@ -276,7 +276,7 @@
       var down = list.filter(function (topic) { return topic.semester === '下'; }).length;
       var whole = list.filter(function (topic) { return topic.semester === '全'; }).length;
       var splitText = whole ? '全一册 ' + whole : '上 ' + up + ' · 下 ' + down;
-      var href = subject !== 'math' ? 'explore/?subject=' + subject + '&grade=' + g : 'explore/?grade=' + g;
+      var href = subject !== 'math' ? 'explore/index.html?subject=' + subject + '&grade=' + g : 'explore/index.html?grade=' + g;
       addCard(g, g <= 6 ? '小学' : (wantPhysics ? '初中物理' : '初中'), CN[g] + '年级', g <= 6 ? 'is-primary' : 'is-junior', splitText, href);
     }
     if (wantChinese) {
@@ -286,26 +286,26 @@
     } else if (wantGeography) {
       /* 初中地理只到八年级 */
     } else if (wantPhysics) {
-      addCard(10, '高中物理', '必修一', 'is-senior', '必修第一册', 'explore/?subject=physics&grade=10');
-      addCard(11, '高中物理', '必修二', 'is-senior', '必修第二册', 'explore/?subject=physics&grade=11');
-      addCard(12, '高中物理', '必修三', 'is-senior', '必修第三册', 'explore/?subject=physics&grade=12');
-      addCard(13, '高中物理', '选必一', 'is-senior', '选择性必修第一册', 'explore/?subject=physics&grade=13');
-      addCard(14, '高中物理', '选必二', 'is-senior', '选择性必修第二册', 'explore/?subject=physics&grade=14');
-      addCard(15, '高中物理', '选必三', 'is-senior', '选择性必修第三册', 'explore/?subject=physics&grade=15');
+      addCard(10, '高中物理', '必修一', 'is-senior', '必修第一册', 'explore/index.html?subject=physics&grade=10');
+      addCard(11, '高中物理', '必修二', 'is-senior', '必修第二册', 'explore/index.html?subject=physics&grade=11');
+      addCard(12, '高中物理', '必修三', 'is-senior', '必修第三册', 'explore/index.html?subject=physics&grade=12');
+      addCard(13, '高中物理', '选必一', 'is-senior', '选择性必修第一册', 'explore/index.html?subject=physics&grade=13');
+      addCard(14, '高中物理', '选必二', 'is-senior', '选择性必修第二册', 'explore/index.html?subject=physics&grade=14');
+      addCard(15, '高中物理', '选必三', 'is-senior', '选择性必修第三册', 'explore/index.html?subject=physics&grade=15');
     } else if (wantEnglish) {
-      addCard(10, '高中', '必修一', 'is-senior', '必修第一册', 'explore/?subject=english&grade=10');
-      addCard(11, '高中', '必修二', 'is-senior', '必修第二册', 'explore/?subject=english&grade=11');
-      addCard(12, '高中', '必修三', 'is-senior', '必修第三册', 'explore/?subject=english&grade=12');
-      addCard(13, '高中', '选必一', 'is-senior', '选择性必修第一册', 'explore/?subject=english&grade=13');
-      addCard(14, '高中', '选必二', 'is-senior', '选择性必修第二册', 'explore/?subject=english&grade=14');
-      addCard(15, '高中', '选必三', 'is-senior', '选择性必修第三册', 'explore/?subject=english&grade=15');
-      addCard(16, '高中', '选必四', 'is-senior', '选择性必修第四册', 'explore/?subject=english&grade=16');
+      addCard(10, '高中', '必修一', 'is-senior', '必修第一册', 'explore/index.html?subject=english&grade=10');
+      addCard(11, '高中', '必修二', 'is-senior', '必修第二册', 'explore/index.html?subject=english&grade=11');
+      addCard(12, '高中', '必修三', 'is-senior', '必修第三册', 'explore/index.html?subject=english&grade=12');
+      addCard(13, '高中', '选必一', 'is-senior', '选择性必修第一册', 'explore/index.html?subject=english&grade=13');
+      addCard(14, '高中', '选必二', 'is-senior', '选择性必修第二册', 'explore/index.html?subject=english&grade=14');
+      addCard(15, '高中', '选必三', 'is-senior', '选择性必修第三册', 'explore/index.html?subject=english&grade=15');
+      addCard(16, '高中', '选必四', 'is-senior', '选择性必修第四册', 'explore/index.html?subject=english&grade=16');
     } else {
-      addCard(10, '高中', '高一', 'is-senior', '必修第一册', 'explore/?grade=10');
-      addCard(11, '高中', '高二', 'is-senior', '必修第二册', 'explore/?grade=11');
-      addCard(12, '高中', '选必一', 'is-senior', '选择性必修第一册', 'explore/?grade=12');
-      addCard(13, '高中', '选必二', 'is-senior', '选择性必修第二册', 'explore/?grade=13');
-      addCard(14, '高中', '选必三', 'is-senior', '选择性必修第三册', 'explore/?grade=14');
+      addCard(10, '高中', '高一', 'is-senior', '必修第一册', 'explore/index.html?grade=10');
+      addCard(11, '高中', '高二', 'is-senior', '必修第二册', 'explore/index.html?grade=11');
+      addCard(12, '高中', '选必一', 'is-senior', '选择性必修第一册', 'explore/index.html?grade=12');
+      addCard(13, '高中', '选必二', 'is-senior', '选择性必修第二册', 'explore/index.html?grade=13');
+      addCard(14, '高中', '选必三', 'is-senior', '选择性必修第三册', 'explore/index.html?grade=14');
     }
     renderBlindHome(allTopics);
   }).catch(function (error) {

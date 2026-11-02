@@ -3,21 +3,21 @@
  * 改了 SHELL 或 DATA 列表、或数据结构变了，就把 VERSION 加一。 */
 'use strict';
 
-var VERSION = 'v9';
+var VERSION = 'v10';
 var CACHE = 'cnm-pwa-' + VERSION;
 var SCOPE = self.registration.scope;
 
 var SHELL = [
   './',
   'index.html',
-  'explore/',
+  'explore/index.html',
   'explore/app.js',
-  'diagnose/',
+  'diagnose/index.html',
   'diagnose/app.js',
   'diagnose/engine.js',
   'diagnose/share.js',
   'diagnose/style.css',
-  'children/',
+  'children/index.html',
   'children/history.html',
   'children/children.css',
   'children/page.js',

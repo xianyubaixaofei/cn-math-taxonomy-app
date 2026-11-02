@@ -231,15 +231,15 @@
 
   function diagnoseHref(ids, subject, base) {
     ids = (Array.isArray(ids) ? ids : [ids]).filter(Boolean);
-    if (!ids.length) return (base || 'diagnose/') + (subject && subject !== 'math' ? '?subject=' + subject : '');
+    if (!ids.length) return (base || 'diagnose/index.html') + (subject && subject !== 'math' ? '?subject=' + subject : '');
     var sub = subject || subjectOfId(ids[0]);
     var q = 'target=' + ids.map(encodeURIComponent).join(',');
     if (sub && sub !== 'math') q = 'subject=' + encodeURIComponent(sub) + '&' + q;
-    return (base || 'diagnose/') + '?' + q;
+    return (base || 'diagnose/index.html') + '?' + q;
   }
 
   function historyHref(childId, base) {
-    var path = (base || 'children/') + 'history.html';
+    var path = (base || 'children/index.html') + 'history.html';
     if (childId) path += '?child=' + encodeURIComponent(childId);
     return path;
   }

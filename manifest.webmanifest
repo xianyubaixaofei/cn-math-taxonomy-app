@@ -37,7 +37,7 @@
     {
       "name": "开始诊断",
       "short_name": "诊断",
-      "url": "diagnose/?source=pwa",
+      "url": "diagnose/index.html?source=pwa",
       "icons": [
         {
           "src": "assets/icons/icon-192.png",
@@ -49,7 +49,7 @@
     {
       "name": "知识图谱",
       "short_name": "图谱",
-      "url": "explore/?source=pwa",
+      "url": "explore/index.html?source=pwa",
       "icons": [
         {
           "src": "assets/icons/icon-192.png",
@@ -61,7 +61,7 @@
     {
       "name": "孩子档案",
       "short_name": "档案",
-      "url": "children/?source=pwa",
+      "url": "children/index.html?source=pwa",
       "icons": [
         {
           "src": "assets/icons/icon-192.png",
