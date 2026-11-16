@@ -10,6 +10,8 @@
   const LS_SESSION_MOR = 'cndDiagnose.session.v1';
   const LS_SESSION_HIS = 'cnhDiagnose.session.v1';
   const LS_SESSION_GEO = 'cngDiagnose.session.v1';
+  const LS_SESSION_BIO = 'cnbDiagnose.session.v1';
+  const LS_SESSION_CHEM = 'cnkDiagnose.session.v1';
   const LS_SETTINGS = 'cnmDiagnose.settings.v2';
   const LS_SEEN = 'cnmDiagnose.seen.v1';
   const LIMIT_MIN = 8, LIMIT_MAX = 30;
@@ -93,6 +95,8 @@
     if (subject === 'morality') return LS_SESSION_MOR;
     if (subject === 'history') return LS_SESSION_HIS;
     if (subject === 'geography') return LS_SESSION_GEO;
+    if (subject === 'biology') return LS_SESSION_BIO;
+    if (subject === 'chemistry') return LS_SESSION_CHEM;
     return LS_SESSION;
   }
   function withSubject(href) {
@@ -102,7 +106,7 @@
   function detectSubject() {
     const params = new URLSearchParams(location.search);
     const explicit = params.get('subject');
-    if (explicit === 'english' || explicit === 'math' || explicit === 'physics' || explicit === 'chinese' || explicit === 'science' || explicit === 'morality' || explicit === 'history' || explicit === 'geography') return explicit;
+    if (explicit === 'english' || explicit === 'math' || explicit === 'physics' || explicit === 'chinese' || explicit === 'science' || explicit === 'morality' || explicit === 'history' || explicit === 'geography' || explicit === 'biology' || explicit === 'chemistry') return explicit;
     const target = params.get('target') || '';
     let hashId = (location.hash || '').replace(/^#/, '');
     try { hashId = decodeURIComponent(hashId); } catch (e) { /* 保持原样 */ }
@@ -131,6 +135,16 @@
       history.replaceState(null, '', location.pathname + '?' + params.toString() + location.hash);
       return 'geography';
     }
+    if (/(^|,)\s*cnb_/.test(target) || /^cnb_/.test(hashId)) {
+      params.set('subject', 'biology');
+      history.replaceState(null, '', location.pathname + '?' + params.toString() + location.hash);
+      return 'biology';
+    }
+    if (/(^|,)\s*cnk_/.test(target) || /^cnk_/.test(hashId)) {
+      params.set('subject', 'chemistry');
+      history.replaceState(null, '', location.pathname + '?' + params.toString() + location.hash);
+      return 'chemistry';
+    }
     if (/(^|,)\s*cnh_/.test(target) || /^cnh_/.test(hashId)) {
       params.set('subject', 'history');
       history.replaceState(null, '', location.pathname + '?' + params.toString() + location.hash);
@@ -151,6 +165,8 @@
     document.body.classList.toggle('subject-morality', subject === 'morality');
     document.body.classList.toggle('subject-history', subject === 'history');
     document.body.classList.toggle('subject-geography', subject === 'geography');
+    document.body.classList.toggle('subject-biology', subject === 'biology');
+    document.body.classList.toggle('subject-chemistry', subject === 'chemistry');
     document.querySelectorAll('.site-nav a:not(.subject-link), a.brand').forEach(function (link) {
       const href = link.getAttribute('href');
       const next = withSubject(href);
@@ -179,8 +195,8 @@
       if (volSel === '全') volSel = '';
     }
     if (subject === 'morality') {
-      document.title = '诊断 · 小学道德与法治';
-      if ('一二三四五六'.indexOf(gradeSel) < 0) gradeSel = '一';
+      document.title = '诊断 · 道德与法治';
+      if ('一二三四五六七八九'.indexOf(gradeSel) < 0) gradeSel = '一';
       if (volSel === '全') volSel = '';
     }
     if (subject === 'history') {
@@ -193,9 +209,21 @@
       if ('七八'.indexOf(gradeSel) < 0) gradeSel = '七';
       if (volSel === '全') volSel = '';
     }
+    if (subject === 'biology') {
+      document.title = '诊断 · 初中生物';
+      if ('七八'.indexOf(gradeSel) < 0) gradeSel = '七';
+      if (volSel === '全') volSel = '';
+    }
+    if (subject === 'chemistry') {
+      document.title = '诊断 · 化学';
+      if (gradeSel !== '九' && !/^(必修[一二]|选必[一二三]|选择性必修第[一二三]册)$/.test(gradeSel)) gradeSel = '九';
+      if (volSel === '全') volSel = '';
+    }
     if (subject === 'chinese') {
-      document.title = '诊断 · 小学语文';
-      if ('一二三四五六'.indexOf(gradeSel) < 0) gradeSel = '一';
+      document.title = '诊断 · 语文';
+      if ('一二三四五六七八九'.indexOf(gradeSel) < 0) gradeSel = '一';
+      // 全站初始值是七年级。语文原先从一年级进入，这里仍改回一年级；点选七年级之后不会再进这段。
+      else if (gradeSel === '七') gradeSel = '一';
       if (volSel === '全') volSel = '';
     }
   }
@@ -213,9 +241,16 @@
     return { limit: limit, screenLimit: screenLimit, confirm: confirm };
   }
   function setSetting(k, v) { const o = getSettings(); o[k] = v; lsSet(LS_SETTINGS, o); }
-  function seenList() { const v = lsGet(LS_SEEN); return Array.isArray(v) ? v : []; }
+  function seenList() {
+    const v = lsGet(LS_SEEN);
+    if (!Array.isArray(v)) return [];
+    if (!window.StemCompat) return v;
+    return v.filter(function (id) { return !window.StemCompat.isRetiredQid(id); });
+  }
   function markSeen(qid) {
     if (!qid || demo) return;
+    /* 这两个题号曾是古诗。已看过不能当成看过现在的语气题。 */
+    if (window.StemCompat && window.StemCompat.isRetiredQid(qid)) return;
     const v = seenList();
     if (v.indexOf(qid) < 0) { v.push(qid); lsSet(LS_SEEN, v); }
   }
@@ -227,7 +262,7 @@
     pathTipLock = false;
     if (pathCy) { pathCy.destroy(); pathCy = null; window.__pathCy = null; }
   }
-  function show(node) { teardownPath(); closeShare(); clearRoot(); root.append(node); window.scrollTo(0, 0); }
+  function show(node, keepScroll) { teardownPath(); closeShare(); clearRoot(); root.append(node); if (!keepScroll) window.scrollTo(0, 0); }
   function cssVar(name) { return getComputedStyle(document.documentElement).getPropertyValue(name).trim(); }
   function theme() {
     return {
@@ -276,10 +311,11 @@
       if (t.external) return;
       const c = E.parseChapter(t.chapter);
       const v = vols[c.volume] || (vols[c.volume] = { chapters: [], byKey: {} });
-      const key = c.chapterNo + ' ' + c.chapterName;
+      const nameParts = [c.chapterNo, c.chapterName].filter(Boolean);
+      const key = nameParts.join(' ');
       let ch = v.byKey[key];
       if (!ch) {
-        ch = v.byKey[key] = { volume: c.volume, key: c.volume + ' ' + c.chapterNo, label: c.chapterNo + ' ' + c.chapterName, topics: [] };
+        ch = v.byKey[key] = { volume: c.volume, key: c.volume + ' ' + c.chapterNo, label: nameParts.join(' '), topics: [] };
         v.chapters.push(ch);
       }
       ch.topics.push({ t: t, section: c.section });
@@ -290,7 +326,7 @@
   /* ------------------------------------------------------------ 孩子档案 */
   const CC = window.CnmChildren;
   function childLabel(c) { return c.name + (c.grade ? '（' + c.grade + '）' : ''); }
-  function childrenHref(path) { return '../children/index.html' + (path || ''); }
+  function childrenHref(path) { return '../children/' + (path || ''); }
   function fromQuery() { return '?from=diagnose' + (subject !== 'math' ? '&subject=' + subject : ''); }
   function childSelect(onPick) {
     const cur = CC.current();
@@ -345,12 +381,26 @@
   function saveToChild(sum) {
     const cur = CC.current();
     if (demo || !cur || !sum.asked) return;
-    CC.saveRecord(cur.id, {
+    const rec = {
       key: recordKey(), subject: subject, label: sessionMeta.label, mode: sum.mode, asked: sum.asked,
       targets: sum.mode === 'screen' || sum.targets.length > 6 ? null : sum.targets,
       counts: { weak: sum.weak.length, shaky: sum.shaky.length, mastered: sum.mastered.length, untested: sum.untested.length },
       weak: sum.weak, roots: sum.roots.map(function (r) { return r.id; }), shaky: sum.shaky, mastered: sum.mastered
-    });
+    };
+    if (window.StemCompat) {
+      const topic = window.StemCompat.TOPIC;
+      const lists = [rec.weak, rec.shaky, rec.mastered, rec.roots, rec.targets || []];
+      if (lists.some(function (ids) { return ids.indexOf(topic) >= 0; })) rec.stemRev = window.StemCompat.stamp();
+      if ((sessionMeta.excluded || []).some(function (a) { return a.id === topic; })) {
+        rec.needsRetest = [topic];
+      }
+    }
+    CC.saveRecord(cur.id, rec);
+  }
+  function wrongbookLink() {
+    if (!window.CnmWrong) return null;
+    const cur = CC.current();
+    return h('a', { class: 'btn', id: 'btn-wrongbook', href: '../wrongbook/', text: '错题本（' + window.CnmWrong.count(cur ? cur.id : 'guest') + '）' });
   }
   function noteBlind(sum) {
     if (demo || !sum || !sum.asked || !window.CnmBlind) return;
@@ -373,7 +423,7 @@
     const rows = window.CnmBlind.list({ subject: subject, limit: 6 });
     if (!rows.length) return null;
     const cur = CC.current();
-    const more = window.CnmBlind.historyHref(cur && cur.id, '../children/index.html');
+    const more = window.CnmBlind.historyHref(cur && cur.id, '../children/');
     return h('div', { class: 'card', id: 'blind-start' },
       h('h2', { text: '本机盲区（最近薄弱点）' }),
       h('p', { class: 'muted small' }, '根据本机诊断记录汇总，数据只留在这台浏览器。点「再测」会按该知识点重新诊断。'),
@@ -381,8 +431,11 @@
         return h('li', { class: 'blind-item' },
           h('span', { class: 'blind-name', text: nameOf(row.id) }),
           ' ',
-          h('span', { class: 'tag ' + (row.status === 'weak' ? 'weak' : 'shaky'), text: row.status === 'weak' ? (row.root ? '根因' : '薄弱') : '不稳' }),
-          row.wrongs ? h('span', { class: 'muted small', text: ' · 答错 ' + row.wrongs + ' 次' }) : null,
+          h('span', {
+            class: 'tag ' + (row.status === 'weak' ? 'weak' : row.status === 'retest' ? 'unknown' : 'shaky'),
+            text: row.status === 'weak' ? (row.root ? '根因' : '薄弱') : row.status === 'retest' ? '需重测' : '不稳'
+          }),
+          row.wrongs && row.status !== 'retest' ? h('span', { class: 'muted small', text: ' · 答错 ' + row.wrongs + ' 次' }) : null,
           ' ',
           h('a', { class: 'blind-retest', href: diagnoseHrefFor([row.id]), text: '再测' }));
       })),
@@ -396,7 +449,7 @@
     const shakyIds = (sum.shaky || []).slice();
     if (!weakIds.length && !shakyIds.length) return null;
     const cur = CC.current();
-    const hist = window.CnmBlind ? window.CnmBlind.historyHref(cur && cur.id, '../children/index.html') : '../children/history.html';
+    const hist = window.CnmBlind ? window.CnmBlind.historyHref(cur && cur.id, '../children/') : '../children/history.html';
     return h('div', { class: 'card no-print', id: 'blind-result' },
       h('h2', { text: '盲区再测' }),
       h('p', { class: 'muted small' }, '把本轮判为薄弱或不稳的知识点收进本机盲区汇总，可一键再测。不会上传答题内容。'),
@@ -415,6 +468,7 @@
     lsSet(sessionKey(), {
       v: 2, mode: session.mode, targets: session.targets, limit: session.limit, confirm: session.confirm,
       label: sessionMeta.label, answers: session.answers,
+      excluded: sessionMeta.excluded || [],
       seed: session.seed, avoid: session.avoid, savedAt: new Date().toISOString()
     });
   }
@@ -426,7 +480,7 @@
     session = E.createSession(D.graph, targets, {
       mode: mode, limit: limit || (screen ? st.screenLimit : st.limit), confirm: st.confirm, seed: newSeed(), avoid: seenList()
     });
-    sessionMeta = { label: label };
+    sessionMeta = { label: label, excluded: [] };
     resetUi();
     save();
     render();
@@ -434,10 +488,16 @@
 
   function restoreSession(saved) {
     try {
-      session = E.replay(D.graph, saved.targets, saved.answers, {
-        mode: saved.mode, limit: saved.limit, confirm: saved.confirm, seed: saved.seed, avoid: saved.avoid
+      const parts = window.StemCompat
+        ? window.StemCompat.restoreParts(saved)
+        : { answers: saved.answers, excluded: [], avoid: saved.avoid || [] };
+      session = E.replay(D.graph, saved.targets, parts.answers, {
+        mode: saved.mode, limit: saved.limit, confirm: saved.confirm, seed: saved.seed, avoid: parts.avoid
       });
-      sessionMeta = { label: saved.label || saved.targets.map(nameOf).join('、') };
+      sessionMeta = {
+        label: saved.label || saved.targets.map(nameOf).join('、'),
+        excluded: parts.excluded || []
+      };
       return true;
     } catch (e) { return false; }
   }
@@ -450,9 +510,33 @@
     render();
   }
 
+  /* 错题本收集：只在真实用户点了「下一题 / 对 / 不对 / 不会」后进来（commit 的所有调用点都是按钮）。
+   * 演示模式的模拟学生走 runDemo -> E.applyAnswer，不经过这里；这里再用 demo 标志兜底。 */
+  function collectWrong(item, result) {
+    if (demo || result === 'correct' || !window.CnmWrong) return;
+    const q = item.question;
+    if (!q || !q.id) return;
+    const cur = CC.current();
+    const skipped = result === 'skip';
+    window.CnmWrong.record({
+      childId: cur ? cur.id : 'guest',
+      qid: q.id,
+      topicId: item.topicId,
+      topic: nameOf(item.topicId),
+      subject: subject,
+      prompt: q.prompt,
+      choices: q.type === 'choice' && q.choices ? q.choices.map(function (c) { return { key: c.key, text: c.text || '' }; }) : null,
+      answer: answerText(q),
+      explanation: q.explanation || '',
+      chosen: skipped ? '' : (q.type === 'choice' ? answerOfKey(q, ui.answer) : String(ui.answer || '').trim()),
+      kind: skipped ? 'skip' : 'wrong'
+    });
+  }
+
   function commit(result) {
     const item = E.nextItem(D.graph, session);
-    session = E.applyAnswer(D.graph, session, item.topicId, result, { text: ui.answer });
+    collectWrong(item, result);
+    session = E.applyAnswer(D.graph, session, item.topicId, result, { text: ui.answer, prompt: item.question.prompt });
     markSeen(item.question.id);
     resetUi();
     save();
@@ -584,15 +668,20 @@
         ? '选一个想学会或想检查的历史知识点。' + confirmHelp
         : subject === 'geography'
         ? '选一个想学会或想检查的地理知识点。' + confirmHelp
+        : subject === 'biology'
+        ? '选一个想学会或想检查的生物知识点。' + confirmHelp
+        : subject === 'chemistry'
+        ? '选一个想学会或想检查的化学知识点。' + confirmHelp
         : '选一个想学会或想检查的知识点。' + confirmHelp),
       h('div', { class: 'stage-tabs', role: 'tablist', 'aria-label': '学段' },
-        subject === 'physics' ? [stageButton('', '全部'), stageButton('j', '初中'), stageButton('h', '高中')]
-          : subject === 'history' || subject === 'geography' ? [stageButton('', '全部'), stageButton('j', '初中')]
-          : subject === 'chinese' || subject === 'science' || subject === 'morality' ? [stageButton('', '全部'), stageButton('p', '小学')]
+        subject === 'physics' || subject === 'chemistry' ? [stageButton('', '全部'), stageButton('j', '初中'), stageButton('h', '高中')]
+          : subject === 'history' || subject === 'geography' || subject === 'biology' ? [stageButton('', '全部'), stageButton('j', '初中')]
+          : subject === 'chinese' || subject === 'morality' ? [stageButton('', '全部'), stageButton('p', '小学'), stageButton('j', '初中')]
+          : subject === 'science' ? [stageButton('', '全部'), stageButton('p', '小学')]
           : [stageButton('', '全部'), stageButton('p', '小学'), stageButton('j', '初中'), stageButton('h', '高中')]),
       h('input', {
         type: 'search', class: 'search-lg', id: 'search',
-        placeholder: subject === 'physics' ? '搜索知识点，例如：欧姆定律、浮力、牛顿第二定律、楞次定律' : subject === 'english' ? '搜索知识点，例如：现在进行时、虚拟语气、there is' : subject === 'chinese' ? '搜索知识点，例如：声母、静夜思、的地得' : subject === 'science' ? '搜索知识点，例如：溶解、电路、昼夜交替' : subject === 'morality' ? '搜索知识点，例如：升国旗、排队、宪法、节约用水' : subject === 'history' ? '搜索知识点，例如：鸦片战争、丝绸之路、五四运动' : subject === 'geography' ? '搜索知识点，例如：经纬网、季风气候、长江' : '搜索知识点，例如：配方法、20 以内加法、一次函数',
+        placeholder: subject === 'physics' ? '搜索知识点，例如：欧姆定律、浮力、牛顿第二定律、楞次定律' : subject === 'english' ? '搜索知识点，例如：现在进行时、虚拟语气、there is' : subject === 'chinese' ? '搜索知识点，例如：声母、静夜思、春、岳阳楼记' : subject === 'science' ? '搜索知识点，例如：溶解、电路、昼夜交替' : subject === 'morality' ? '搜索知识点，例如：升国旗、排队、宪法、节约用水' : subject === 'history' ? '搜索知识点，例如：鸦片战争、丝绸之路、五四运动' : subject === 'geography' ? '搜索知识点，例如：经纬网、季风气候、长江' : subject === 'biology' ? '搜索知识点，例如：细胞、光合作用、基因' : subject === 'chemistry' ? '搜索知识点，例如：氧气、质量守恒定律、物质的量、氧化还原' : '搜索知识点，例如：配方法、20 以内加法、一次函数',
         value: startQuery, autocomplete: 'off', 'aria-label': '搜索知识点',
         oninput: function (e) {
           startQuery = e.target.value;
@@ -662,10 +751,19 @@
           ])
           : subject === 'history'
           ? '七八九'.split('').map(function (x) { return [x, x + '年级']; })
-          : subject === 'geography'
+          : subject === 'geography' || subject === 'biology'
           ? '七八'.split('').map(function (x) { return [x, x + '年级']; })
-          : subject === 'chinese' || subject === 'science' || subject === 'morality'
+          : subject === 'chemistry'
+          ? [['九', '九年级'], ['必修一', '必修一'], ['必修二', '必修二'], ['选必一', '选必一'], ['选必二', '选必二'], ['选必三', '选必三']]
+          : subject === 'chinese'
+          ? '一二三四五六七八九'.split('').map(function (x) { return [x, x + '年级']; })
+          : subject === 'science'
           ? '一二三四五六'.split('').map(function (x) { return [x, x + '年级']; })
+          : subject === 'morality'
+          ? '一二三四五六七八九'.split('').filter(function (x) {
+            var gnum = '一二三四五六七八九'.indexOf(x) + 1;
+            return D.topics.some(function (t) { return t.grade === gnum; });
+          }).map(function (x) { return [x, x + '年级']; })
           : GRADES.map(function (x) { return [x, x + '年级']; }).concat([
             ['高一', '高一'], ['高二', '高二'], ['选必一', '选必一'], ['选必二', '选必二'], ['选必三', '选必三']
           ]), gradeSel, function (v) {
@@ -682,6 +780,15 @@
             ? tabs('范围', [['全', '全一册']], '全', function () { volSel = '全'; })
           : (subject === 'english' && gradeSel === '九')
             ? tabs('范围', [['', '整年级'], ['上', '上册（新版）'], ['全', '全一册（旧版，九下暂用）']], volSel, function (v) { volSel = v; })
+          : subject === 'morality'
+            ? tabs('范围', [['', '整年级']].concat(['上', '下'].filter(function (sem) {
+              var gnum = '一二三四五六七八九'.indexOf(gradeSel) + 1;
+              return D.topics.some(function (t) { return t.grade === gnum && t.semester === sem; });
+            }).map(function (sem) { return [sem, sem + '册']; })), (function () {
+              var gnum = '一二三四五六七八九'.indexOf(gradeSel) + 1;
+              if (volSel && !D.topics.some(function (t) { return t.grade === gnum && t.semester === volSel; })) volSel = '';
+              return volSel;
+            })(), function (v) { volSel = v; })
             : tabs('范围', [['', '整年级'], ['上', '上册'], ['下', '下册']], volSel, function (v) { volSel = v; }),
         h('p', { class: 'muted', id: 'grade-info' }, g ? g.label + '：' + g.ids.length + ' 个知识点。' : '这个范围没有知识点。'),
         h('div', { class: 'row' },
@@ -721,9 +828,10 @@
       if (!chapters.length) return;
       const count = chapters.reduce(function (n, c) { return n + c.rows.length; }, 0);
       shown += count;
-      const openVol = subject === 'physics' ? '八上' : subject === 'english' ? '三上' : subject === 'history' || subject === 'geography' ? '七上' : '一上';
-      const seniorOpen = subject === 'english' || subject === 'physics' ? '必修一' : '高一';
-      const det = h('details', { class: 'vol', open: !!q || (startStage === 'j' ? vv[0] === '七上' : startStage === 'h' ? vv[0] === seniorOpen : vv[0] === openVol) },
+      const openVol = subject === 'physics' ? '八上' : subject === 'english' ? '三上' : subject === 'chemistry' ? '九上' : subject === 'history' || subject === 'geography' || subject === 'biology' ? '七上' : '一上';
+      const juniorOpen = subject === 'chemistry' ? '九上' : '七上';
+      const seniorOpen = subject === 'english' || subject === 'physics' || subject === 'chemistry' ? '必修一' : '高一';
+      const det = h('details', { class: 'vol', open: !!q || (startStage === 'j' ? vv[0] === juniorOpen : startStage === 'h' ? vv[0] === seniorOpen : vv[0] === openVol) },
         h('summary', null, vv[1] + '（' + count + ' 个知识点）'));
       chapters.forEach(function (c) {
         const ch = c.ch;
@@ -809,10 +917,19 @@
     return q.answer;
   }
 
+  const ISSUE_NEW_URL = 'https://github.com/xiaoyang111222/cn-math-taxonomy/issues/new';
+
+  function reportUrl(q) {
+    return ISSUE_NEW_URL + '?template=question-fix.yml&title=' + encodeURIComponent('[题目] ' + q.id) +
+      '&question_id=' + encodeURIComponent(q.id);
+  }
+
   function feedbackBlock(q) {
     return h('div', { class: 'feedback' },
       h('div', { class: 'refans' }, h('b', null, '参考答案：'), answerText(q)),
-      q.explanation ? h('div', { class: 'explain', id: 'explain' }, h('b', null, '解析：'), q.explanation) : null);
+      q.explanation ? h('div', { class: 'explain', id: 'explain' }, h('b', null, '解析：'), q.explanation) : null,
+      q.id ? h('div', { class: 'report-link no-print' },
+        h('a', { id: 'report-q', href: reportUrl(q), target: '_blank', rel: 'noopener noreferrer' }, '这道题有错？报错')) : null);
   }
 
   function renderQuestion(item) {
@@ -820,7 +937,8 @@
     const q = item.question;
     const t = D.graph.byId[id];
     const key = id + '#' + item.attempt;
-    if (ui.key !== key) ui = { key: key, phase: 'ask', answer: '', verdict: null, picked: null };
+    const isNewQuestion = ui.key !== key;
+    if (isNewQuestion) ui = { key: key, phase: 'ask', answer: '', verdict: null, picked: null };
     const n = session.answers.length;
     const card = h('div', { class: 'card' });
     card.append(
@@ -843,6 +961,7 @@
       if (qt) qt.insertAdjacentElement('afterend', stemFig);
     }
 
+    const resultStart = card.children.length;
     if (ui.phase === 'ask') {
       if (q.type === 'choice') {
         card.append(h('div', { class: 'choices' + (q.hideChoiceText ? ' fig-icons' : ''), id: 'choices' }, (q.choices || []).map(function (c) {
@@ -855,7 +974,11 @@
             class: 'choice' + (c.figure ? ' fig-choice' : '') + (ui.picked === c.key ? ' picked' : ''),
             id: 'choice-' + c.key, 'data-key': c.key,
             'aria-label': hideName ? ('选项 ' + c.key) : null,
-            onclick: function () { ui.picked = c.key; ui.answer = c.key; renderQuestion(item); }
+            onclick: function (e) {
+              ui.picked = c.key; ui.answer = c.key;
+              const box = e.currentTarget.parentNode;
+              Array.prototype.forEach.call(box.querySelectorAll('.choice'), function (b) { b.classList.toggle('picked', b.getAttribute('data-key') === c.key); });
+            }
           }, kids);
         })));
       } else if (q.type === 'self') {
@@ -870,7 +993,7 @@
           onkeydown: function (e) { if (e.key === 'Enter' && !e.isComposing) judgeAndGo(item); }
         }));
       }
-      card.append(h('div', { class: 'row', style: 'margin-top:10px' },
+      card.append(h('div', { class: 'row actions-sticky', style: 'margin-top:10px' },
         q.type === 'self' ? null : h('button', { class: 'primary', id: 'btn-submit', onclick: function () { judgeAndGo(item); } }, '提交答案'),
         q.type === 'choice' ? null : h('button', { id: 'btn-peek', onclick: function () { ui.phase = 'self'; ui.verdict = null; renderQuestion(item); } }, '看参考答案并自评'),
         h('button', { id: 'btn-skip', onclick: function () { ui.phase = 'skip'; renderQuestion(item); } }, '不会')));
@@ -880,7 +1003,7 @@
         h('div', { class: 'muted' }, '你的答案：' + (q.type === 'choice' ? answerOfKey(q, ui.answer) : ui.answer)),
         h('div', { class: 'verdict ' + (ok ? 'ok' : 'no') }, ok ? '自动判定：正确' : '自动判定：不正确'),
         feedbackBlock(q),
-        h('div', { class: 'row' },
+        h('div', { class: 'row actions-sticky' },
           h('button', { class: 'primary', id: 'btn-next', onclick: function () { commit(ok ? 'correct' : 'wrong'); } }, '下一题'),
           h('button', { id: 'btn-flip', onclick: function () { commit(ok ? 'wrong' : 'correct'); } }, ok ? '判错了，我其实没做对' : '判错了，我其实做对了'),
           h('button', { onclick: function () { ui.phase = 'ask'; renderQuestion(item); } }, '重新作答')));
@@ -888,14 +1011,14 @@
       card.append(
         h('div', { class: 'muted' }, '你选择了「不会」。看一下答案和解析再继续：'),
         feedbackBlock(q),
-        h('div', { class: 'row' }, h('button', { class: 'primary', id: 'btn-next', onclick: function () { commit('skip'); } }, '下一题')));
+        h('div', { class: 'row actions-sticky' }, h('button', { class: 'primary', id: 'btn-next', onclick: function () { commit('skip'); } }, '下一题')));
     } else {
       card.append(
-        ui.answer ? h('div', { class: 'muted' }, '你的答案：' + ui.answer) : null,
+        ui.answer ? h('div', { class: 'muted' }, '你的答案：' + ui.answer) : '',
         q.type === 'self' ? h('div', { class: 'muted' }, '开放题：请对照参考答案自己判断。')
-          : (ui.verdict ? h('div', { class: 'muted' }, '这道题的答案无法被自动可靠地判定，请对照参考答案自己判断。') : null),
+          : (ui.verdict ? h('div', { class: 'muted' }, '这道题的答案无法被自动可靠地判定，请对照参考答案自己判断。') : ''),
         feedbackBlock(q),
-        h('div', { class: 'row' },
+        h('div', { class: 'row actions-sticky' },
           h('button', { class: 'good', id: 'btn-right', onclick: function () { commit('correct'); } }, '对（我做对了）'),
           h('button', { class: 'bad', id: 'btn-wrong', onclick: function () { commit('wrong'); } }, '不对'),
           h('button', { id: 'btn-skip2', onclick: function () { commit('skip'); } }, '不会')));
@@ -909,10 +1032,18 @@
     if (demo) page.append(demoBanner());
     page.append(childBar('question'));
     page.append(card);
-    show(page);
+    show(page, !isNewQuestion);
     const inp = document.getElementById('ans');
-    if (inp && inp.setSelectionRange && inp.tagName === 'INPUT') { inp.focus(); inp.setSelectionRange(inp.value.length, inp.value.length); }
-    else if (inp) inp.focus();
+    const focusOpts = { preventScroll: !isNewQuestion };
+    if (inp && inp.setSelectionRange && inp.tagName === 'INPUT') { inp.focus(focusOpts); inp.setSelectionRange(inp.value.length, inp.value.length); }
+    else if (inp) inp.focus(focusOpts);
+    const resultEl = ui.phase === 'ask' ? null : card.children[resultStart];
+    if (resultEl && !isNewQuestion) {
+      const header = document.querySelector('.site-header');
+      resultEl.style.scrollMarginTop = ((header ? header.offsetHeight : 0) + 12) + 'px';
+      const calm = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      resultEl.scrollIntoView({ behavior: calm ? 'auto' : 'smooth', block: 'start' });
+    }
   }
 
   function answerOfKey(q, key) {
@@ -942,7 +1073,7 @@
     return raw || '本次诊断';
   }
   function buildShareModel(sum, chapters) {
-    var subjectName = subject === 'english' ? '英语' : subject === 'physics' ? '物理' : subject === 'chinese' ? '语文' : subject === 'science' ? '科学' : subject === 'morality' ? '道德与法治' : subject === 'history' ? '历史' : subject === 'geography' ? '地理' : '数学';
+    var subjectName = subject === 'english' ? '英语' : subject === 'physics' ? '物理' : subject === 'chinese' ? '语文' : subject === 'science' ? '科学' : subject === 'morality' ? '道德与法治' : subject === 'history' ? '历史' : subject === 'geography' ? '地理' : subject === 'biology' ? '生物' : subject === 'chemistry' ? '化学' : '数学';
     var spots = [];
     var spotKind = 'topic';
     if (chapters && chapters.length) {
@@ -1093,6 +1224,8 @@
     saveToChild(sum);
     noteBlind(sum);
     page.append(childBar('result'));
+    const dropped = excludedNote();
+    if (dropped) page.append(dropped);
 
     const targetsMastered = session.targets.every(function (id) { return E.statusOf(session, id) === 'mastered'; });
     const chapters = screen ? E.chapterSummary(D.graph, session) : null;
@@ -1128,6 +1261,7 @@
         h('button', { class: 'primary', id: 'btn-share', onclick: openShare }, '生成分享图'),
         h('button', { id: 'btn-export', onclick: exportJson }, '导出 JSON'),
         h('button', { id: 'btn-print', onclick: printPage }, '打印 / 另存为 PDF'),
+        wrongbookLink(),
         h('button', { onclick: function () { if (confirm('重新开始会清除当前进度，确定吗？')) restart(); } }, '重新开始'),
         session.answers.length ? h('button', { onclick: function () { rebuild(session.answers.slice(0, -1)); } }, '撤销上一题') : null));
     page.append(summaryCard);
@@ -1193,35 +1327,6 @@
 
     page.append(standardsCard(sum));
     page.append(logCard());
-    show(page);
-    mountPathGraph(sum);
-  }
-
-  function nameList(ids) { return ids.map(nameOf).join('、'); }
-
-  function chaptersCard(chapters, outOfScope) {
-    const seg = function (cls, n, total) { return n ? h('i', { class: cls, style: 'width:' + (n / total * 100) + '%' }) : null; };
-    return h('div', { class: 'card', id: 'chapters' },
-      h('h2', { text: '按章汇总' }),
-      h('p', { class: 'muted small' }, '每章的知识点掌握情况，薄弱多的章排在前面；点开看具体是哪几个知识点。色条从左到右：掌握、不稳、薄弱、未测。'),
-      outOfScope.length ? h('p', { class: 'notice', id: 'out-of-scope' }, '部分薄弱点的前置知识在所选年级之外，未检查（涉及 ' + outOfScope.length + ' 个薄弱点，如「' +
-        outOfScope.slice(0, 3).map(function (r) { return nameOf(r.id); }).join('」「') + '」）。可对这些知识点单独做诊断，沿先修继续往前查。') : null,
-      chapters.map(function (c) {
-        return h('details', { class: 'topic chap-sum', open: c.weak > 0 || c.shaky > 0 },
-          h('summary', null,
-            h('span', { class: 'chap-name', text: c.label }),
-            h('span', { class: 'chap-counts' },
-              tag('mastered', '掌握 ' + c.mastered), tag('shaky', '不稳 ' + c.shaky), tag('weak', '薄弱 ' + c.weak), tag('unknown', '未测 ' + c.untested)),
-            h('span', { class: 'chap-bar', 'aria-hidden': 'true' },
-              seg('m', c.mastered, c.total), seg('s', c.shaky, c.total), seg('w', c.weak, c.total), seg('u', c.untested, c.total))),
-          h('div', { class: 'body' },
-            h('div', { class: 'muted small', text: '共 ' + c.total + ' 个知识点' }),
-            c.weakIds.length ? h('div', { class: 'chap-names' }, tag('weak', '薄弱'), nameList(c.weakIds),
-              ' ', h('a', { class: 'blind-retest no-print', href: diagnoseHrefFor(c.weakIds), text: '再测本章薄弱' })) : null,
-            c.shakyIds.length ? h('div', { class: 'chap-names' }, tag('shaky', '不稳'), nameList(c.shakyIds),
-              ' ', h('a', { class: 'blind-retest no-print', href: diagnoseHrefFor(c.shakyIds), text: '再测本章不稳' })) : null,
-            !c.weakIds.length && !c.shakyIds.length ? h('div', { class: 'muted small', text: c.untested ? '没有发现薄弱或不稳的点，另有 ' + c.untested + ' 个没测到。' : '没有发现薄弱或不稳的点。' }) : null));
-      }));
   }
 
   function stat(cls, n, label) { return h('div', { class: 'stat ' + cls }, h('b', { text: String(n) }), label); }
@@ -1241,15 +1346,19 @@
         : subject === 'english'
         ? '目标与学习路径上的知识点对应的《义务教育英语课程标准（2022年版）》和《普通高中英语课程标准（2017年版2025年修订）》公开转述（一级、二级、三级，以及高中必修、选择性必修）。'
         : subject === 'chinese'
-        ? '目标与学习路径上的知识点对应的《义务教育语文课程标准（2022年版）》第一至第三学段的公开转述。'
+        ? '目标与学习路径上的知识点对应的《义务教育语文课程标准（2022年版）》第一至第四学段的公开转述。'
         : subject === 'science'
         ? '目标与学习路径上的知识点对应的《义务教育科学课程标准（2022年版）》第一至第三学段学习内容的公开转述。'
         : subject === 'morality'
-        ? '目标与学习路径上的知识点对应的《义务教育道德与法治课程标准（2022年版）》第一至第三学段内容要求的公开转述。'
+        ? '目标与学习路径上的知识点对应的《义务教育道德与法治课程标准（2022年版）》第一至第三学段内容要求的公开转述；初中第四学段目前仅作主题推断，非逐字课标原文，页码待核。七至九年级上册已按官方目录录入，九下未建，不含高中。'
         : subject === 'history'
         ? '目标与学习路径上的知识点对应的《义务教育历史课程标准（2022年版）》第四学段内容要求的公开转述。'
         : subject === 'geography'
         ? '目标与学习路径上的知识点对应的《义务教育地理课程标准（2022年版）》第四学段内容要求的公开转述。'
+        : subject === 'biology'
+        ? '目标与学习路径上的知识点对应的《义务教育生物学课程标准（2022年版）》第四学段内容要求的公开转述。'
+        : subject === 'chemistry'
+        ? '目标与学习路径上的知识点对应的《义务教育化学课程标准（2022年版）》五个学习主题，以及《普通高中化学课程标准（2017年版）》必修第一册、必修第二册、选择性必修第一册、选择性必修第二册、选择性必修第三册相关内容要求的公开转述。'
         : '目标与学习路径上的知识点对应的《义务教育数学课程标准（2022年版）》内容要求（第一至第四学段）。'),
       keys.length ? keys.map(function (k) {
         const item = D.stdById[k];
@@ -1259,9 +1368,21 @@
       }) : h('p', { class: 'muted', text: '无。' }));
   }
 
+  function excludedNote() {
+    const xs = sessionMeta && sessionMeta.excluded || [];
+    if (!xs.length) return null;
+    return h('div', { class: 'card', id: 'stem-excluded' },
+      h('h2', { text: '有旧作答未计入' }),
+      h('p', null, '这些题号后来改成了别的题。旧作答没有能对上现行题干的快照，不显示成现在的语气题，也不计对错，没有改记到古诗。需要重测。'),
+      h('ul', null, xs.map(function (a) {
+        return h('li', null, (a.qid || '旧题') + '：' + (a.prompt || '题干未保存') + '（不计入语气）');
+      })));
+  }
+
   function logCard() {
     const rows = session.answers.map(function (a, i) {
       const q = E.questionById(D.graph, a.qid) || { prompt: '', answer: '' };
+      const shown = window.StemCompat ? window.StemCompat.displayPrompt(a, q) : q.prompt;
       const sel = h('select', {
         onchange: function (e) {
           const next = session.answers.map(function (x, j) { return j === i ? Object.assign({}, x, { result: e.target.value }) : x; });
@@ -1269,9 +1390,9 @@
         }
       }, ['correct', 'wrong', 'skip'].map(function (r) { return h('option', { value: r, selected: r === a.result }, RESULT_LABEL[r]); }));
       return h('tr', null, h('td', { text: String(i + 1) }),
-        h('td', null, nameOf(a.id), h('div', { class: 'muted small', text: q.prompt.length > 60 ? q.prompt.slice(0, 59) + '…' : q.prompt })),
-        h('td', { class: 'muted', text: a.text || '' }),
-        h('td', null, sel), h('td', { class: 'muted', text: q.answer }));
+        h('td', null, nameOf(a.id), h('div', { class: 'muted small', text: shown == null ? '这道旧作答对不上现在的题干，不计入。' : (shown.length > 60 ? shown.slice(0, 59) + '…' : shown) })),
+        h('td', { class: 'muted', text: shown == null ? '' : (a.text || '') }),
+        h('td', null, sel), h('td', { class: 'muted', text: shown == null ? '—' : q.answer }));
     });
     return h('div', { class: 'card', id: 'log' },
       h('h2', { text: '答题记录（可更正）' }),
@@ -1292,6 +1413,7 @@
     }
     if (grade >= 1 && grade <= 9) return cn[grade] + '年级';
     if (subject === 'physics') return { 10: '必修一', 11: '必修二', 12: '必修三', 13: '选必一', 14: '选必二', 15: '选必三' }[grade] || ('册' + grade);
+    if (subject === 'chemistry') return { 10: '必修一', 11: '必修二', 12: '选必一', 13: '选必二', 14: '选必三' }[grade] || ('册' + grade);
     const math = { 10: '高一', 11: '高二', 12: '选必一', 13: '选必二', 14: '选必三' };
     return math[grade] || ('年级' + grade);
   }
@@ -1553,11 +1675,22 @@
       limit: session.limit, seed: session.seed, asked: sum.asked, finished: sum.finished, limitReached: sum.limitReached,
       answers: session.answers.map(function (a, i) {
         const q = E.questionById(D.graph, a.qid) || {};
+        const shown = window.StemCompat ? window.StemCompat.displayPrompt(a, q) : q.prompt;
+        if (shown == null) {
+          return {
+            order: i + 1, topicId: a.id, name: nameOf(a.id), questionId: a.qid,
+            prompt: a.prompt || null, userAnswer: null, result: null, excluded: true,
+            note: '题号已改写，旧作答不计入现行题干'
+          };
+        }
         return {
           order: i + 1, topicId: a.id, name: nameOf(a.id), questionId: a.qid, difficulty: q.difficulty, type: q.type,
-          prompt: q.prompt, userAnswer: a.text == null ? null : a.text, result: a.result,
+          prompt: shown, userAnswer: a.text == null ? null : a.text, result: a.result,
           referenceAnswer: q.answer, explanation: q.explanation || ''
         };
+      }),
+      excludedAnswers: (sessionMeta.excluded || []).map(function (a) {
+        return { topicId: a.id, questionId: a.qid, prompt: a.prompt || null, result: null, excluded: true, note: '不计入语气，需重测' };
       }),
       chapters: chapters ? chapters.map(function (c) {
         return {
@@ -1641,6 +1774,8 @@
             ? '高中英语不拆上下册：' + grade + ' / ' + volume + '（用 grade=必修一 或 grade=选必一）'
             : subject === 'physics'
             ? '高中物理不拆上下册：' + grade + ' / ' + volume + '（用 grade=必修一 或 grade=选必一）'
+            : subject === 'chemistry'
+            ? '高中化学不拆上下册：' + grade + ' / ' + volume + '（用 grade=必修一、grade=必修二、grade=选必一、grade=选必二 或 grade=选必三）'
             : '高中不拆上下册：' + grade + ' / ' + volume + '（用 grade=高一、grade=高二 或 grade=选必二）');
         }
         scope = seniorUrl[grade];
@@ -1664,7 +1799,7 @@
       clearRoot();
       root.append(h('div', { class: 'card' }, h('h2', { class: 'err', text: '数据加载失败' }),
         h('p', null, String(e.message || e)),
-        h('p', null, '请在项目根目录运行 ', h('code', { text: 'python3 -m http.server 8000' }), '，再访问 http://localhost:8000/diagnose/index.html （不能直接用 file:// 打开）。')));
+        h('p', null, '请在项目根目录运行 ', h('code', { text: 'python3 -m http.server 8000' }), '，再访问 http://localhost:8000/diagnose/ （不能直接用 file:// 打开）。')));
       return;
     }
     const params = new URLSearchParams(location.search);

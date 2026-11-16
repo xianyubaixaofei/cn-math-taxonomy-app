@@ -6,7 +6,7 @@
   var MAX_TOPICS = 200;
   var SUBJECT_NAME = {
     math: '数学', chinese: '语文', science: '科学',
-    morality: '道德与法治', history: '历史', geography: '地理', english: '英语', physics: '物理'
+    morality: '道德与法治', history: '历史', geography: '地理', biology: '生物', chemistry: '化学', english: '英语', physics: '物理'
   };
   var SESSION_KEYS = [
     { key: 'cnmDiagnose.session.v2', subject: 'math' },
@@ -16,7 +16,9 @@
     { key: 'cnsDiagnose.session.v1', subject: 'science' },
     { key: 'cndDiagnose.session.v1', subject: 'morality' },
     { key: 'cnhDiagnose.session.v1', subject: 'history' },
-    { key: 'cngDiagnose.session.v1', subject: 'geography' }
+    { key: 'cngDiagnose.session.v1', subject: 'geography' },
+    { key: 'cnbDiagnose.session.v1', subject: 'biology' },
+    { key: 'cnkDiagnose.session.v1', subject: 'chemistry' }
   ];
 
   function read(k, fallback) {
@@ -38,6 +40,8 @@
     if (id.indexOf('cnd_') === 0) return 'morality';
     if (id.indexOf('cnh_') === 0) return 'history';
     if (id.indexOf('cng_') === 0) return 'geography';
+    if (id.indexOf('cnb_') === 0) return 'biology';
+    if (id.indexOf('cnk_') === 0) return 'chemistry';
     return 'math';
   }
 
@@ -71,12 +75,19 @@
     return out;
   }
 
-  /* 诊断结果页调用：无论有没有孩子档案，都把本轮薄弱 / 不稳写入本机盲区账本。 */
+  function compat() { return typeof window !== 'undefined' ? window.StemCompat : null; }
+
+  /* 诊断结果页调用：无论有没有孩子档案，都把本轮薄弱 / 不稳写入本机盲区账本。
+   * 对不上现行题干的作答不累加错次。cnc_p124 只有带着现行戳才保持薄弱 / 不稳 / 掌握。 */
   function noteResult(payload) {
     if (!payload || payload.demo) return false;
     var s = store();
     var now = new Date().toISOString();
-    var wrongs = tallyWrongs(payload.answers);
+    var SC = compat();
+    var effect = SC && SC.sessionEffect ? SC.sessionEffect(payload.answers) : { answers: payload.answers, retestTopicIds: [] };
+    var wrongs = tallyWrongs(effect.answers);
+    var blocked = {};
+    (effect.retestTopicIds || []).forEach(function (id) { blocked[id] = true; });
     var rootSet = {};
     (payload.roots || []).forEach(function (id) { rootSet[id] = true; });
     var subject = payload.subject || 'math';
@@ -85,8 +96,23 @@
       (ids || []).forEach(function (id) {
         if (!id) return;
         var prev = s.byId[id] || { id: id, hits: 0, wrongs: 0 };
+        if (blocked[id]) {
+          s.byId[id] = {
+            id: id,
+            subject: subject || subjectOfId(id),
+            status: 'retest',
+            needsRetest: true,
+            root: false,
+            hits: 0,
+            wrongs: 0,
+            lastAt: now,
+            lastLabel: payload.label || prev.lastLabel || '',
+            lastKey: payload.key || prev.lastKey || ''
+          };
+          return;
+        }
         var bump = status === 'weak' || status === 'shaky';
-        s.byId[id] = {
+        var row = {
           id: id,
           subject: subject || subjectOfId(id),
           status: status,
@@ -97,6 +123,8 @@
           lastLabel: payload.label || prev.lastLabel || '',
           lastKey: payload.key || prev.lastKey || ''
         };
+        if (SC && id === SC.TOPIC) row.stemRev = SC.REV;
+        s.byId[id] = row;
       });
     }
 
@@ -110,10 +138,28 @@
   function fromLedger(subject) {
     var by = store().byId;
     var out = {};
+    var SC = compat();
     Object.keys(by).forEach(function (id) {
       var row = by[id];
-      if (!row || (row.status !== 'weak' && row.status !== 'shaky')) return;
+      if (!row) return;
       if (subject && row.subject !== subject && subjectOfId(id) !== subject) return;
+      var stale = SC && id === SC.TOPIC && !SC.topicTrusted(row, id);
+      if (!stale && row.status !== 'weak' && row.status !== 'shaky' && row.status !== 'retest') return;
+      if (stale || row.status === 'retest') {
+        out[id] = {
+          id: id,
+          subject: row.subject || subjectOfId(id),
+          status: 'retest',
+          needsRetest: true,
+          root: false,
+          hits: 0,
+          wrongs: 0,
+          at: row.lastAt || '',
+          label: row.lastLabel || '',
+          source: 'local'
+        };
+        return;
+      }
       out[id] = {
         id: id,
         subject: row.subject || subjectOfId(id),
@@ -138,13 +184,13 @@
     var out = {};
     Object.keys(latest).forEach(function (id) {
       var info = latest[id];
-      if (!info || (info.status !== 'weak' && info.status !== 'shaky')) return;
+      if (!info || (info.status !== 'weak' && info.status !== 'shaky' && info.status !== 'retest')) return;
       out[id] = {
         id: id,
         subject: info.subject || subjectOfId(id),
         status: info.status,
-        root: !!info.root,
-        hits: 1,
+        root: info.status === 'retest' ? false : !!info.root,
+        hits: info.status === 'retest' ? 0 : 1,
         wrongs: 0,
         at: info.at || '',
         label: info.label || '',
@@ -161,7 +207,9 @@
       if (subject && item.subject !== subject) return;
       var sess = read(item.key, null);
       if (!sess || !Array.isArray(sess.answers) || !sess.answers.length) return;
-      var wrongs = tallyWrongs(sess.answers);
+      var SC = compat();
+      var effect = SC && SC.sessionEffect ? SC.sessionEffect(sess.answers) : { answers: sess.answers, retestTopicIds: [] };
+      var wrongs = tallyWrongs(effect.answers);
       Object.keys(wrongs).forEach(function (id) {
         if (out[id] && out[id].status === 'weak') {
           out[id].wrongs += wrongs[id];
@@ -179,6 +227,21 @@
           source: 'session'
         };
       });
+      (effect.retestTopicIds || []).forEach(function (id) {
+        if (out[id]) return;
+        out[id] = {
+          id: id,
+          subject: item.subject,
+          status: 'retest',
+          needsRetest: true,
+          root: false,
+          hits: 0,
+          wrongs: 0,
+          at: sess.savedAt || '',
+          label: sess.label || '未完成的诊断',
+          source: 'session'
+        };
+      });
     });
     return out;
   }
@@ -191,6 +254,11 @@
         var row = map[id];
         var prev = out[id];
         if (!prev) {
+          out[id] = Object.assign({}, row);
+          return;
+        }
+        if (prev.status !== 'retest' && row.status === 'retest') return;
+        if (prev.status === 'retest' && row.status !== 'retest') {
           out[id] = Object.assign({}, row);
           return;
         }
@@ -216,8 +284,11 @@
     var merged = mergeMaps(fromSessions(subject), fromLedger(subject), fromChild(subject));
     var rows = Object.keys(merged).map(function (id) { return merged[id]; });
     rows.sort(function (a, b) {
-      var ra = (a.status === 'weak' ? 0 : 2) + (a.root ? 0 : 1);
-      var rb = (b.status === 'weak' ? 0 : 2) + (b.root ? 0 : 1);
+      var rank = function (row) {
+        return row.status === 'retest' ? 4 : (row.status === 'weak' ? 0 : 2) + (row.root ? 0 : 1);
+      };
+      var ra = rank(a);
+      var rb = rank(b);
       return ra - rb || (b.wrongs || 0) - (a.wrongs || 0) || (b.hits || 0) - (a.hits || 0) ||
         String(b.at || '').localeCompare(String(a.at || ''));
     });
@@ -231,15 +302,15 @@
 
   function diagnoseHref(ids, subject, base) {
     ids = (Array.isArray(ids) ? ids : [ids]).filter(Boolean);
-    if (!ids.length) return (base || 'diagnose/index.html') + (subject && subject !== 'math' ? '?subject=' + subject : '');
+    if (!ids.length) return (base || 'diagnose/') + (subject && subject !== 'math' ? '?subject=' + subject : '');
     var sub = subject || subjectOfId(ids[0]);
     var q = 'target=' + ids.map(encodeURIComponent).join(',');
     if (sub && sub !== 'math') q = 'subject=' + encodeURIComponent(sub) + '&' + q;
-    return (base || 'diagnose/index.html') + '?' + q;
+    return (base || 'diagnose/') + '?' + q;
   }
 
   function historyHref(childId, base) {
-    var path = (base || 'children/index.html') + 'history.html';
+    var path = (base || 'children/') + 'history.html';
     if (childId) path += '?child=' + encodeURIComponent(childId);
     return path;
   }

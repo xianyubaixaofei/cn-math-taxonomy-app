@@ -3,32 +3,37 @@
  * 改了 SHELL 或 DATA 列表、或数据结构变了，就把 VERSION 加一。 */
 'use strict';
 
-var VERSION = 'v10';
+var VERSION = 'v28';
 var CACHE = 'cnm-pwa-' + VERSION;
 var SCOPE = self.registration.scope;
 
 var SHELL = [
   './',
   'index.html',
-  'explore/index.html',
+  'explore/',
   'explore/app.js',
-  'diagnose/index.html',
+  'diagnose/',
   'diagnose/app.js',
   'diagnose/engine.js',
   'diagnose/share.js',
   'diagnose/style.css',
-  'children/index.html',
+  'children/',
   'children/history.html',
   'children/children.css',
   'children/page.js',
   'children/history.js',
+  'wrongbook/',
+  'wrongbook/wrongbook.js',
+  'wrongbook/wrongbook.css',
   'assets/site.css',
   'assets/explore.css',
   'assets/home.js',
   'assets/stats-config.js',
   'assets/stats.js',
+  'assets/stem-compat.js',
   'assets/children.js',
   'assets/blindspots.js',
+  'assets/wrongbook.js',
   'assets/pwa.js',
   'assets/pwa.css',
   'assets/vendor/cytoscape.min.js',
