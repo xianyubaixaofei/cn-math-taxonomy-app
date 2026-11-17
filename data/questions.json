@@ -55225,7 +55225,7 @@
     "topicId": "cne_p028",
     "difficulty": "standard",
     "type": "choice",
-    "prompt": "读一读：I am six. I have two dolls. 玩具娃娃有几个？",
+    "prompt": "读一读：I am six. I have two dolls. 玩具娃娃（dolls）有几个？",
     "choices": [
       {
         "key": "A",
@@ -55245,7 +55245,7 @@
       }
     ],
     "answer": "A",
-    "explanation": "two dolls 是 2 个；six 是年龄。",
+    "explanation": "two dolls 是 2 个玩具娃娃；six 是年龄（I am six），别把年龄当成玩具数量。",
     "verify": "\"2 个\""
   },
   {
@@ -58307,7 +58307,7 @@
     "topicId": "cne_p056",
     "difficulty": "standard",
     "type": "choice",
-    "prompt": "读一读：I see thirteen kites and eleven birds. 风筝有几个？",
+    "prompt": "读一读：I see thirteen kites and eleven birds. 风筝（kites）有几个？",
     "choices": [
       {
         "key": "A",
@@ -58327,7 +58327,7 @@
       }
     ],
     "answer": "A",
-    "explanation": "kites 的数量是 thirteen。",
+    "explanation": "thirteen kites 是 13 个风筝；eleven birds 是 11 只鸟，别把鸟的数量当成风筝。",
     "verify": "\"13 个\""
   },
   {
