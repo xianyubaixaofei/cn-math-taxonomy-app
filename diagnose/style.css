@@ -14,6 +14,24 @@ main#root { width: min(840px, 100%); margin: 0 auto; padding: 20px 16px 56px; }
 .card h3 { font-size: 1.05rem; margin: 12px 0 4px; }
 .muted { color: var(--muted); }
 .small { font-size: 0.92rem; }
+/* 「范围」那一排单独框起来，跟上面的「年级」区分开，不然两排长得一样容易看成一堆。 */
+.range-block {
+  margin-top: 10px;
+  padding: 10px 12px 12px;
+  border: 1px solid var(--line);
+  border-left: 3px solid var(--brand);
+  border-radius: var(--radius-sm);
+  background: var(--brand-soft);
+}
+.range-label { font-size: 0.86rem; font-weight: 800; color: var(--brand-strong); margin-bottom: 8px; letter-spacing: 0.01em; }
+.range-block .stage-tab { background: var(--bg-elev); }
+.range-block .stage-tab.on, .range-block .stage-tab[aria-selected="true"] {
+  background: var(--brand);
+  color: var(--on-brand);
+  border-color: transparent;
+  font-weight: 800;
+}
+#grade-limit-hint { margin: 10px 0 0; }
 .err { color: var(--bad); }
 .row { display: flex; gap: 8px; flex-wrap: wrap; align-items: center; }
 .grow { flex: 1; min-width: 0; }

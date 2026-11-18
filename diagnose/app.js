@@ -719,14 +719,19 @@
     const fill = function () {
       while (box.firstChild) box.removeChild(box.firstChild);
       const g = E.gradeTargets(D.graph, gradeScope(), subject);
-      const tabs = function (label, items, current, set) {
-        return h('div', { class: 'stage-tabs', role: 'tablist', 'aria-label': label }, items.map(function (it) {
+      // boxed=true 时把这一组 tab 包进带小标题的框里，「范围」那排才不会和「年级」混成一堆。
+      const tabs = function (label, items, current, set, boxed) {
+        const group = h('div', { class: 'stage-tabs', role: 'tablist', 'aria-label': label }, items.map(function (it) {
           return h('button', {
             type: 'button', class: 'stage-tab' + (current === it[0] ? ' on' : ''), role: 'tab',
             'aria-selected': current === it[0] ? 'true' : 'false', 'data-value': it[0],
             onclick: function () { set(it[0]); fill(); }
           }, it[1]);
         }));
+        if (!boxed) return group;
+        return h('div', { class: 'range-block', id: 'range-block' },
+          h('div', { class: 'range-label' }, items.length > 1 ? '按册（可以分开诊断）' : '册次'),
+          group);
       };
       const limitInput = h('input', {
         type: 'number', min: SCREEN_MIN, max: SCREEN_MAX, step: 1, value: String(getSettings().screenLimit), id: 'screen-limit-input', 'aria-label': '整体诊断题量上限'
@@ -737,7 +742,12 @@
         if (v > SCREEN_MAX) v = SCREEN_MAX;
         limitInput.value = String(v);
         setSetting('screenLimit', v);
+        fill();  // 题量上限变了，「会不会有测不到的」提示要跟着变
       });
+      // 会话标签写清是整年级还是某一册，结果页和档案里才看得出这次测的范围。
+      var screenLabel = g
+        ? (g.volumes && g.volumes.length > 1 ? g.label + '（上册 + 下册）' : g.label) + ' · 整体筛查'
+        : '';
       box.append(
         h('h2', { text: '按年级整体诊断' }),
         h('p', { class: 'muted' }, '本测评检查本年级知识点是否掌握，不是竞赛拔高。按「基础 / 提高 / 拓展」出题：先出提高题，答对再出拓展题确认掌握；答错会先补基础题，仍错会回到前面年级的相关知识点。每个知识点连续答对 ' + getSettings().confirm + ' 题才算掌握（可在上方改），最后按章汇总出哪几章薄弱。适合期初摸底、学期末复习。'),
@@ -775,11 +785,11 @@
         }),
         h('div', { style: 'margin-top:8px' }),
         seniorGrade(gradeSel)
-          ? tabs('范围', [['', seniorRangeLabel(gradeSel)]], '', function () { volSel = ''; })
+          ? tabs('范围', [['', seniorRangeLabel(gradeSel)]], '', function () { volSel = ''; }, true)
           : (subject === 'physics' && gradeSel === '九')
-            ? tabs('范围', [['全', '全一册']], '全', function () { volSel = '全'; })
+            ? tabs('范围', [['全', '全一册']], '全', function () { volSel = '全'; }, true)
           : (subject === 'english' && gradeSel === '九')
-            ? tabs('范围', [['', '整年级'], ['上', '上册（新版）'], ['全', '全一册（旧版，九下暂用）']], volSel, function (v) { volSel = v; })
+            ? tabs('范围', [['', '整年级'], ['上', '上册（新版）'], ['全', '全一册（旧版，九下暂用）']], volSel, function (v) { volSel = v; }, true)
           : subject === 'morality'
             ? tabs('范围', [['', '整年级']].concat(['上', '下'].filter(function (sem) {
               var gnum = '一二三四五六七八九'.indexOf(gradeSel) + 1;
@@ -788,14 +798,21 @@
               var gnum = '一二三四五六七八九'.indexOf(gradeSel) + 1;
               if (volSel && !D.topics.some(function (t) { return t.grade === gnum && t.semester === volSel; })) volSel = '';
               return volSel;
-            })(), function (v) { volSel = v; })
-            : tabs('范围', [['', '整年级'], ['上', '上册'], ['下', '下册']], volSel, function (v) { volSel = v; }),
+            })(), function (v) { volSel = v; }, true)
+            : tabs('范围', [['', '整年级'], ['上', '上册'], ['下', '下册']], volSel, function (v) { volSel = v; }, true),
         h('p', { class: 'muted', id: 'grade-info' }, g ? g.label + '：' + g.ids.length + ' 个知识点。' : '这个范围没有知识点。'),
+        // 知识点数超过题量上限时，提醒会有一批测不到——这是「感觉上下册混在一起」的主要来源。
+        // 注意 box.append 是原生 DOM 方法，传 null 会变成文字「null」，所以用 hidden 的空节点占位。
+        g && g.ids.length > getSettings().screenLimit
+          ? h('p', { class: 'notice', id: 'grade-limit-hint' },
+            '这个范围一共 ' + g.ids.length + ' 个知识点，题量上限只有 ' + getSettings().screenLimit + ' 题，会有 ' +
+            (g.ids.length - getSettings().screenLimit) + ' 个测不到（结果里标「未测」）。想测得细一点，可以选上册或下册分开测。')
+          : h('p', { class: 'notice', id: 'grade-limit-hint', hidden: true }),
         h('div', { class: 'row' },
           h('label', null, '题量上限（' + SCREEN_MIN + '–' + SCREEN_MAX + '）', limitInput),
           h('button', {
             class: 'primary', id: 'btn-grade-start', disabled: !g,
-            onclick: function () { if (g) startSession(g.ids, g.label + '（整体筛查）', null, 'screen'); }
+            onclick: function () { if (g) startSession(g.ids, screenLabel, null, 'screen'); }
           }, '开始整体诊断')),
         h('p', { class: 'muted small' }, '知识点多、题量有限，到上限后没测到的标为「未测」；结果页可以再加题。默认 ' + E.SCREEN_LIMIT + ' 题。'));
     };
