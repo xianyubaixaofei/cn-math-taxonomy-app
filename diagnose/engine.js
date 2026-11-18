@@ -565,6 +565,9 @@
     // 资源页没有写进某一课的项目，例如「七年级上册 待核」。仍算进该册，不假装有单元号。
     const pend = /^([一二三四五六七八九])年级([上下全])册 待核$/.exec(s);
     if (pend) return { volume: pend[1] + pend[2], chapterNo: '待核', chapterName: '未挂到具体单元', section: '' };
+    // 只写了册次、没写单元的项目（如「九年级上册」）。仍算进该册，单元标待核，不假装有单元号。
+    const bare = /^([一二三四五六七八九])年级([上下全])册$/.exec(s);
+    if (bare) return { volume: bare[1] + bare[2], chapterNo: '待核', chapterName: '未挂到具体单元', section: '' };
     const pi = /^([一二三四五六])年级([上下])册 (综合与实践) (.+)$/.exec(s);
     if (pi) return { volume: pi[1] + pi[2], chapterNo: pi[3], chapterName: pi[4], section: '' };
     // 小学英语复习 / Recycle（如「四年级上册 复习 Let's help!」）

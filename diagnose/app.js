@@ -695,6 +695,7 @@
         h('label', null, '每知识点确认题数', confirmSelect),
         h('span', { class: 'muted small' }, '连续答对这么多题才判掌握；中途答错会再出一道确认题。到上限后，没测到的标为「未测」。'))));
     page.append(gradeCard());
+    page.append(rollupCard(mergedStatus(), true, focusGradeOf()));
     page.append(h('div', { class: 'card' }, browser));
     page.append(h('p', { class: 'muted small' },
       '可以诊断的知识点：' + D.topics.length + ' 个。进度和出过的题只保存在这台浏览器里。'));
@@ -714,6 +715,14 @@
     return gradeSel + (volSel ? volSel : '年级');
   }
 
+  // 「按年级」卡片当前选中的年级（'一'..'九'）。高中册返回 ''（不分上下册，总表就列全部高中册）。
+  function focusGradeOf() {
+    const sel = String(gradeSel || '');
+    if (seniorGrade(sel)) return '';
+    const m = /^([一二三四五六七八九])/.exec(sel);
+    return m ? m[1] : '';
+  }
+
   function gradeCard() {
     const box = h('div', { class: 'card', id: 'grade-card' });
     const fill = function () {
@@ -725,7 +734,7 @@
           return h('button', {
             type: 'button', class: 'stage-tab' + (current === it[0] ? ' on' : ''), role: 'tab',
             'aria-selected': current === it[0] ? 'true' : 'false', 'data-value': it[0],
-            onclick: function () { set(it[0]); fill(); }
+            onclick: function () { set(it[0]); fill(); syncRollup(); }
           }, it[1]);
         }));
         if (!boxed) return group;
@@ -818,6 +827,253 @@
     };
     fill();
     return box;
+  }
+
+  /* ------------------------------------------------ 分册合并视图
+   * 上册、下册分别诊断会产生两条独立记录（分学科只有一份 session，新测覆盖旧测）。
+   * 这里把「本机盲区账本」和「孩子档案的历史记录」合并起来，按册、按单元汇总成一张
+   * 学年总表：上册测一次 + 下册测一次 → 一张完整的三上/三下对照表。
+   * 只读 localStorage，不上传。 */
+
+  /* 合并出「每个知识点现在的状态」。优先级：孩子档案记录 > 盲区账本累计。 */
+  function mergedStatus() {
+    const out = Object.create(null);   // id -> { status, at, label }
+    const cur = CC.current();
+
+    function put(id, status, at, label, force) {
+      if (!id) return;
+      const prev = out[id];
+      if (prev && !force) {
+        // 已有的更强结论不被更弱的覆盖（weak > shaky > retest > mastered）
+        const rank = { weak: 3, shaky: 2, retest: 1, mastered: 0 };
+        if ((rank[prev.status] || 0) >= (rank[status] || 0)) return;
+      }
+      out[id] = { status: status, at: at || '', label: label || '' };
+    }
+
+    // 1) 孩子档案：最新记录说了算（latestStatus 已按时间倒序覆盖）
+    if (cur && CC.latestStatus) {
+      const latest = CC.latestStatus(cur.id, subject);
+      Object.keys(latest).forEach(function (id) {
+        const info = latest[id];
+        put(id, info.status, info.at, info.label);
+      });
+    }
+
+    // 2) 盲区账本累计：取「本学科、本轮没被档案覆盖到」的知识点
+    if (window.CnmBlind && window.CnmBlind.list) {
+      const rows = window.CnmBlind.list({ subject: subject }) || [];
+      rows.forEach(function (row) {
+        if (!row || !row.id) return;
+        if (out[row.id]) {
+          // 档案里已有记录时，只用账本的错次信息补强 weak
+          if (row.status === 'weak' && out[row.id].status !== 'weak') {
+            out[row.id] = { status: 'weak', at: row.at || out[row.id].at, label: out[row.id].label || row.label || '' };
+          }
+          return;
+        }
+        put(row.id, row.status, row.at, row.label, true);
+      });
+    }
+
+    return out;
+  }
+
+  /* 把 parseChapter 的 volume 拆成 { grade, semester, label }。
+   * 数据里有两种写法：小学「一年级上」，数学初中「七上」「九全」，高中「高一」「必修一」等。 */
+  function volumeMeta(vol) {
+    var m = /^([一二三四五六七八九])年级([上下全])$/.exec(vol);
+    if (m) {
+      return {
+        grade: m[1], semester: m[2],
+        label: m[1] + '年级' + (m[2] === '全' ? '（全一册）' : m[2] + '册')
+      };
+    }
+    m = /^([一二三四五六七八九])([上下全])$/.exec(vol);
+    if (m) {
+      return {
+        grade: m[1], semester: m[2],
+        label: m[1] + '年级' + (m[2] === '全' ? '（全一册）' : m[2] + '册')
+      };
+    }
+    return { grade: '', semester: '', label: vol };
+  }
+
+  /* 排序用：低年级在前，高中册排最后。 */
+  function volumeOrder(v) {
+    var RANK = '一二三四五六七八九';
+    // 注意 RANK.indexOf('') 返回 0，必须先确认 grade 非空，否则高中册会被当成一年级。
+    var gi = v.grade ? RANK.indexOf(v.grade) : -1;
+    if (gi >= 0) return gi * 2 + (v.semester === '下' ? 1 : 0);
+    var SENIOR = ['高一', '高二', '必修一', '必修二', '必修三', '选必一', '选必二', '选必三', '选必四', '必修第一册', '必修第二册', '必修第三册', '选择性必修第一册', '选择性必修第二册', '选择性必修第三册', '选择性必修第四册'];
+    var hi = SENIOR.indexOf(v.volume);
+    return (hi >= 0 ? 100 + hi : 200);
+  }
+
+  /* 按「册」分组并把每个册内的知识点按状态统计。
+   * 返回 [{ volume, label, grade, semester, total, mastered, shaky, weak, retest, untested,
+   *          tested, units: [{ label, total, mastered, shaky, weak, untested, tested }], ids }] */
+  function volumeRollup(status) {
+    const byVol = Object.create(null);
+    const order = [];
+
+    D.topics.forEach(function (t) {
+      if (t.external) return;
+      const c = E.parseChapter(t.chapter);
+      const vol = c.volume;
+      if (!vol) return;
+      let v = byVol[vol];
+      if (!v) {
+        const meta = volumeMeta(vol);
+        v = byVol[vol] = {
+          volume: vol,
+          label: meta.label,
+          grade: meta.grade,
+          semester: meta.semester,
+          total: 0, mastered: 0, shaky: 0, weak: 0, retest: 0, untested: 0,
+          tested: 0, ids: [], units: [], _unitMap: Object.create(null)
+        };
+        order.push(v);
+      }
+      const unitLabel = [c.chapterNo, c.chapterName].filter(Boolean).join(' ') || '未分单元';
+      let u = v._unitMap[unitLabel];
+      if (!u) {
+        u = v._unitMap[unitLabel] = { label: unitLabel, total: 0, mastered: 0, shaky: 0, weak: 0, untested: 0, tested: 0 };
+        v.units.push(u);
+      }
+      const st = status[t.id] ? status[t.id].status : '';
+      v.total++; u.total++;
+      if (st === 'mastered') { v.mastered++; u.mastered++; v.tested++; u.tested++; }
+      else if (st === 'shaky') { v.shaky++; u.shaky++; v.tested++; u.tested++; v.ids.push(t.id); }
+      else if (st === 'weak') { v.weak++; u.weak++; v.tested++; u.tested++; v.ids.push(t.id); }
+      else if (st === 'retest') { v.retest++; v.ids.push(t.id); }
+      else { v.untested++; u.untested++; v.ids.push(t.id); }
+    });
+
+    order.forEach(function (v) { delete v._unitMap; });
+    order.sort(function (a, b) { return volumeOrder(a) - volumeOrder(b) || a.volume.localeCompare(b.volume); });
+    return order;
+  }
+
+  function pct(n, total) { return total ? Math.round(n * 100 / total) : 0; }
+
+  function meterCell(n, total, cls) {
+    const p = pct(n, total);
+    return h('td', { class: 'vbar-cell' },
+      h('span', { class: 'vbar ' + cls, style: 'width:' + Math.max(p, n ? 4 : 0) + '%' }),
+      h('span', { class: 'vnum', text: total ? String(n) : '－' }));
+  }
+
+  // 「合成一张学年总表」的关键：只测了上册时，同年级的下册也要留在表里（显示成还没测），
+  // 否则用户看不到「下册还欠着」。只补数据里真实存在的册，不凭空造册。
+  function pairVolumes(vols) {
+    const byVol = {};
+    vols.forEach(function (v) { byVol[v.volume] = v; });
+    const keep = {};
+    vols.forEach(function (v) {
+      if (v.tested > 0) keep[v.volume] = true;
+    });
+    Object.keys(keep).forEach(function (vol) {
+      const m = volumeMeta(vol);
+      if (!m.grade || m.semester === '全') return;
+      const other = m.grade + (m.semester === '上' ? '下' : '上');
+      if (byVol[other]) keep[other] = true;
+    });
+    return vols.filter(function (v) { return keep[v.volume]; });
+  }
+
+  function rollupCard(status, onlyTested, focusGrade) {
+    const all = volumeRollup(status);
+    const tested = all.filter(function (v) { return v.tested > 0; });
+
+    // 选中某个年级时，这个年级的两册都要列（没测的显示「还没测」），
+    // 否则用户看不到「下册还欠着」，也就意识不到可以分册测。
+    let vols;
+    if (focusGrade) {
+      vols = all.filter(function (v) { return volumeMeta(v.volume).grade === focusGrade; });
+      if (!vols.length) {
+        return h('div', { class: 'card', id: 'rollup' },
+          h('h2', { text: focusGrade + '年级 · 分册总表' }),
+          h('p', { class: 'muted', text: focusGrade + '年级在这台设备上还没有可诊断的知识点。' }));
+      }
+      if (!vols.some(function (v) { return v.tested > 0; })) {
+        const n = vols.reduce(function (a, v) { return a + v.total; }, 0);
+        return h('div', { class: 'card', id: 'rollup' },
+          h('h2', { text: focusGrade + '年级 · 分册总表' }),
+          h('p', { class: 'muted' },
+            focusGrade + '年级还没有诊断记录。按上册做一次、下册做一次，这里会合成一张总表。' +
+            '现在共 ' + n + ' 个知识点，分 ' + vols.length + ' 册。'));
+      }
+    } else if (tested.length) {
+      vols = onlyTested ? pairVolumes(all) : all;
+    } else {
+      return h('div', { class: 'card', id: 'rollup' },
+        h('h2', { text: '分册总表' }),
+        h('p', { class: 'muted', text: '还没有任何诊断记录。先在下面选范围做一次诊断——上册做一次、下册做一次，这里会自动合成一张学年总表。' }));
+    }
+
+    const overall = { total: 0, mastered: 0, shaky: 0, weak: 0, retest: 0, untested: 0, tested: 0 };
+    vols.forEach(function (v) {
+      ['total', 'mastered', 'shaky', 'weak', 'retest', 'untested', 'tested'].forEach(function (k) {
+        overall[k] += v[k];
+      });
+    });
+
+    const rows = [];
+    vols.forEach(function (v) {
+      const tested = v.tested;
+      rows.push(h('tr', { class: 'vol-row' },
+        h('th', { scope: 'row' }, h('b', { text: v.label || v.volume }),
+          tested ? h('span', { class: 'muted small', text: '　测了 ' + tested + '/' + v.total }) : h('span', { class: 'muted small', text: '　还没测' })),
+        meterCell(v.mastered, tested, 'ok'),
+        meterCell(v.shaky, tested, 'shaky'),
+        meterCell(v.weak, tested, 'bad'),
+        h('td', { class: 'vmiss', text: v.untested ? String(v.untested) : '－' })));
+
+      v.units.forEach(function (u) {
+        if (!u.tested) return;   // 没测过的单元不铺开，避免表格过长
+        rows.push(h('tr', { class: 'unit-row' },
+          h('td', { class: 'unit-label', text: u.label }),
+          meterCell(u.mastered, u.tested, 'ok'),
+          meterCell(u.shaky, u.tested, 'shaky'),
+          meterCell(u.weak, u.tested, 'bad'),
+          h('td', { class: 'vmiss', text: u.untested ? String(u.untested) : '－' })));
+      });
+    });
+
+    return h('div', { class: 'card', id: 'rollup' },
+      h('h2', { text: focusGrade ? focusGrade + '年级 · 分册总表' : '分册总表' }),
+      h('p', { class: 'muted small' },
+        (focusGrade
+          ? '把' + focusGrade + '年级上册、下册的诊断记录合并成一张表。'
+          : '把本机所有的诊断记录按册合并成一张表：上册做过一次、下册做过一次，就能看到整学年的掌握情况。') +
+        '「已掌握 / 不稳 / 薄弱」的分母是这一册已测到的知识点，右侧「未测」是还没问到的个数。'),
+      h('div', { class: 'rollup-wrap' },
+        h('table', { class: 'rollup' },
+          h('thead', null, h('tr', null,
+            h('th', { text: '册 / 单元' }),
+            h('th', { text: '已掌握' }),
+            h('th', { text: '不稳' }),
+            h('th', { text: '薄弱' }),
+            h('th', { text: '未测' }))),
+          h('tbody', null, rows),
+          h('tfoot', null, h('tr', null,
+            h('th', { scope: 'row', text: '合计（已测 ' + overall.tested + '/' + overall.total + '）' }),
+            h('td', { text: overall.tested ? pct(overall.mastered, overall.tested) + '%' : '－' }),
+            h('td', { text: overall.tested ? pct(overall.shaky, overall.tested) + '%' : '－' }),
+            h('td', { text: overall.tested ? pct(overall.weak, overall.tested) + '%' : '－' }),
+            h('td', { text: String(overall.untested) }))))),
+      overall.tested ? h('p', { class: 'notice' },
+        '按已测到的 ' + overall.tested + ' 个知识点算：掌握 ' + pct(overall.mastered, overall.tested) +
+        '%，不稳 ' + pct(overall.shaky, overall.tested) + '%，薄弱 ' + pct(overall.weak, overall.tested) +
+        '%。还有 ' + overall.untested + ' 个没测到。') : null);
+  }
+
+  // 切「年级」或「范围」后，分册总表要跟着换（选三年级就只显示三年级的上下册）。
+  function syncRollup() {
+    const old = document.getElementById('rollup');
+    if (!old || !old.parentNode) return;
+    old.parentNode.replaceChild(rollupCard(mergedStatus(), true, focusGradeOf()), old);
   }
 
   function fillList(box) {
@@ -1343,6 +1599,7 @@
       sum.untested.map(function (id) { return topicItem(id, statusTags(id, rootSet, targetSet)); })));
 
     page.append(standardsCard(sum));
+    page.append(rollupCard(mergedStatus(), true, focusGradeOf()));
     page.append(logCard());
   }
 

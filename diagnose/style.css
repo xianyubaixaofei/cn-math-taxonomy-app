@@ -251,3 +251,45 @@ table.log select { min-height: 44px; }
 .blind-name { font-weight: 700; }
 .blind-retest { font-weight: 700; white-space: nowrap; }
 .report-link { text-align: right; font-size: .85rem; margin: -4px 0 10px; }
+
+/* ===== 分册合计：跨册诊断合并视图（v2.3） ===== */
+.rollup-wrap { overflow-x: auto; -webkit-overflow-scrolling: touch; margin-top: 10px; }
+table.rollup { width: 100%; border-collapse: collapse; font-size: 0.88rem; min-width: 420px; }
+table.rollup th, table.rollup td { padding: 7px 8px; border-bottom: 1px solid var(--line); vertical-align: middle; }
+table.rollup thead th { font-size: 0.8rem; font-weight: 800; color: var(--muted); text-align: center; white-space: nowrap; }
+table.rollup thead th:first-child { text-align: left; }
+td.vbar-cell {
+  position: relative; min-width: 74px; height: 22px; padding: 0 6px;
+  background: var(--bg-muted); border-radius: 6px; overflow: hidden;
+}
+.vbar { position: absolute; left: 0; top: 0; bottom: 0; display: block; border-radius: 6px; }
+.vbar.ok { background: var(--ok-bg); }
+.vbar.shaky { background: var(--diagram-shaky-bg); }
+.vbar.bad { background: var(--bad-bg); }
+.vbar.unk { background: var(--unk-bg); }
+.vnum {
+  position: relative; z-index: 1; display: block; text-align: center;
+  font-weight: 700; font-variant-numeric: tabular-nums; line-height: 22px;
+  font-size: 0.82rem; color: var(--text);
+}
+.vnum.zero { color: var(--muted); font-weight: 500; }
+tr.vol-row th {
+  text-align: left; font-weight: 800; padding: 10px 8px 6px;
+  border-bottom: 1px solid var(--line); background: var(--bg-muted);
+}
+tr.vol-row .vol-sub { display: block; font-weight: 500; font-size: 0.78rem; color: var(--muted); margin-top: 2px; }
+tr.unit-row th {
+  text-align: left; font-weight: 500; font-size: 0.82rem;
+  color: var(--muted); padding: 4px 8px 4px 20px; border-bottom: 1px dashed var(--line);
+}
+tr.unit-row td { padding: 4px 8px; }
+table.rollup tfoot td {
+  padding: 9px 8px; font-weight: 800; border-top: 2px solid var(--line);
+  border-bottom: none; background: var(--bg-muted);
+}
+table.rollup tfoot td:first-child { text-align: right; }
+.rollup-empty { color: var(--muted); margin: 8px 0 0; }
+@media (max-width: 520px) {
+  table.rollup { font-size: 0.8rem; min-width: 0; }
+  td.vbar-cell { min-width: 48px; }
+}

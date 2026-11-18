@@ -28492,5 +28492,365 @@
     "prerequisiteId": "cnc_p120",
     "strength": "hard",
     "reason": "背《赋得古原草送别》之前，要先会背《村居》，才不会把放纸鸢和春风吹又生记成同一首。"
+  },
+  {
+    "topicId": "cnd_j111",
+    "prerequisiteId": "cnd_j106",
+    "strength": "soft",
+    "reason": "按教材顺序，先学完「民族复兴梦要靠每个人追梦」，再进入九年级下册「第1单元 我们共同的世界」的学习。"
+  },
+  {
+    "topicId": "cnd_j112",
+    "prerequisiteId": "cnd_j111",
+    "strength": "soft",
+    "reason": "同一单元「第1单元 我们共同的世界」内的并列知识点，先掌握「当今世界开放互动又紧密联系」再学本点。"
+  },
+  {
+    "topicId": "cnd_j113",
+    "prerequisiteId": "cnd_j112",
+    "strength": "soft",
+    "reason": "同一单元「第1单元 我们共同的世界」内的并列知识点，先掌握「人类命运休戚与共」再学本点。"
+  },
+  {
+    "topicId": "cnd_j114",
+    "prerequisiteId": "cnd_j113",
+    "strength": "soft",
+    "reason": "同一单元「第1单元 我们共同的世界」内的并列知识点，先掌握「动荡变革的世界」再学本点。"
+  },
+  {
+    "topicId": "cnd_j115",
+    "prerequisiteId": "cnd_j114",
+    "strength": "soft",
+    "reason": "同一单元「第1单元 我们共同的世界」内的并列知识点，先掌握「不可阻挡的历史潮流」再学本点。"
+  },
+  {
+    "topicId": "cnd_j116",
+    "prerequisiteId": "cnd_j115",
+    "strength": "soft",
+    "reason": "同一单元「第1单元 我们共同的世界」内的并列知识点，先掌握「走近联合国」再学本点。"
+  },
+  {
+    "topicId": "cnd_j117",
+    "prerequisiteId": "cnd_j116",
+    "strength": "soft",
+    "reason": "按教材单元顺序，先学完「第1单元 我们共同的世界」，再进入「第2单元 建设美好世界」。"
+  },
+  {
+    "topicId": "cnd_j118",
+    "prerequisiteId": "cnd_j117",
+    "strength": "soft",
+    "reason": "同一单元「第2单元 建设美好世界」内的并列知识点，先掌握「深度联动的「两个大局」」再学本点。"
+  },
+  {
+    "topicId": "cnd_j119",
+    "prerequisiteId": "cnd_j118",
+    "strength": "soft",
+    "reason": "同一单元「第2单元 建设美好世界」内的并列知识点，先掌握「于变局中开新局」再学本点。"
+  },
+  {
+    "topicId": "cnd_j120",
+    "prerequisiteId": "cnd_j119",
+    "strength": "soft",
+    "reason": "同一单元「第2单元 建设美好世界」内的并列知识点，先掌握「「国强必霸」不是历史定律」再学本点。"
+  },
+  {
+    "topicId": "cnd_j121",
+    "prerequisiteId": "cnd_j120",
+    "strength": "soft",
+    "reason": "同一单元「第2单元 建设美好世界」内的并列知识点，先掌握「世界和平发展的建设者」再学本点。"
+  },
+  {
+    "topicId": "cnd_j122",
+    "prerequisiteId": "cnd_j121",
+    "strength": "soft",
+    "reason": "同一单元「第2单元 建设美好世界」内的并列知识点，先掌握「国际影响力不断增强」再学本点。"
+  },
+  {
+    "topicId": "cnd_j123",
+    "prerequisiteId": "cnd_j122",
+    "strength": "soft",
+    "reason": "同一单元「第2单元 建设美好世界」内的并列知识点，先掌握「展现大国担当」再学本点。"
+  },
+  {
+    "topicId": "cnd_j124",
+    "prerequisiteId": "cnd_j123",
+    "strength": "soft",
+    "reason": "同一单元「第2单元 建设美好世界」内的并列知识点，先掌握「积极贡献中国智慧」再学本点。"
+  },
+  {
+    "topicId": "cnd_j125",
+    "prerequisiteId": "cnd_j124",
+    "strength": "soft",
+    "reason": "按教材单元顺序，先学完「第2单元 建设美好世界」，再进入「第3单元 争做时代新人」。"
+  },
+  {
+    "topicId": "cnd_j126",
+    "prerequisiteId": "cnd_j125",
+    "strength": "soft",
+    "reason": "同一单元「第3单元 争做时代新人」内的并列知识点，先掌握「理想信念关乎国家未来」再学本点。"
+  },
+  {
+    "topicId": "cnd_j127",
+    "prerequisiteId": "cnd_j126",
+    "strength": "soft",
+    "reason": "同一单元「第3单元 争做时代新人」内的并列知识点，先掌握「筑牢理想信念根基」再学本点。"
+  },
+  {
+    "topicId": "cnd_j128",
+    "prerequisiteId": "cnd_j127",
+    "strength": "soft",
+    "reason": "同一单元「第3单元 争做时代新人」内的并列知识点，先掌握「勤学苦练 增强本领」再学本点。"
+  },
+  {
+    "topicId": "cnd_j129",
+    "prerequisiteId": "cnd_j128",
+    "strength": "soft",
+    "reason": "同一单元「第3单元 争做时代新人」内的并列知识点，先掌握「脚踏实地 做好人生规划」再学本点。"
+  },
+  {
+    "topicId": "cnd_j130",
+    "prerequisiteId": "cnd_j129",
+    "strength": "soft",
+    "reason": "同一单元「第3单元 争做时代新人」内的并列知识点，先掌握「担当成就事业」再学本点。"
+  },
+  {
+    "topicId": "cne_j258",
+    "prerequisiteId": "cne_j257",
+    "strength": "soft",
+    "reason": "按教材顺序，先学完「体育赛事词汇」，再进入九年级下册「第1单元 Let's Celebrate!」的学习。"
+  },
+  {
+    "topicId": "cne_j259",
+    "prerequisiteId": "cne_j258",
+    "strength": "soft",
+    "reason": "同一单元「第1单元 Let's Celebrate!」内的并列知识点，先掌握「节日的核心词」再学本点。"
+  },
+  {
+    "topicId": "cne_j260",
+    "prerequisiteId": "cne_j259",
+    "strength": "soft",
+    "reason": "同一单元「第1单元 Let's Celebrate!」内的并列知识点，先掌握「谈论团圆与象征」再学本点。"
+  },
+  {
+    "topicId": "cne_j261",
+    "prerequisiteId": "cne_j260",
+    "strength": "hard",
+    "reason": "「并列句」要用到「简单句」的知识，先掌握「简单句」再学本点。"
+  },
+  {
+    "topicId": "cne_j262",
+    "prerequisiteId": "cne_j261",
+    "strength": "hard",
+    "reason": "「复合句与宾语从句语序」要用到「并列句」的知识，先掌握「并列句」再学本点。"
+  },
+  {
+    "topicId": "cne_j263",
+    "prerequisiteId": "cne_j262",
+    "strength": "soft",
+    "reason": "同一单元「第1单元 Let's Celebrate!」内的并列知识点，先掌握「复合句与宾语从句语序」再学本点。"
+  },
+  {
+    "topicId": "cne_j264",
+    "prerequisiteId": "cne_j263",
+    "strength": "soft",
+    "reason": "同一单元「第1单元 Let's Celebrate!」内的并列知识点，先掌握「谈论节日习俗」再学本点。"
+  },
+  {
+    "topicId": "cne_j265",
+    "prerequisiteId": "cne_j264",
+    "strength": "soft",
+    "reason": "同一单元「第1单元 Let's Celebrate!」内的并列知识点，先掌握「读节日短文找细节」再学本点。"
+  },
+  {
+    "topicId": "cne_j266",
+    "prerequisiteId": "cne_j265",
+    "strength": "soft",
+    "reason": "按教材单元顺序，先学完「第1单元 Let's Celebrate!」，再进入「第2单元 A Look into the Past」。"
+  },
+  {
+    "topicId": "cne_j267",
+    "prerequisiteId": "cne_j266",
+    "strength": "soft",
+    "reason": "同一单元「第2单元 A Look into the Past」内的并列知识点，先掌握「考古与遗迹的核心词」再学本点。"
+  },
+  {
+    "topicId": "cne_j268",
+    "prerequisiteId": "cne_j267",
+    "strength": "soft",
+    "reason": "同一单元「第2单元 A Look into the Past」内的并列知识点，先掌握「修复与重现」再学本点。"
+  },
+  {
+    "topicId": "cne_j269",
+    "prerequisiteId": "cne_j268",
+    "strength": "soft",
+    "reason": "同一单元「第2单元 A Look into the Past」内的并列知识点，先掌握「情态动词表可能性的梯度」再学本点。"
+  },
+  {
+    "topicId": "cne_j270",
+    "prerequisiteId": "cne_j269",
+    "strength": "soft",
+    "reason": "同一单元「第2单元 A Look into the Past」内的并列知识点，先掌握「被动语态里的 by 短语」再学本点。"
+  },
+  {
+    "topicId": "cne_j271",
+    "prerequisiteId": "cne_j270",
+    "strength": "soft",
+    "reason": "同一单元「第2单元 A Look into the Past」内的并列知识点，先掌握「invent 与 discover 的区别」再学本点。"
+  },
+  {
+    "topicId": "cne_j272",
+    "prerequisiteId": "cne_j271",
+    "strength": "soft",
+    "reason": "同一单元「第2单元 A Look into the Past」内的并列知识点，先掌握「询问和描述历史」再学本点。"
+  },
+  {
+    "topicId": "cne_j273",
+    "prerequisiteId": "cne_j272",
+    "strength": "soft",
+    "reason": "同一单元「第2单元 A Look into the Past」内的并列知识点，先掌握「读说明性短文的时间线」再学本点。"
+  },
+  {
+    "topicId": "cne_j274",
+    "prerequisiteId": "cne_j273",
+    "strength": "soft",
+    "reason": "按教材单元顺序，先学完「第2单元 A Look into the Past」，再进入「第3单元 A Taste of Art」。"
+  },
+  {
+    "topicId": "cne_j275",
+    "prerequisiteId": "cne_j274",
+    "strength": "soft",
+    "reason": "同一单元「第3单元 A Taste of Art」内的并列知识点，先掌握「艺术与美感的核心词」再学本点。"
+  },
+  {
+    "topicId": "cne_j276",
+    "prerequisiteId": "cne_j275",
+    "strength": "soft",
+    "reason": "同一单元「第3单元 A Taste of Art」内的并列知识点，先掌握「艺术创作与复制」再学本点。"
+  },
+  {
+    "topicId": "cne_j277",
+    "prerequisiteId": "cne_j276",
+    "strength": "soft",
+    "reason": "同一单元「第3单元 A Taste of Art」内的并列知识点，先掌握「不定式与动名词的取舍」再学本点。"
+  },
+  {
+    "topicId": "cne_j278",
+    "prerequisiteId": "cne_j277",
+    "strength": "soft",
+    "reason": "同一单元「第3单元 A Taste of Art」内的并列知识点，先掌握「动词不定式作宾语补足语」再学本点。"
+  },
+  {
+    "topicId": "cne_j279",
+    "prerequisiteId": "cne_j278",
+    "strength": "soft",
+    "reason": "同一单元「第3单元 A Taste of Art」内的并列知识点，先掌握「疑问词加不定式」再学本点。"
+  },
+  {
+    "topicId": "cne_j280",
+    "prerequisiteId": "cne_j279",
+    "strength": "soft",
+    "reason": "同一单元「第3单元 A Taste of Art」内的并列知识点，先掌握「谈论和评价艺术作品」再学本点。"
+  },
+  {
+    "topicId": "cne_j281",
+    "prerequisiteId": "cne_j280",
+    "strength": "soft",
+    "reason": "同一单元「第3单元 A Taste of Art」内的并列知识点，先掌握「读艺术家介绍」再学本点。"
+  },
+  {
+    "topicId": "cne_j282",
+    "prerequisiteId": "cne_j281",
+    "strength": "soft",
+    "reason": "按教材单元顺序，先学完「第3单元 A Taste of Art」，再进入「第4单元 Reduce, Reuse, Recycle」。"
+  },
+  {
+    "topicId": "cne_j283",
+    "prerequisiteId": "cne_j282",
+    "strength": "soft",
+    "reason": "同一单元「第4单元 Reduce, Reuse, Recycle」内的并列知识点，先掌握「三个 R 与环保动作」再学本点。"
+  },
+  {
+    "topicId": "cne_j284",
+    "prerequisiteId": "cne_j283",
+    "strength": "soft",
+    "reason": "同一单元「第4单元 Reduce, Reuse, Recycle」内的并列知识点，先掌握「环保描述词」再学本点。"
+  },
+  {
+    "topicId": "cne_j285",
+    "prerequisiteId": "cne_j284",
+    "strength": "soft",
+    "reason": "同一单元「第4单元 Reduce, Reuse, Recycle」内的并列知识点，先掌握「not everything 部分否定」再学本点。"
+  },
+  {
+    "topicId": "cne_j286",
+    "prerequisiteId": "cne_j285",
+    "strength": "soft",
+    "reason": "同一单元「第4单元 Reduce, Reuse, Recycle」内的并列知识点，先掌握「情态动词表建议与义务」再学本点。"
+  },
+  {
+    "topicId": "cne_j287",
+    "prerequisiteId": "cne_j286",
+    "strength": "soft",
+    "reason": "同一单元「第4单元 Reduce, Reuse, Recycle」内的并列知识点，先掌握「环保语境里的一般现在时被动语态」再学本点。"
+  },
+  {
+    "topicId": "cne_j288",
+    "prerequisiteId": "cne_j287",
+    "strength": "soft",
+    "reason": "同一单元「第4单元 Reduce, Reuse, Recycle」内的并列知识点，先掌握「宾语从句在环保话题中的用法」再学本点。"
+  },
+  {
+    "topicId": "cne_j289",
+    "prerequisiteId": "cne_j288",
+    "strength": "soft",
+    "reason": "同一单元「第4单元 Reduce, Reuse, Recycle」内的并列知识点，先掌握「提出环保建议」再学本点。"
+  },
+  {
+    "topicId": "cne_j290",
+    "prerequisiteId": "cne_j289",
+    "strength": "soft",
+    "reason": "按教材单元顺序，先学完「第4单元 Reduce, Reuse, Recycle」，再进入「第5单元 Open to New Beginnings」。"
+  },
+  {
+    "topicId": "cne_j291",
+    "prerequisiteId": "cne_j290",
+    "strength": "soft",
+    "reason": "同一单元「第5单元 Open to New Beginnings」内的并列知识点，先掌握「毕业与成长的核心词」再学本点。"
+  },
+  {
+    "topicId": "cne_j292",
+    "prerequisiteId": "cne_j291",
+    "strength": "soft",
+    "reason": "同一单元「第5单元 Open to New Beginnings」内的并列知识点，先掌握「构词法 un- re- -tion -ist」再学本点。"
+  },
+  {
+    "topicId": "cne_j293",
+    "prerequisiteId": "cne_j292",
+    "strength": "soft",
+    "reason": "同一单元「第5单元 Open to New Beginnings」内的并列知识点，先掌握「形容词与副词后缀 -able -ful -ly」再学本点。"
+  },
+  {
+    "topicId": "cne_j294",
+    "prerequisiteId": "cne_j293",
+    "strength": "soft",
+    "reason": "同一单元「第5单元 Open to New Beginnings」内的并列知识点，先掌握「宾语从句的语序与时态呼应」再学本点。"
+  },
+  {
+    "topicId": "cne_j295",
+    "prerequisiteId": "cne_j294",
+    "strength": "soft",
+    "reason": "同一单元「第5单元 Open to New Beginnings」内的并列知识点，先掌握「一般将来时的两种表达」再学本点。"
+  },
+  {
+    "topicId": "cne_j296",
+    "prerequisiteId": "cne_j295",
+    "strength": "hard",
+    "reason": "「读毕业演讲稿」要用到「谈论毕业感受与未来规划」的知识，先掌握「谈论毕业感受与未来规划」再学本点。"
+  },
+  {
+    "topicId": "cne_j297",
+    "prerequisiteId": "cne_j296",
+    "strength": "hard",
+    "reason": "「写毕业演讲稿」要用到「读毕业演讲稿」的知识，先掌握「读毕业演讲稿」再学本点。"
   }
 ]
