@@ -18744,6 +18744,246 @@
     "reason": "词尾 s 的读音和动物都在七年级下册第1单元 Animal Friends，先分辨名词复数词尾读音，再学动物词汇。"
   },
   {
+    "topicId": "cne_j258",
+    "prerequisiteId": "cne_j257",
+    "strength": "soft",
+    "reason": "按教材顺序，先学完「体育赛事词汇」，再进入九年级下册「第1单元 Let's Celebrate!」的学习。"
+  },
+  {
+    "topicId": "cne_j259",
+    "prerequisiteId": "cne_j258",
+    "strength": "soft",
+    "reason": "同一单元「第1单元 Let's Celebrate!」内的并列知识点，先掌握「节日的核心词」再学本点。"
+  },
+  {
+    "topicId": "cne_j260",
+    "prerequisiteId": "cne_j259",
+    "strength": "soft",
+    "reason": "同一单元「第1单元 Let's Celebrate!」内的并列知识点，先掌握「谈论团圆与象征」再学本点。"
+  },
+  {
+    "topicId": "cne_j261",
+    "prerequisiteId": "cne_j260",
+    "strength": "hard",
+    "reason": "「并列句」要用到「简单句」的知识，先掌握「简单句」再学本点。"
+  },
+  {
+    "topicId": "cne_j262",
+    "prerequisiteId": "cne_j261",
+    "strength": "hard",
+    "reason": "「复合句与宾语从句语序」要用到「并列句」的知识，先掌握「并列句」再学本点。"
+  },
+  {
+    "topicId": "cne_j263",
+    "prerequisiteId": "cne_j262",
+    "strength": "soft",
+    "reason": "同一单元「第1单元 Let's Celebrate!」内的并列知识点，先掌握「复合句与宾语从句语序」再学本点。"
+  },
+  {
+    "topicId": "cne_j264",
+    "prerequisiteId": "cne_j263",
+    "strength": "soft",
+    "reason": "同一单元「第1单元 Let's Celebrate!」内的并列知识点，先掌握「谈论节日习俗」再学本点。"
+  },
+  {
+    "topicId": "cne_j265",
+    "prerequisiteId": "cne_j264",
+    "strength": "soft",
+    "reason": "同一单元「第1单元 Let's Celebrate!」内的并列知识点，先掌握「读节日短文找细节」再学本点。"
+  },
+  {
+    "topicId": "cne_j266",
+    "prerequisiteId": "cne_j265",
+    "strength": "soft",
+    "reason": "按教材单元顺序，先学完「第1单元 Let's Celebrate!」，再进入「第2单元 A Look into the Past」。"
+  },
+  {
+    "topicId": "cne_j267",
+    "prerequisiteId": "cne_j266",
+    "strength": "soft",
+    "reason": "同一单元「第2单元 A Look into the Past」内的并列知识点，先掌握「考古与遗迹的核心词」再学本点。"
+  },
+  {
+    "topicId": "cne_j268",
+    "prerequisiteId": "cne_j267",
+    "strength": "soft",
+    "reason": "同一单元「第2单元 A Look into the Past」内的并列知识点，先掌握「修复与重现」再学本点。"
+  },
+  {
+    "topicId": "cne_j269",
+    "prerequisiteId": "cne_j268",
+    "strength": "soft",
+    "reason": "同一单元「第2单元 A Look into the Past」内的并列知识点，先掌握「情态动词表可能性的梯度」再学本点。"
+  },
+  {
+    "topicId": "cne_j270",
+    "prerequisiteId": "cne_j269",
+    "strength": "soft",
+    "reason": "同一单元「第2单元 A Look into the Past」内的并列知识点，先掌握「被动语态里的 by 短语」再学本点。"
+  },
+  {
+    "topicId": "cne_j271",
+    "prerequisiteId": "cne_j270",
+    "strength": "soft",
+    "reason": "同一单元「第2单元 A Look into the Past」内的并列知识点，先掌握「invent 与 discover 的区别」再学本点。"
+  },
+  {
+    "topicId": "cne_j272",
+    "prerequisiteId": "cne_j271",
+    "strength": "soft",
+    "reason": "同一单元「第2单元 A Look into the Past」内的并列知识点，先掌握「询问和描述历史」再学本点。"
+  },
+  {
+    "topicId": "cne_j273",
+    "prerequisiteId": "cne_j272",
+    "strength": "soft",
+    "reason": "同一单元「第2单元 A Look into the Past」内的并列知识点，先掌握「读说明性短文的时间线」再学本点。"
+  },
+  {
+    "topicId": "cne_j274",
+    "prerequisiteId": "cne_j273",
+    "strength": "soft",
+    "reason": "按教材单元顺序，先学完「第2单元 A Look into the Past」，再进入「第3单元 A Taste of Art」。"
+  },
+  {
+    "topicId": "cne_j275",
+    "prerequisiteId": "cne_j274",
+    "strength": "soft",
+    "reason": "同一单元「第3单元 A Taste of Art」内的并列知识点，先掌握「艺术与美感的核心词」再学本点。"
+  },
+  {
+    "topicId": "cne_j276",
+    "prerequisiteId": "cne_j275",
+    "strength": "soft",
+    "reason": "同一单元「第3单元 A Taste of Art」内的并列知识点，先掌握「艺术创作与复制」再学本点。"
+  },
+  {
+    "topicId": "cne_j277",
+    "prerequisiteId": "cne_j276",
+    "strength": "soft",
+    "reason": "同一单元「第3单元 A Taste of Art」内的并列知识点，先掌握「不定式与动名词的取舍」再学本点。"
+  },
+  {
+    "topicId": "cne_j278",
+    "prerequisiteId": "cne_j277",
+    "strength": "soft",
+    "reason": "同一单元「第3单元 A Taste of Art」内的并列知识点，先掌握「动词不定式作宾语补足语」再学本点。"
+  },
+  {
+    "topicId": "cne_j279",
+    "prerequisiteId": "cne_j278",
+    "strength": "soft",
+    "reason": "同一单元「第3单元 A Taste of Art」内的并列知识点，先掌握「疑问词加不定式」再学本点。"
+  },
+  {
+    "topicId": "cne_j280",
+    "prerequisiteId": "cne_j279",
+    "strength": "soft",
+    "reason": "同一单元「第3单元 A Taste of Art」内的并列知识点，先掌握「谈论和评价艺术作品」再学本点。"
+  },
+  {
+    "topicId": "cne_j281",
+    "prerequisiteId": "cne_j280",
+    "strength": "soft",
+    "reason": "同一单元「第3单元 A Taste of Art」内的并列知识点，先掌握「读艺术家介绍」再学本点。"
+  },
+  {
+    "topicId": "cne_j282",
+    "prerequisiteId": "cne_j281",
+    "strength": "soft",
+    "reason": "按教材单元顺序，先学完「第3单元 A Taste of Art」，再进入「第4单元 Reduce, Reuse, Recycle」。"
+  },
+  {
+    "topicId": "cne_j283",
+    "prerequisiteId": "cne_j282",
+    "strength": "soft",
+    "reason": "同一单元「第4单元 Reduce, Reuse, Recycle」内的并列知识点，先掌握「三个 R 与环保动作」再学本点。"
+  },
+  {
+    "topicId": "cne_j284",
+    "prerequisiteId": "cne_j283",
+    "strength": "soft",
+    "reason": "同一单元「第4单元 Reduce, Reuse, Recycle」内的并列知识点，先掌握「环保描述词」再学本点。"
+  },
+  {
+    "topicId": "cne_j285",
+    "prerequisiteId": "cne_j284",
+    "strength": "soft",
+    "reason": "同一单元「第4单元 Reduce, Reuse, Recycle」内的并列知识点，先掌握「not everything 部分否定」再学本点。"
+  },
+  {
+    "topicId": "cne_j286",
+    "prerequisiteId": "cne_j285",
+    "strength": "soft",
+    "reason": "同一单元「第4单元 Reduce, Reuse, Recycle」内的并列知识点，先掌握「情态动词表建议与义务」再学本点。"
+  },
+  {
+    "topicId": "cne_j287",
+    "prerequisiteId": "cne_j286",
+    "strength": "soft",
+    "reason": "同一单元「第4单元 Reduce, Reuse, Recycle」内的并列知识点，先掌握「环保语境里的一般现在时被动语态」再学本点。"
+  },
+  {
+    "topicId": "cne_j288",
+    "prerequisiteId": "cne_j287",
+    "strength": "soft",
+    "reason": "同一单元「第4单元 Reduce, Reuse, Recycle」内的并列知识点，先掌握「宾语从句在环保话题中的用法」再学本点。"
+  },
+  {
+    "topicId": "cne_j289",
+    "prerequisiteId": "cne_j288",
+    "strength": "soft",
+    "reason": "同一单元「第4单元 Reduce, Reuse, Recycle」内的并列知识点，先掌握「提出环保建议」再学本点。"
+  },
+  {
+    "topicId": "cne_j290",
+    "prerequisiteId": "cne_j289",
+    "strength": "soft",
+    "reason": "按教材单元顺序，先学完「第4单元 Reduce, Reuse, Recycle」，再进入「第5单元 Open to New Beginnings」。"
+  },
+  {
+    "topicId": "cne_j291",
+    "prerequisiteId": "cne_j290",
+    "strength": "soft",
+    "reason": "同一单元「第5单元 Open to New Beginnings」内的并列知识点，先掌握「毕业与成长的核心词」再学本点。"
+  },
+  {
+    "topicId": "cne_j292",
+    "prerequisiteId": "cne_j291",
+    "strength": "soft",
+    "reason": "同一单元「第5单元 Open to New Beginnings」内的并列知识点，先掌握「构词法 un- re- -tion -ist」再学本点。"
+  },
+  {
+    "topicId": "cne_j293",
+    "prerequisiteId": "cne_j292",
+    "strength": "soft",
+    "reason": "同一单元「第5单元 Open to New Beginnings」内的并列知识点，先掌握「形容词与副词后缀 -able -ful -ly」再学本点。"
+  },
+  {
+    "topicId": "cne_j294",
+    "prerequisiteId": "cne_j293",
+    "strength": "soft",
+    "reason": "同一单元「第5单元 Open to New Beginnings」内的并列知识点，先掌握「宾语从句的语序与时态呼应」再学本点。"
+  },
+  {
+    "topicId": "cne_j295",
+    "prerequisiteId": "cne_j294",
+    "strength": "soft",
+    "reason": "同一单元「第5单元 Open to New Beginnings」内的并列知识点，先掌握「一般将来时的两种表达」再学本点。"
+  },
+  {
+    "topicId": "cne_j296",
+    "prerequisiteId": "cne_j295",
+    "strength": "hard",
+    "reason": "「读毕业演讲稿」要用到「谈论毕业感受与未来规划」的知识，先掌握「谈论毕业感受与未来规划」再学本点。"
+  },
+  {
+    "topicId": "cne_j297",
+    "prerequisiteId": "cne_j296",
+    "strength": "hard",
+    "reason": "「写毕业演讲稿」要用到「读毕业演讲稿」的知识，先掌握「读毕业演讲稿」再学本点。"
+  },
+  {
     "topicId": "cnc_p002",
     "prerequisiteId": "cnc_p001",
     "strength": "soft",
@@ -22050,6 +22290,672 @@
     "reason": "同一单元「第6单元 创意与余响」内的并列知识点，先掌握「课外古诗词四首（下）」再学本点。"
   },
   {
+    "topicId": "cnc_h002",
+    "prerequisiteId": "cnc_h001",
+    "strength": "soft",
+    "reason": "同一单元「第一单元 第1课」内的并列知识点，先掌握「阅读《沁园春·长沙》」再学本点。"
+  },
+  {
+    "topicId": "cnc_h003",
+    "prerequisiteId": "cnc_h001",
+    "strength": "soft",
+    "reason": "同一单元「第一单元 第1课」内的并列知识点，先掌握「阅读《沁园春·长沙》」再学本点。"
+  },
+  {
+    "topicId": "cnc_h004",
+    "prerequisiteId": "cnc_h001",
+    "strength": "soft",
+    "reason": "同一单元「第一单元 第1课」内的并列知识点，先掌握「阅读《沁园春·长沙》」再学本点。"
+  },
+  {
+    "topicId": "cnc_h005",
+    "prerequisiteId": "cnc_h001",
+    "strength": "soft",
+    "reason": "同一单元「第一单元 第1课」内的并列知识点，先掌握「阅读《沁园春·长沙》」再学本点。"
+  },
+  {
+    "topicId": "cnc_h006",
+    "prerequisiteId": "cnc_h001",
+    "strength": "soft",
+    "reason": "同一单元「第一单元 第1课」内的并列知识点，先掌握「阅读《沁园春·长沙》」再学本点。"
+  },
+  {
+    "topicId": "cnc_h007",
+    "prerequisiteId": "cnc_h001",
+    "strength": "soft",
+    "reason": "同一单元「第一单元 第1课」内的并列知识点，先掌握「阅读《沁园春·长沙》」再学本点。"
+  },
+  {
+    "topicId": "cnc_h009",
+    "prerequisiteId": "cnc_h008",
+    "strength": "soft",
+    "reason": "同一单元「第二单元 第4课」内的并列知识点，先掌握「阅读《喜看稻菽千重浪》」再学本点。"
+  },
+  {
+    "topicId": "cnc_h010",
+    "prerequisiteId": "cnc_h008",
+    "strength": "soft",
+    "reason": "同一单元「第二单元 第4课」内的并列知识点，先掌握「阅读《喜看稻菽千重浪》」再学本点。"
+  },
+  {
+    "topicId": "cnc_h011",
+    "prerequisiteId": "cnc_h008",
+    "strength": "soft",
+    "reason": "同一单元「第二单元 第4课」内的并列知识点，先掌握「阅读《喜看稻菽千重浪》」再学本点。"
+  },
+  {
+    "topicId": "cnc_h012",
+    "prerequisiteId": "cnc_h008",
+    "strength": "soft",
+    "reason": "同一单元「第二单元 第4课」内的并列知识点，先掌握「阅读《喜看稻菽千重浪》」再学本点。"
+  },
+  {
+    "topicId": "cnc_h013",
+    "prerequisiteId": "cnc_h008",
+    "strength": "soft",
+    "reason": "同一单元「第二单元 第4课」内的并列知识点，先掌握「阅读《喜看稻菽千重浪》」再学本点。"
+  },
+  {
+    "topicId": "cnc_h015",
+    "prerequisiteId": "cnc_h014",
+    "strength": "soft",
+    "reason": "同一单元「第三单元 第7课」内的并列知识点，先掌握「诗《短歌行》」再学本点。"
+  },
+  {
+    "topicId": "cnc_h016",
+    "prerequisiteId": "cnc_h014",
+    "strength": "soft",
+    "reason": "同一单元「第三单元 第7课」内的并列知识点，先掌握「诗《短歌行》」再学本点。"
+  },
+  {
+    "topicId": "cnc_h017",
+    "prerequisiteId": "cnc_h014",
+    "strength": "soft",
+    "reason": "同一单元「第三单元 第7课」内的并列知识点，先掌握「诗《短歌行》」再学本点。"
+  },
+  {
+    "topicId": "cnc_h018",
+    "prerequisiteId": "cnc_h014",
+    "strength": "soft",
+    "reason": "同一单元「第三单元 第7课」内的并列知识点，先掌握「诗《短歌行》」再学本点。"
+  },
+  {
+    "topicId": "cnc_h019",
+    "prerequisiteId": "cnc_h014",
+    "strength": "soft",
+    "reason": "同一单元「第三单元 第7课」内的并列知识点，先掌握「诗《短歌行》」再学本点。"
+  },
+  {
+    "topicId": "cnc_h020",
+    "prerequisiteId": "cnc_h014",
+    "strength": "soft",
+    "reason": "同一单元「第三单元 第7课」内的并列知识点，先掌握「诗《短歌行》」再学本点。"
+  },
+  {
+    "topicId": "cnc_h021",
+    "prerequisiteId": "cnc_h014",
+    "strength": "soft",
+    "reason": "同一单元「第三单元 第7课」内的并列知识点，先掌握「诗《短歌行》」再学本点。"
+  },
+  {
+    "topicId": "cnc_h025",
+    "prerequisiteId": "cnc_h024",
+    "strength": "soft",
+    "reason": "同一单元「第六单元 第10课」内的并列知识点，先掌握「文言文《劝学》」再学本点。"
+  },
+  {
+    "topicId": "cnc_h026",
+    "prerequisiteId": "cnc_h024",
+    "strength": "soft",
+    "reason": "同一单元「第六单元 第10课」内的并列知识点，先掌握「文言文《劝学》」再学本点。"
+  },
+  {
+    "topicId": "cnc_h027",
+    "prerequisiteId": "cnc_h024",
+    "strength": "soft",
+    "reason": "同一单元「第六单元 第10课」内的并列知识点，先掌握「文言文《劝学》」再学本点。"
+  },
+  {
+    "topicId": "cnc_h028",
+    "prerequisiteId": "cnc_h024",
+    "strength": "soft",
+    "reason": "同一单元「第六单元 第10课」内的并列知识点，先掌握「文言文《劝学》」再学本点。"
+  },
+  {
+    "topicId": "cnc_h029",
+    "prerequisiteId": "cnc_h024",
+    "strength": "soft",
+    "reason": "同一单元「第六单元 第10课」内的并列知识点，先掌握「文言文《劝学》」再学本点。"
+  },
+  {
+    "topicId": "cnc_h031",
+    "prerequisiteId": "cnc_h030",
+    "strength": "soft",
+    "reason": "同一单元「第七单元 第14课」内的并列知识点，先掌握「阅读《故都的秋》」再学本点。"
+  },
+  {
+    "topicId": "cnc_h032",
+    "prerequisiteId": "cnc_h030",
+    "strength": "soft",
+    "reason": "同一单元「第七单元 第14课」内的并列知识点，先掌握「阅读《故都的秋》」再学本点。"
+  },
+  {
+    "topicId": "cnc_h033",
+    "prerequisiteId": "cnc_h030",
+    "strength": "soft",
+    "reason": "同一单元「第七单元 第14课」内的并列知识点，先掌握「阅读《故都的秋》」再学本点。"
+  },
+  {
+    "topicId": "cnc_h034",
+    "prerequisiteId": "cnc_h030",
+    "strength": "soft",
+    "reason": "同一单元「第七单元 第14课」内的并列知识点，先掌握「阅读《故都的秋》」再学本点。"
+  },
+  {
+    "topicId": "cnc_h037",
+    "prerequisiteId": "cnc_h036",
+    "strength": "soft",
+    "reason": "同一单元「古诗词诵读 静女」内的并列知识点，先掌握「古诗词诵读《静女》」再学本点。"
+  },
+  {
+    "topicId": "cnc_h038",
+    "prerequisiteId": "cnc_h036",
+    "strength": "soft",
+    "reason": "同一单元「古诗词诵读 静女」内的并列知识点，先掌握「古诗词诵读《静女》」再学本点。"
+  },
+  {
+    "topicId": "cnc_h039",
+    "prerequisiteId": "cnc_h036",
+    "strength": "soft",
+    "reason": "同一单元「古诗词诵读 静女」内的并列知识点，先掌握「古诗词诵读《静女》」再学本点。"
+  },
+  {
+    "topicId": "cnc_h041",
+    "prerequisiteId": "cnc_h040",
+    "strength": "soft",
+    "reason": "同一单元「第一单元 第1课」内的并列知识点，先掌握「文言文《子路、曾皙、冉有、公西华侍坐》」再学本点。"
+  },
+  {
+    "topicId": "cnc_h042",
+    "prerequisiteId": "cnc_h040",
+    "strength": "soft",
+    "reason": "同一单元「第一单元 第1课」内的并列知识点，先掌握「文言文《子路、曾皙、冉有、公西华侍坐》」再学本点。"
+  },
+  {
+    "topicId": "cnc_h043",
+    "prerequisiteId": "cnc_h040",
+    "strength": "soft",
+    "reason": "同一单元「第一单元 第1课」内的并列知识点，先掌握「文言文《子路、曾皙、冉有、公西华侍坐》」再学本点。"
+  },
+  {
+    "topicId": "cnc_h044",
+    "prerequisiteId": "cnc_h040",
+    "strength": "soft",
+    "reason": "同一单元「第一单元 第1课」内的并列知识点，先掌握「文言文《子路、曾皙、冉有、公西华侍坐》」再学本点。"
+  },
+  {
+    "topicId": "cnc_h046",
+    "prerequisiteId": "cnc_h045",
+    "strength": "soft",
+    "reason": "同一单元「第二单元 第4课」内的并列知识点，先掌握「阅读《窦娥冤》（节选）」再学本点。"
+  },
+  {
+    "topicId": "cnc_h047",
+    "prerequisiteId": "cnc_h045",
+    "strength": "soft",
+    "reason": "同一单元「第二单元 第4课」内的并列知识点，先掌握「阅读《窦娥冤》（节选）」再学本点。"
+  },
+  {
+    "topicId": "cnc_h049",
+    "prerequisiteId": "cnc_h048",
+    "strength": "soft",
+    "reason": "同一单元「第三单元 第7课」内的并列知识点，先掌握「阅读《青蒿素：人类征服疾病的一小步》」再学本点。"
+  },
+  {
+    "topicId": "cnc_h050",
+    "prerequisiteId": "cnc_h048",
+    "strength": "soft",
+    "reason": "同一单元「第三单元 第7课」内的并列知识点，先掌握「阅读《青蒿素：人类征服疾病的一小步》」再学本点。"
+  },
+  {
+    "topicId": "cnc_h051",
+    "prerequisiteId": "cnc_h048",
+    "strength": "soft",
+    "reason": "同一单元「第三单元 第7课」内的并列知识点，先掌握「阅读《青蒿素：人类征服疾病的一小步》」再学本点。"
+  },
+  {
+    "topicId": "cnc_h054",
+    "prerequisiteId": "cnc_h053",
+    "strength": "soft",
+    "reason": "同一单元「第五单元 第10课」内的并列知识点，先掌握「阅读《在〈人民报〉创刊纪念会上的演说》」再学本点。"
+  },
+  {
+    "topicId": "cnc_h055",
+    "prerequisiteId": "cnc_h053",
+    "strength": "soft",
+    "reason": "同一单元「第五单元 第10课」内的并列知识点，先掌握「阅读《在〈人民报〉创刊纪念会上的演说》」再学本点。"
+  },
+  {
+    "topicId": "cnc_h056",
+    "prerequisiteId": "cnc_h053",
+    "strength": "soft",
+    "reason": "同一单元「第五单元 第10课」内的并列知识点，先掌握「阅读《在〈人民报〉创刊纪念会上的演说》」再学本点。"
+  },
+  {
+    "topicId": "cnc_h058",
+    "prerequisiteId": "cnc_h057",
+    "strength": "soft",
+    "reason": "同一单元「第六单元 第12课」内的并列知识点，先掌握「阅读《祝福》」再学本点。"
+  },
+  {
+    "topicId": "cnc_h059",
+    "prerequisiteId": "cnc_h057",
+    "strength": "soft",
+    "reason": "同一单元「第六单元 第12课」内的并列知识点，先掌握「阅读《祝福》」再学本点。"
+  },
+  {
+    "topicId": "cnc_h060",
+    "prerequisiteId": "cnc_h057",
+    "strength": "soft",
+    "reason": "同一单元「第六单元 第12课」内的并列知识点，先掌握「阅读《祝福》」再学本点。"
+  },
+  {
+    "topicId": "cnc_h061",
+    "prerequisiteId": "cnc_h057",
+    "strength": "soft",
+    "reason": "同一单元「第六单元 第12课」内的并列知识点，先掌握「阅读《祝福》」再学本点。"
+  },
+  {
+    "topicId": "cnc_h064",
+    "prerequisiteId": "cnc_h063",
+    "strength": "soft",
+    "reason": "同一单元「第八单元 第15课」内的并列知识点，先掌握「文言文《谏太宗十思疏》」再学本点。"
+  },
+  {
+    "topicId": "cnc_h065",
+    "prerequisiteId": "cnc_h063",
+    "strength": "soft",
+    "reason": "同一单元「第八单元 第15课」内的并列知识点，先掌握「文言文《谏太宗十思疏》」再学本点。"
+  },
+  {
+    "topicId": "cnc_h066",
+    "prerequisiteId": "cnc_h063",
+    "strength": "soft",
+    "reason": "同一单元「第八单元 第15课」内的并列知识点，先掌握「文言文《谏太宗十思疏》」再学本点。"
+  },
+  {
+    "topicId": "cnc_h068",
+    "prerequisiteId": "cnc_h067",
+    "strength": "soft",
+    "reason": "同一单元「古诗词诵读 登岳阳楼」内的并列知识点，先掌握「古诗词诵读《登岳阳楼》」再学本点。"
+  },
+  {
+    "topicId": "cnc_h069",
+    "prerequisiteId": "cnc_h067",
+    "strength": "soft",
+    "reason": "同一单元「古诗词诵读 登岳阳楼」内的并列知识点，先掌握「古诗词诵读《登岳阳楼》」再学本点。"
+  },
+  {
+    "topicId": "cnc_h070",
+    "prerequisiteId": "cnc_h067",
+    "strength": "soft",
+    "reason": "同一单元「古诗词诵读 登岳阳楼」内的并列知识点，先掌握「古诗词诵读《登岳阳楼》」再学本点。"
+  },
+  {
+    "topicId": "cnc_h072",
+    "prerequisiteId": "cnc_h071",
+    "strength": "soft",
+    "reason": "同一单元「第一单元 第1课」内的并列知识点，先掌握「阅读《中国人民站起来了》」再学本点。"
+  },
+  {
+    "topicId": "cnc_h073",
+    "prerequisiteId": "cnc_h071",
+    "strength": "soft",
+    "reason": "同一单元「第一单元 第1课」内的并列知识点，先掌握「阅读《中国人民站起来了》」再学本点。"
+  },
+  {
+    "topicId": "cnc_h074",
+    "prerequisiteId": "cnc_h071",
+    "strength": "soft",
+    "reason": "同一单元「第一单元 第1课」内的并列知识点，先掌握「阅读《中国人民站起来了》」再学本点。"
+  },
+  {
+    "topicId": "cnc_h075",
+    "prerequisiteId": "cnc_h071",
+    "strength": "soft",
+    "reason": "同一单元「第一单元 第1课」内的并列知识点，先掌握「阅读《中国人民站起来了》」再学本点。"
+  },
+  {
+    "topicId": "cnc_h076",
+    "prerequisiteId": "cnc_h071",
+    "strength": "soft",
+    "reason": "同一单元「第一单元 第1课」内的并列知识点，先掌握「阅读《中国人民站起来了》」再学本点。"
+  },
+  {
+    "topicId": "cnc_h078",
+    "prerequisiteId": "cnc_h077",
+    "strength": "soft",
+    "reason": "同一单元「第二单元 第5课」内的并列知识点，先掌握「文言文《论语》十二章」再学本点。"
+  },
+  {
+    "topicId": "cnc_h079",
+    "prerequisiteId": "cnc_h077",
+    "strength": "soft",
+    "reason": "同一单元「第二单元 第5课」内的并列知识点，先掌握「文言文《论语》十二章」再学本点。"
+  },
+  {
+    "topicId": "cnc_h080",
+    "prerequisiteId": "cnc_h077",
+    "strength": "soft",
+    "reason": "同一单元「第二单元 第5课」内的并列知识点，先掌握「文言文《论语》十二章」再学本点。"
+  },
+  {
+    "topicId": "cnc_h081",
+    "prerequisiteId": "cnc_h077",
+    "strength": "soft",
+    "reason": "同一单元「第二单元 第5课」内的并列知识点，先掌握「文言文《论语》十二章」再学本点。"
+  },
+  {
+    "topicId": "cnc_h082",
+    "prerequisiteId": "cnc_h077",
+    "strength": "soft",
+    "reason": "同一单元「第二单元 第5课」内的并列知识点，先掌握「文言文《论语》十二章」再学本点。"
+  },
+  {
+    "topicId": "cnc_h084",
+    "prerequisiteId": "cnc_h083",
+    "strength": "soft",
+    "reason": "同一单元「第三单元 第8课」内的并列知识点，先掌握「阅读《大卫·科波菲尔》（节选）」再学本点。"
+  },
+  {
+    "topicId": "cnc_h085",
+    "prerequisiteId": "cnc_h083",
+    "strength": "soft",
+    "reason": "同一单元「第三单元 第8课」内的并列知识点，先掌握「阅读《大卫·科波菲尔》（节选）」再学本点。"
+  },
+  {
+    "topicId": "cnc_h086",
+    "prerequisiteId": "cnc_h083",
+    "strength": "soft",
+    "reason": "同一单元「第三单元 第8课」内的并列知识点，先掌握「阅读《大卫·科波菲尔》（节选）」再学本点。"
+  },
+  {
+    "topicId": "cnc_h089",
+    "prerequisiteId": "cnc_h088",
+    "strength": "soft",
+    "reason": "同一单元「古诗词诵读 无衣」内的并列知识点，先掌握「古诗词诵读《无衣》」再学本点。"
+  },
+  {
+    "topicId": "cnc_h090",
+    "prerequisiteId": "cnc_h088",
+    "strength": "soft",
+    "reason": "同一单元「古诗词诵读 无衣」内的并列知识点，先掌握「古诗词诵读《无衣》」再学本点。"
+  },
+  {
+    "topicId": "cnc_h091",
+    "prerequisiteId": "cnc_h088",
+    "strength": "soft",
+    "reason": "同一单元「古诗词诵读 无衣」内的并列知识点，先掌握「古诗词诵读《无衣》」再学本点。"
+  },
+  {
+    "topicId": "cnc_h093",
+    "prerequisiteId": "cnc_h092",
+    "strength": "soft",
+    "reason": "同一单元「第一单元 第1课」内的并列知识点，先掌握「阅读《社会历史的决定性基础》」再学本点。"
+  },
+  {
+    "topicId": "cnc_h094",
+    "prerequisiteId": "cnc_h092",
+    "strength": "soft",
+    "reason": "同一单元「第一单元 第1课」内的并列知识点，先掌握「阅读《社会历史的决定性基础》」再学本点。"
+  },
+  {
+    "topicId": "cnc_h095",
+    "prerequisiteId": "cnc_h092",
+    "strength": "soft",
+    "reason": "同一单元「第一单元 第1课」内的并列知识点，先掌握「阅读《社会历史的决定性基础》」再学本点。"
+  },
+  {
+    "topicId": "cnc_h096",
+    "prerequisiteId": "cnc_h092",
+    "strength": "soft",
+    "reason": "同一单元「第一单元 第1课」内的并列知识点，先掌握「阅读《社会历史的决定性基础》」再学本点。"
+  },
+  {
+    "topicId": "cnc_h097",
+    "prerequisiteId": "cnc_h092",
+    "strength": "soft",
+    "reason": "同一单元「第一单元 第1课」内的并列知识点，先掌握「阅读《社会历史的决定性基础》」再学本点。"
+  },
+  {
+    "topicId": "cnc_h098",
+    "prerequisiteId": "cnc_h092",
+    "strength": "soft",
+    "reason": "同一单元「第一单元 第1课」内的并列知识点，先掌握「阅读《社会历史的决定性基础》」再学本点。"
+  },
+  {
+    "topicId": "cnc_h100",
+    "prerequisiteId": "cnc_h099",
+    "strength": "soft",
+    "reason": "同一单元「第二单元 第6课」内的并列知识点，先掌握「阅读《记念刘和珍君》」再学本点。"
+  },
+  {
+    "topicId": "cnc_h101",
+    "prerequisiteId": "cnc_h099",
+    "strength": "soft",
+    "reason": "同一单元「第二单元 第6课」内的并列知识点，先掌握「阅读《记念刘和珍君》」再学本点。"
+  },
+  {
+    "topicId": "cnc_h102",
+    "prerequisiteId": "cnc_h099",
+    "strength": "soft",
+    "reason": "同一单元「第二单元 第6课」内的并列知识点，先掌握「阅读《记念刘和珍君》」再学本点。"
+  },
+  {
+    "topicId": "cnc_h103",
+    "prerequisiteId": "cnc_h099",
+    "strength": "soft",
+    "reason": "同一单元「第二单元 第6课」内的并列知识点，先掌握「阅读《记念刘和珍君》」再学本点。"
+  },
+  {
+    "topicId": "cnc_h104",
+    "prerequisiteId": "cnc_h099",
+    "strength": "soft",
+    "reason": "同一单元「第二单元 第6课」内的并列知识点，先掌握「阅读《记念刘和珍君》」再学本点。"
+  },
+  {
+    "topicId": "cnc_h106",
+    "prerequisiteId": "cnc_h105",
+    "strength": "soft",
+    "reason": "同一单元「第三单元 第9课」内的并列知识点，先掌握「文言文《屈原列传》」再学本点。"
+  },
+  {
+    "topicId": "cnc_h107",
+    "prerequisiteId": "cnc_h105",
+    "strength": "soft",
+    "reason": "同一单元「第三单元 第9课」内的并列知识点，先掌握「文言文《屈原列传》」再学本点。"
+  },
+  {
+    "topicId": "cnc_h108",
+    "prerequisiteId": "cnc_h105",
+    "strength": "soft",
+    "reason": "同一单元「第三单元 第9课」内的并列知识点，先掌握「文言文《屈原列传》」再学本点。"
+  },
+  {
+    "topicId": "cnc_h110",
+    "prerequisiteId": "cnc_h109",
+    "strength": "soft",
+    "reason": "同一单元「第四单元 第12课」内的并列知识点，先掌握「阅读《玩偶之家》（节选）」再学本点。"
+  },
+  {
+    "topicId": "cnc_h111",
+    "prerequisiteId": "cnc_h109",
+    "strength": "soft",
+    "reason": "同一单元「第四单元 第12课」内的并列知识点，先掌握「阅读《玩偶之家》（节选）」再学本点。"
+  },
+  {
+    "topicId": "cnc_h112",
+    "prerequisiteId": "cnc_h109",
+    "strength": "soft",
+    "reason": "同一单元「第四单元 第12课」内的并列知识点，先掌握「阅读《玩偶之家》（节选）」再学本点。"
+  },
+  {
+    "topicId": "cnc_h113",
+    "prerequisiteId": "cnc_h109",
+    "strength": "soft",
+    "reason": "同一单元「第四单元 第12课」内的并列知识点，先掌握「阅读《玩偶之家》（节选）」再学本点。"
+  },
+  {
+    "topicId": "cnc_h115",
+    "prerequisiteId": "cnc_h114",
+    "strength": "soft",
+    "reason": "同一单元「古诗词诵读 燕歌行并序」内的并列知识点，先掌握「古诗词诵读《燕歌行并序》」再学本点。"
+  },
+  {
+    "topicId": "cnc_h116",
+    "prerequisiteId": "cnc_h114",
+    "strength": "soft",
+    "reason": "同一单元「古诗词诵读 燕歌行并序」内的并列知识点，先掌握「古诗词诵读《燕歌行并序》」再学本点。"
+  },
+  {
+    "topicId": "cnc_h117",
+    "prerequisiteId": "cnc_h114",
+    "strength": "soft",
+    "reason": "同一单元「古诗词诵读 燕歌行并序」内的并列知识点，先掌握「古诗词诵读《燕歌行并序》」再学本点。"
+  },
+  {
+    "topicId": "cnc_h119",
+    "prerequisiteId": "cnc_h118",
+    "strength": "soft",
+    "reason": "同一单元「第一单元 第1课」内的并列知识点，先掌握「诗《氓》」再学本点。"
+  },
+  {
+    "topicId": "cnc_h120",
+    "prerequisiteId": "cnc_h118",
+    "strength": "soft",
+    "reason": "同一单元「第一单元 第1课」内的并列知识点，先掌握「诗《氓》」再学本点。"
+  },
+  {
+    "topicId": "cnc_h121",
+    "prerequisiteId": "cnc_h118",
+    "strength": "soft",
+    "reason": "同一单元「第一单元 第1课」内的并列知识点，先掌握「诗《氓》」再学本点。"
+  },
+  {
+    "topicId": "cnc_h122",
+    "prerequisiteId": "cnc_h118",
+    "strength": "soft",
+    "reason": "同一单元「第一单元 第1课」内的并列知识点，先掌握「诗《氓》」再学本点。"
+  },
+  {
+    "topicId": "cnc_h123",
+    "prerequisiteId": "cnc_h118",
+    "strength": "soft",
+    "reason": "同一单元「第一单元 第1课」内的并列知识点，先掌握「诗《氓》」再学本点。"
+  },
+  {
+    "topicId": "cnc_h124",
+    "prerequisiteId": "cnc_h118",
+    "strength": "soft",
+    "reason": "同一单元「第一单元 第1课」内的并列知识点，先掌握「诗《氓》」再学本点。"
+  },
+  {
+    "topicId": "cnc_h126",
+    "prerequisiteId": "cnc_h125",
+    "strength": "soft",
+    "reason": "同一单元「第二单元 第5课」内的并列知识点，先掌握「阅读《阿Q正传》（节选）」再学本点。"
+  },
+  {
+    "topicId": "cnc_h127",
+    "prerequisiteId": "cnc_h125",
+    "strength": "soft",
+    "reason": "同一单元「第二单元 第5课」内的并列知识点，先掌握「阅读《阿Q正传》（节选）」再学本点。"
+  },
+  {
+    "topicId": "cnc_h128",
+    "prerequisiteId": "cnc_h125",
+    "strength": "soft",
+    "reason": "同一单元「第二单元 第5课」内的并列知识点，先掌握「阅读《阿Q正传》（节选）」再学本点。"
+  },
+  {
+    "topicId": "cnc_h129",
+    "prerequisiteId": "cnc_h125",
+    "strength": "soft",
+    "reason": "同一单元「第二单元 第5课」内的并列知识点，先掌握「阅读《阿Q正传》（节选）」再学本点。"
+  },
+  {
+    "topicId": "cnc_h130",
+    "prerequisiteId": "cnc_h125",
+    "strength": "soft",
+    "reason": "同一单元「第二单元 第5课」内的并列知识点，先掌握「阅读《阿Q正传》（节选）」再学本点。"
+  },
+  {
+    "topicId": "cnc_h131",
+    "prerequisiteId": "cnc_h125",
+    "strength": "soft",
+    "reason": "同一单元「第二单元 第5课」内的并列知识点，先掌握「阅读《阿Q正传》（节选）」再学本点。"
+  },
+  {
+    "topicId": "cnc_h133",
+    "prerequisiteId": "cnc_h132",
+    "strength": "soft",
+    "reason": "同一单元「第三单元 第9课」内的并列知识点，先掌握「文言文《陈情表》」再学本点。"
+  },
+  {
+    "topicId": "cnc_h134",
+    "prerequisiteId": "cnc_h132",
+    "strength": "soft",
+    "reason": "同一单元「第三单元 第9课」内的并列知识点，先掌握「文言文《陈情表》」再学本点。"
+  },
+  {
+    "topicId": "cnc_h135",
+    "prerequisiteId": "cnc_h132",
+    "strength": "soft",
+    "reason": "同一单元「第三单元 第9课」内的并列知识点，先掌握「文言文《陈情表》」再学本点。"
+  },
+  {
+    "topicId": "cnc_h136",
+    "prerequisiteId": "cnc_h132",
+    "strength": "soft",
+    "reason": "同一单元「第三单元 第9课」内的并列知识点，先掌握「文言文《陈情表》」再学本点。"
+  },
+  {
+    "topicId": "cnc_h137",
+    "prerequisiteId": "cnc_h132",
+    "strength": "soft",
+    "reason": "同一单元「第三单元 第9课」内的并列知识点，先掌握「文言文《陈情表》」再学本点。"
+  },
+  {
+    "topicId": "cnc_h139",
+    "prerequisiteId": "cnc_h138",
+    "strength": "soft",
+    "reason": "同一单元「第四单元 第13课」内的并列知识点，先掌握「阅读《自然选择的证明》」再学本点。"
+  },
+  {
+    "topicId": "cnc_h140",
+    "prerequisiteId": "cnc_h138",
+    "strength": "soft",
+    "reason": "同一单元「第四单元 第13课」内的并列知识点，先掌握「阅读《自然选择的证明》」再学本点。"
+  },
+  {
+    "topicId": "cnc_h142",
+    "prerequisiteId": "cnc_h141",
+    "strength": "soft",
+    "reason": "同一单元「古诗词诵读 拟行路难（其四）」内的并列知识点，先掌握「古诗词诵读《拟行路难》（其四）」再学本点。"
+  },
+  {
+    "topicId": "cnc_h143",
+    "prerequisiteId": "cnc_h141",
+    "strength": "soft",
+    "reason": "同一单元「古诗词诵读 拟行路难（其四）」内的并列知识点，先掌握「古诗词诵读《拟行路难》（其四）」再学本点。"
+  },
+  {
+    "topicId": "cnc_h144",
+    "prerequisiteId": "cnc_h141",
+    "strength": "soft",
+    "reason": "同一单元「古诗词诵读 拟行路难（其四）」内的并列知识点，先掌握「古诗词诵读《拟行路难》（其四）」再学本点。"
+  },
+  {
     "topicId": "cnc_p012",
     "prerequisiteId": "cnc_p001",
     "strength": "soft",
@@ -22836,10 +23742,214 @@
     "reason": "「古诗文积累」的后续单元，先学「诗词曲五首」再进入本单元。"
   },
   {
+    "topicId": "cnc_h001",
+    "prerequisiteId": "cnc_j189",
+    "strength": "soft",
+    "reason": "「古诗文积累」的后续单元，先学「课外古诗词四首（下）」再进入本单元。"
+  },
+  {
+    "topicId": "cnc_h008",
+    "prerequisiteId": "cnc_j184",
+    "strength": "soft",
+    "reason": "「阅读理解」的后续单元，先学「话剧《屈原》（节选）」再进入本单元。"
+  },
+  {
+    "topicId": "cnc_h014",
+    "prerequisiteId": "cnc_h001",
+    "strength": "soft",
+    "reason": "「古诗文积累」的后续单元，先学「阅读《沁园春·长沙》」再进入本单元。"
+  },
+  {
+    "topicId": "cnc_h022",
+    "prerequisiteId": "cnc_p485",
+    "strength": "soft",
+    "reason": "「习作基础」的后续单元，先学「综合性学习：回忆往事」再进入本单元。"
+  },
+  {
+    "topicId": "cnc_h023",
+    "prerequisiteId": "cnc_j147",
+    "strength": "soft",
+    "reason": "「名著阅读」的后续单元，先学「整本书《简·爱》」再进入本单元。"
+  },
+  {
+    "topicId": "cnc_h024",
+    "prerequisiteId": "cnc_h023",
+    "strength": "soft",
+    "reason": "进入「文言文阅读」单元之前，先有「整本书阅读《乡土中国》」的学习经验。"
+  },
+  {
+    "topicId": "cnc_h030",
+    "prerequisiteId": "cnc_h008",
+    "strength": "soft",
+    "reason": "「阅读理解」的后续单元，先学「阅读《喜看稻菽千重浪》」再进入本单元。"
+  },
+  {
+    "topicId": "cnc_h035",
+    "prerequisiteId": "cnc_j151",
+    "strength": "soft",
+    "reason": "「词语」的后续单元，先学「词语的褒贬」再进入本单元。"
+  },
+  {
+    "topicId": "cnc_h036",
+    "prerequisiteId": "cnc_h014",
+    "strength": "soft",
+    "reason": "「古诗文积累」的后续单元，先学「诗《短歌行》」再进入本单元。"
+  },
+  {
+    "topicId": "cnc_h040",
+    "prerequisiteId": "cnc_h024",
+    "strength": "soft",
+    "reason": "「文言文阅读」的后续单元，先学「文言文《劝学》」再进入本单元。"
+  },
+  {
+    "topicId": "cnc_h045",
+    "prerequisiteId": "cnc_h030",
+    "strength": "soft",
+    "reason": "「阅读理解」的后续单元，先学「阅读《故都的秋》」再进入本单元。"
+  },
+  {
+    "topicId": "cnc_h048",
+    "prerequisiteId": "cnc_h045",
+    "strength": "soft",
+    "reason": "「阅读理解」的后续单元，先学「阅读《窦娥冤》（节选）」再进入本单元。"
+  },
+  {
+    "topicId": "cnc_h052",
+    "prerequisiteId": "cnc_h048",
+    "strength": "soft",
+    "reason": "「阅读理解」的后续单元，先学「阅读《青蒿素：人类征服疾病的一小步》」再进入本单元。"
+  },
+  {
+    "topicId": "cnc_h053",
+    "prerequisiteId": "cnc_h052",
+    "strength": "soft",
+    "reason": "「阅读理解」的后续单元，先学「学习活动《信息时代的语文生活》」再进入本单元。"
+  },
+  {
+    "topicId": "cnc_h057",
+    "prerequisiteId": "cnc_h053",
+    "strength": "soft",
+    "reason": "「阅读理解」的后续单元，先学「阅读《在〈人民报〉创刊纪念会上的演说》」再进入本单元。"
+  },
+  {
+    "topicId": "cnc_h062",
+    "prerequisiteId": "cnc_h023",
+    "strength": "soft",
+    "reason": "「名著阅读」的后续单元，先学「整本书阅读《乡土中国》」再进入本单元。"
+  },
+  {
+    "topicId": "cnc_h063",
+    "prerequisiteId": "cnc_h040",
+    "strength": "soft",
+    "reason": "「文言文阅读」的后续单元，先学「文言文《子路、曾皙、冉有、公西华侍坐》」再进入本单元。"
+  },
+  {
+    "topicId": "cnc_h067",
+    "prerequisiteId": "cnc_h036",
+    "strength": "soft",
+    "reason": "「古诗文积累」的后续单元，先学「古诗词诵读《静女》」再进入本单元。"
+  },
+  {
+    "topicId": "cnc_h071",
+    "prerequisiteId": "cnc_h057",
+    "strength": "soft",
+    "reason": "「阅读理解」的后续单元，先学「阅读《祝福》」再进入本单元。"
+  },
+  {
+    "topicId": "cnc_h077",
+    "prerequisiteId": "cnc_h063",
+    "strength": "soft",
+    "reason": "「文言文阅读」的后续单元，先学「文言文《谏太宗十思疏》」再进入本单元。"
+  },
+  {
+    "topicId": "cnc_h083",
+    "prerequisiteId": "cnc_h071",
+    "strength": "soft",
+    "reason": "「阅读理解」的后续单元，先学「阅读《中国人民站起来了》」再进入本单元。"
+  },
+  {
+    "topicId": "cnc_h087",
+    "prerequisiteId": "cnc_h083",
+    "strength": "soft",
+    "reason": "进入「句子」单元之前，先有「阅读《大卫·科波菲尔》（节选）」的学习经验。"
+  },
+  {
+    "topicId": "cnc_h088",
+    "prerequisiteId": "cnc_h067",
+    "strength": "soft",
+    "reason": "「古诗文积累」的后续单元，先学「古诗词诵读《登岳阳楼》」再进入本单元。"
+  },
+  {
+    "topicId": "cnc_h092",
+    "prerequisiteId": "cnc_h083",
+    "strength": "soft",
+    "reason": "「阅读理解」的后续单元，先学「阅读《大卫·科波菲尔》（节选）」再进入本单元。"
+  },
+  {
+    "topicId": "cnc_h099",
+    "prerequisiteId": "cnc_h092",
+    "strength": "soft",
+    "reason": "「阅读理解」的后续单元，先学「阅读《社会历史的决定性基础》」再进入本单元。"
+  },
+  {
+    "topicId": "cnc_h105",
+    "prerequisiteId": "cnc_h077",
+    "strength": "soft",
+    "reason": "「文言文阅读」的后续单元，先学「文言文《论语》十二章」再进入本单元。"
+  },
+  {
+    "topicId": "cnc_h109",
+    "prerequisiteId": "cnc_h099",
+    "strength": "soft",
+    "reason": "「阅读理解」的后续单元，先学「阅读《记念刘和珍君》」再进入本单元。"
+  },
+  {
+    "topicId": "cnc_h114",
+    "prerequisiteId": "cnc_h088",
+    "strength": "soft",
+    "reason": "「古诗文积累」的后续单元，先学「古诗词诵读《无衣》」再进入本单元。"
+  },
+  {
+    "topicId": "cnc_h118",
+    "prerequisiteId": "cnc_h114",
+    "strength": "soft",
+    "reason": "「古诗文积累」的后续单元，先学「古诗词诵读《燕歌行并序》」再进入本单元。"
+  },
+  {
+    "topicId": "cnc_h125",
+    "prerequisiteId": "cnc_h109",
+    "strength": "soft",
+    "reason": "「阅读理解」的后续单元，先学「阅读《玩偶之家》（节选）」再进入本单元。"
+  },
+  {
+    "topicId": "cnc_h132",
+    "prerequisiteId": "cnc_h105",
+    "strength": "soft",
+    "reason": "「文言文阅读」的后续单元，先学「文言文《屈原列传》」再进入本单元。"
+  },
+  {
+    "topicId": "cnc_h138",
+    "prerequisiteId": "cnc_h125",
+    "strength": "soft",
+    "reason": "「阅读理解」的后续单元，先学「阅读《阿Q正传》（节选）」再进入本单元。"
+  },
+  {
+    "topicId": "cnc_h141",
+    "prerequisiteId": "cnc_h118",
+    "strength": "soft",
+    "reason": "「古诗文积累」的后续单元，先学「诗《氓》」再进入本单元。"
+  },
+  {
     "topicId": "cnc_p128",
     "prerequisiteId": "cnc_p153",
     "strength": "soft",
     "reason": "「词语」以「识字写字」的能力为基础，先掌握「语文园地七·大扫除」。"
+  },
+  {
+    "topicId": "cnc_h087",
+    "prerequisiteId": "cnc_h035",
+    "strength": "soft",
+    "reason": "「句子」以「词语」的能力为基础，先掌握「学习活动《词语积累与词语解释》」。"
   },
   {
     "topicId": "cnc_p485",
@@ -22873,12 +23983,6 @@
   },
   {
     "topicId": "cns_p006",
-    "prerequisiteId": "cns_p001",
-    "strength": "soft",
-    "reason": "同一单元「第1单元 周围的植物」内的并列知识点，先掌握「我们知道的植物」再学本点。"
-  },
-  {
-    "topicId": "cns_p007",
     "prerequisiteId": "cns_p001",
     "strength": "soft",
     "reason": "同一单元「第1单元 周围的植物」内的并列知识点，先掌握「我们知道的植物」再学本点。"
@@ -22962,12 +24066,6 @@
     "reason": "同一单元「第1单元 身边的物体」内的并列知识点，先掌握「认识物体的形状」再学本点。"
   },
   {
-    "topicId": "cns_p023",
-    "prerequisiteId": "cns_p019",
-    "strength": "soft",
-    "reason": "同一单元「第1单元 身边的物体」内的并列知识点，先掌握「认识物体的形状」再学本点。"
-  },
-  {
     "topicId": "cns_p025",
     "prerequisiteId": "cns_p024",
     "strength": "soft",
@@ -22987,12 +24085,6 @@
   },
   {
     "topicId": "cns_p028",
-    "prerequisiteId": "cns_p024",
-    "strength": "soft",
-    "reason": "同一单元「第2单元 常见的动物」内的并列知识点，先掌握「我们周围的动物」再学本点。"
-  },
-  {
-    "topicId": "cns_p029",
     "prerequisiteId": "cns_p024",
     "strength": "soft",
     "reason": "同一单元「第2单元 常见的动物」内的并列知识点，先掌握「我们周围的动物」再学本点。"
@@ -23029,12 +24121,6 @@
   },
   {
     "topicId": "cns_p036",
-    "prerequisiteId": "cns_p031",
-    "strength": "soft",
-    "reason": "同一单元「第1单元 造房子」内的并列知识点，先掌握「动物的「家」」再学本点。"
-  },
-  {
-    "topicId": "cns_p037",
     "prerequisiteId": "cns_p031",
     "strength": "soft",
     "reason": "同一单元「第1单元 造房子」内的并列知识点，先掌握「动物的「家」」再学本点。"
@@ -23118,12 +24204,6 @@
     "reason": "同一单元「第1单元 探秘恐龙」内的并列知识点，先掌握「恐龙的故事」再学本点。"
   },
   {
-    "topicId": "cns_p053",
-    "prerequisiteId": "cns_p046",
-    "strength": "soft",
-    "reason": "同一单元「第1单元 探秘恐龙」内的并列知识点，先掌握「恐龙的故事」再学本点。"
-  },
-  {
     "topicId": "cns_p055",
     "prerequisiteId": "cns_p054",
     "strength": "soft",
@@ -23142,19 +24222,7 @@
     "reason": "同一单元「第2单元 玩磁铁」内的并列知识点，先掌握「磁铁能吸引什么」再学本点。"
   },
   {
-    "topicId": "cns_p058",
-    "prerequisiteId": "cns_p054",
-    "strength": "soft",
-    "reason": "同一单元「第2单元 玩磁铁」内的并列知识点，先掌握「磁铁能吸引什么」再学本点。"
-  },
-  {
     "topicId": "cns_p059",
-    "prerequisiteId": "cns_p054",
-    "strength": "soft",
-    "reason": "同一单元「第2单元 玩磁铁」内的并列知识点，先掌握「磁铁能吸引什么」再学本点。"
-  },
-  {
-    "topicId": "cns_p060",
     "prerequisiteId": "cns_p054",
     "strength": "soft",
     "reason": "同一单元「第2单元 玩磁铁」内的并列知识点，先掌握「磁铁能吸引什么」再学本点。"
@@ -25668,6 +26736,108 @@
     "reason": "同一单元「第4单元 共圆中国梦」内的并列知识点，先掌握「铸牢中华民族共同体意识」再学本点。"
   },
   {
+    "topicId": "cnd_j112",
+    "prerequisiteId": "cnd_j111",
+    "strength": "soft",
+    "reason": "同一单元「第1单元 我们共同的世界」内的并列知识点，先掌握「当今世界开放互动又紧密联系」再学本点。"
+  },
+  {
+    "topicId": "cnd_j113",
+    "prerequisiteId": "cnd_j111",
+    "strength": "soft",
+    "reason": "同一单元「第1单元 我们共同的世界」内的并列知识点，先掌握「当今世界开放互动又紧密联系」再学本点。"
+  },
+  {
+    "topicId": "cnd_j114",
+    "prerequisiteId": "cnd_j111",
+    "strength": "soft",
+    "reason": "同一单元「第1单元 我们共同的世界」内的并列知识点，先掌握「当今世界开放互动又紧密联系」再学本点。"
+  },
+  {
+    "topicId": "cnd_j115",
+    "prerequisiteId": "cnd_j111",
+    "strength": "soft",
+    "reason": "同一单元「第1单元 我们共同的世界」内的并列知识点，先掌握「当今世界开放互动又紧密联系」再学本点。"
+  },
+  {
+    "topicId": "cnd_j116",
+    "prerequisiteId": "cnd_j111",
+    "strength": "soft",
+    "reason": "同一单元「第1单元 我们共同的世界」内的并列知识点，先掌握「当今世界开放互动又紧密联系」再学本点。"
+  },
+  {
+    "topicId": "cnd_j118",
+    "prerequisiteId": "cnd_j117",
+    "strength": "soft",
+    "reason": "同一单元「第2单元 建设美好世界」内的并列知识点，先掌握「深度联动的「两个大局」」再学本点。"
+  },
+  {
+    "topicId": "cnd_j119",
+    "prerequisiteId": "cnd_j117",
+    "strength": "soft",
+    "reason": "同一单元「第2单元 建设美好世界」内的并列知识点，先掌握「深度联动的「两个大局」」再学本点。"
+  },
+  {
+    "topicId": "cnd_j120",
+    "prerequisiteId": "cnd_j117",
+    "strength": "soft",
+    "reason": "同一单元「第2单元 建设美好世界」内的并列知识点，先掌握「深度联动的「两个大局」」再学本点。"
+  },
+  {
+    "topicId": "cnd_j121",
+    "prerequisiteId": "cnd_j117",
+    "strength": "soft",
+    "reason": "同一单元「第2单元 建设美好世界」内的并列知识点，先掌握「深度联动的「两个大局」」再学本点。"
+  },
+  {
+    "topicId": "cnd_j122",
+    "prerequisiteId": "cnd_j117",
+    "strength": "soft",
+    "reason": "同一单元「第2单元 建设美好世界」内的并列知识点，先掌握「深度联动的「两个大局」」再学本点。"
+  },
+  {
+    "topicId": "cnd_j123",
+    "prerequisiteId": "cnd_j117",
+    "strength": "soft",
+    "reason": "同一单元「第2单元 建设美好世界」内的并列知识点，先掌握「深度联动的「两个大局」」再学本点。"
+  },
+  {
+    "topicId": "cnd_j124",
+    "prerequisiteId": "cnd_j117",
+    "strength": "soft",
+    "reason": "同一单元「第2单元 建设美好世界」内的并列知识点，先掌握「深度联动的「两个大局」」再学本点。"
+  },
+  {
+    "topicId": "cnd_j126",
+    "prerequisiteId": "cnd_j125",
+    "strength": "soft",
+    "reason": "同一单元「第3单元 争做时代新人」内的并列知识点，先掌握「理想信念关乎国家未来」再学本点。"
+  },
+  {
+    "topicId": "cnd_j127",
+    "prerequisiteId": "cnd_j125",
+    "strength": "soft",
+    "reason": "同一单元「第3单元 争做时代新人」内的并列知识点，先掌握「理想信念关乎国家未来」再学本点。"
+  },
+  {
+    "topicId": "cnd_j128",
+    "prerequisiteId": "cnd_j125",
+    "strength": "soft",
+    "reason": "同一单元「第3单元 争做时代新人」内的并列知识点，先掌握「理想信念关乎国家未来」再学本点。"
+  },
+  {
+    "topicId": "cnd_j129",
+    "prerequisiteId": "cnd_j125",
+    "strength": "soft",
+    "reason": "同一单元「第3单元 争做时代新人」内的并列知识点，先掌握「理想信念关乎国家未来」再学本点。"
+  },
+  {
+    "topicId": "cnd_j130",
+    "prerequisiteId": "cnd_j125",
+    "strength": "soft",
+    "reason": "同一单元「第3单元 争做时代新人」内的并列知识点，先掌握「理想信念关乎国家未来」再学本点。"
+  },
+  {
     "topicId": "cnd_p005",
     "prerequisiteId": "cnd_p001",
     "strength": "soft",
@@ -26068,6 +27238,24 @@
     "prerequisiteId": "cnd_j099",
     "strength": "soft",
     "reason": "「国情教育」的后续单元，先学「分两步把我国建成社会主义现代化强国」再进入本单元。"
+  },
+  {
+    "topicId": "cnd_j111",
+    "prerequisiteId": "cnd_j104",
+    "strength": "soft",
+    "reason": "「国情教育」的后续单元，先学「铸牢中华民族共同体意识」再进入本单元。"
+  },
+  {
+    "topicId": "cnd_j117",
+    "prerequisiteId": "cnd_j111",
+    "strength": "soft",
+    "reason": "「国情教育」的后续单元，先学「当今世界开放互动又紧密联系」再进入本单元。"
+  },
+  {
+    "topicId": "cnd_j125",
+    "prerequisiteId": "cnd_j117",
+    "strength": "soft",
+    "reason": "「国情教育」的后续单元，先学「深度联动的「两个大局」」再进入本单元。"
   },
   {
     "topicId": "cnh_j002",
@@ -26670,6 +27858,498 @@
     "reason": "同一单元「第6单元 走向和平发展的世界」内的并列知识点，先掌握「联合国与世界贸易组织」再学本点。"
   },
   {
+    "topicId": "cnh_h002",
+    "prerequisiteId": "cnh_h001",
+    "strength": "soft",
+    "reason": "同一单元「第一单元 从中华文明起源到秦汉统一多民族封建国家的建立与巩固 第1课」内的并列知识点，先掌握「中华文明的起源与早期国家」再学本点。"
+  },
+  {
+    "topicId": "cnh_h003",
+    "prerequisiteId": "cnh_h001",
+    "strength": "soft",
+    "reason": "同一单元「第一单元 从中华文明起源到秦汉统一多民族封建国家的建立与巩固 第1课」内的并列知识点，先掌握「中华文明的起源与早期国家」再学本点。"
+  },
+  {
+    "topicId": "cnh_h004",
+    "prerequisiteId": "cnh_h001",
+    "strength": "soft",
+    "reason": "同一单元「第一单元 从中华文明起源到秦汉统一多民族封建国家的建立与巩固 第1课」内的并列知识点，先掌握「中华文明的起源与早期国家」再学本点。"
+  },
+  {
+    "topicId": "cnh_h005",
+    "prerequisiteId": "cnh_h001",
+    "strength": "soft",
+    "reason": "同一单元「第一单元 从中华文明起源到秦汉统一多民族封建国家的建立与巩固 第1课」内的并列知识点，先掌握「中华文明的起源与早期国家」再学本点。"
+  },
+  {
+    "topicId": "cnh_h006",
+    "prerequisiteId": "cnh_h001",
+    "strength": "soft",
+    "reason": "同一单元「第一单元 从中华文明起源到秦汉统一多民族封建国家的建立与巩固 第1课」内的并列知识点，先掌握「中华文明的起源与早期国家」再学本点。"
+  },
+  {
+    "topicId": "cnh_h008",
+    "prerequisiteId": "cnh_h007",
+    "strength": "soft",
+    "reason": "同一单元「第二单元 三国两晋南北朝的民族交融与隋唐统一多民族封建国家的发展 第5课」内的并列知识点，先掌握「三国两晋南北朝的政权更迭」再学本点。"
+  },
+  {
+    "topicId": "cnh_h009",
+    "prerequisiteId": "cnh_h007",
+    "strength": "soft",
+    "reason": "同一单元「第二单元 三国两晋南北朝的民族交融与隋唐统一多民族封建国家的发展 第5课」内的并列知识点，先掌握「三国两晋南北朝的政权更迭」再学本点。"
+  },
+  {
+    "topicId": "cnh_h010",
+    "prerequisiteId": "cnh_h007",
+    "strength": "soft",
+    "reason": "同一单元「第二单元 三国两晋南北朝的民族交融与隋唐统一多民族封建国家的发展 第5课」内的并列知识点，先掌握「三国两晋南北朝的政权更迭」再学本点。"
+  },
+  {
+    "topicId": "cnh_h011",
+    "prerequisiteId": "cnh_h007",
+    "strength": "soft",
+    "reason": "同一单元「第二单元 三国两晋南北朝的民族交融与隋唐统一多民族封建国家的发展 第5课」内的并列知识点，先掌握「三国两晋南北朝的政权更迭」再学本点。"
+  },
+  {
+    "topicId": "cnh_h012",
+    "prerequisiteId": "cnh_h007",
+    "strength": "soft",
+    "reason": "同一单元「第二单元 三国两晋南北朝的民族交融与隋唐统一多民族封建国家的发展 第5课」内的并列知识点，先掌握「三国两晋南北朝的政权更迭」再学本点。"
+  },
+  {
+    "topicId": "cnh_h013",
+    "prerequisiteId": "cnh_h014",
+    "strength": "soft",
+    "reason": "同一单元「第三单元 辽宋夏金多民族政权的并立与元朝的统一 第9课」内的并列知识点，先掌握「辽夏金元的统治」再学本点。"
+  },
+  {
+    "topicId": "cnh_h015",
+    "prerequisiteId": "cnh_h014",
+    "strength": "soft",
+    "reason": "同一单元「第三单元 辽宋夏金多民族政权的并立与元朝的统一 第9课」内的并列知识点，先掌握「辽夏金元的统治」再学本点。"
+  },
+  {
+    "topicId": "cnh_h016",
+    "prerequisiteId": "cnh_h018",
+    "strength": "soft",
+    "reason": "同一单元「第四单元 明清中国版图的奠定与面临的挑战 第12课」内的并列知识点，先掌握「明至清中叶的经济与文化」再学本点。"
+  },
+  {
+    "topicId": "cnh_h017",
+    "prerequisiteId": "cnh_h018",
+    "strength": "soft",
+    "reason": "同一单元「第四单元 明清中国版图的奠定与面临的挑战 第12课」内的并列知识点，先掌握「明至清中叶的经济与文化」再学本点。"
+  },
+  {
+    "topicId": "cnh_h020",
+    "prerequisiteId": "cnh_h019",
+    "strength": "soft",
+    "reason": "同一单元「第五单元 晚清时期的内忧外患与救亡图存 第15课」内的并列知识点，先掌握「两次鸦片战争」再学本点。"
+  },
+  {
+    "topicId": "cnh_h021",
+    "prerequisiteId": "cnh_h019",
+    "strength": "soft",
+    "reason": "同一单元「第五单元 晚清时期的内忧外患与救亡图存 第15课」内的并列知识点，先掌握「两次鸦片战争」再学本点。"
+  },
+  {
+    "topicId": "cnh_h022",
+    "prerequisiteId": "cnh_h019",
+    "strength": "soft",
+    "reason": "同一单元「第五单元 晚清时期的内忧外患与救亡图存 第15课」内的并列知识点，先掌握「两次鸦片战争」再学本点。"
+  },
+  {
+    "topicId": "cnh_h024",
+    "prerequisiteId": "cnh_h023",
+    "strength": "soft",
+    "reason": "同一单元「第六单元 辛亥革命与中华民国的建立 第18课」内的并列知识点，先掌握「辛亥革命」再学本点。"
+  },
+  {
+    "topicId": "cnh_h026",
+    "prerequisiteId": "cnh_h025",
+    "strength": "soft",
+    "reason": "同一单元「第七单元 中国共产党成立与新民主主义革命兴起 第20课」内的并列知识点，先掌握「五四运动与中国共产党的诞生」再学本点。"
+  },
+  {
+    "topicId": "cnh_h027",
+    "prerequisiteId": "cnh_h025",
+    "strength": "soft",
+    "reason": "同一单元「第七单元 中国共产党成立与新民主主义革命兴起 第20课」内的并列知识点，先掌握「五四运动与中国共产党的诞生」再学本点。"
+  },
+  {
+    "topicId": "cnh_h028",
+    "prerequisiteId": "cnh_h025",
+    "strength": "soft",
+    "reason": "同一单元「第七单元 中国共产党成立与新民主主义革命兴起 第20课」内的并列知识点，先掌握「五四运动与中国共产党的诞生」再学本点。"
+  },
+  {
+    "topicId": "cnh_h030",
+    "prerequisiteId": "cnh_h029",
+    "strength": "soft",
+    "reason": "同一单元「第八单元 中华民族的抗日战争和人民解放战争 第22课」内的并列知识点，先掌握「从局部抗战到全国抗战」再学本点。"
+  },
+  {
+    "topicId": "cnh_h031",
+    "prerequisiteId": "cnh_h029",
+    "strength": "soft",
+    "reason": "同一单元「第八单元 中华民族的抗日战争和人民解放战争 第22课」内的并列知识点，先掌握「从局部抗战到全国抗战」再学本点。"
+  },
+  {
+    "topicId": "cnh_h033",
+    "prerequisiteId": "cnh_h032",
+    "strength": "soft",
+    "reason": "同一单元「第九单元 中华人民共和国成立和社会主义革命与建设 第25课」内的并列知识点，先掌握「中华人民共和国成立和向社会主义的过渡」再学本点。"
+  },
+  {
+    "topicId": "cnh_h034",
+    "prerequisiteId": "cnh_h035",
+    "strength": "soft",
+    "reason": "同一单元「第十单元 改革开放与社会主义现代化建设新时期 第27课」内的并列知识点，先掌握「改革开放以来的经济与社会成就」再学本点。"
+  },
+  {
+    "topicId": "cnh_h036",
+    "prerequisiteId": "cnh_h035",
+    "strength": "soft",
+    "reason": "同一单元「第十单元 改革开放与社会主义现代化建设新时期 第27课」内的并列知识点，先掌握「改革开放以来的经济与社会成就」再学本点。"
+  },
+  {
+    "topicId": "cnh_h038",
+    "prerequisiteId": "cnh_h037",
+    "strength": "soft",
+    "reason": "同一单元「第十一单元 中国特色社会主义新时代 第29课」内的并列知识点，先掌握「中国特色社会主义进入新时代」再学本点。"
+  },
+  {
+    "topicId": "cnh_h040",
+    "prerequisiteId": "cnh_h039",
+    "strength": "soft",
+    "reason": "同一单元「第一单元 古代文明的产生与发展 第1课」内的并列知识点，先掌握「古代东方文明的产生与早期发展」再学本点。"
+  },
+  {
+    "topicId": "cnh_h041",
+    "prerequisiteId": "cnh_h039",
+    "strength": "soft",
+    "reason": "同一单元「第一单元 古代文明的产生与发展 第1课」内的并列知识点，先掌握「古代东方文明的产生与早期发展」再学本点。"
+  },
+  {
+    "topicId": "cnh_h043",
+    "prerequisiteId": "cnh_h042",
+    "strength": "soft",
+    "reason": "同一单元「第二单元 中古时期的世界 第3课」内的并列知识点，先掌握「中古时期的欧洲」再学本点。"
+  },
+  {
+    "topicId": "cnh_h044",
+    "prerequisiteId": "cnh_h042",
+    "strength": "soft",
+    "reason": "同一单元「第二单元 中古时期的世界 第3课」内的并列知识点，先掌握「中古时期的欧洲」再学本点。"
+  },
+  {
+    "topicId": "cnh_h046",
+    "prerequisiteId": "cnh_h045",
+    "strength": "soft",
+    "reason": "同一单元「第三单元 走向整体的世界 第6课」内的并列知识点，先掌握「全球航路的开辟」再学本点。"
+  },
+  {
+    "topicId": "cnh_h048",
+    "prerequisiteId": "cnh_h047",
+    "strength": "soft",
+    "reason": "同一单元「第四单元 资本主义制度的确立 第8课」内的并列知识点，先掌握「欧洲的思想解放运动」再学本点。"
+  },
+  {
+    "topicId": "cnh_h049",
+    "prerequisiteId": "cnh_h047",
+    "strength": "soft",
+    "reason": "同一单元「第四单元 资本主义制度的确立 第8课」内的并列知识点，先掌握「欧洲的思想解放运动」再学本点。"
+  },
+  {
+    "topicId": "cnh_h050",
+    "prerequisiteId": "cnh_h051",
+    "strength": "soft",
+    "reason": "同一单元「第五单元 工业革命与马克思主义的诞生 第10课」内的并列知识点，先掌握「马克思主义的诞生与传播」再学本点。"
+  },
+  {
+    "topicId": "cnh_h052",
+    "prerequisiteId": "cnh_h053",
+    "strength": "soft",
+    "reason": "同一单元「第六单元 世界殖民体系与亚非拉民族独立运动 第12课」内的并列知识点，先掌握「亚非拉民族独立运动」再学本点。"
+  },
+  {
+    "topicId": "cnh_h055",
+    "prerequisiteId": "cnh_h054",
+    "strength": "soft",
+    "reason": "同一单元「第七单元 世界大战、十月革命与国际秩序的演变 第14课」内的并列知识点，先掌握「第一次世界大战与战后国际秩序」再学本点。"
+  },
+  {
+    "topicId": "cnh_h056",
+    "prerequisiteId": "cnh_h054",
+    "strength": "soft",
+    "reason": "同一单元「第七单元 世界大战、十月革命与国际秩序的演变 第14课」内的并列知识点，先掌握「第一次世界大战与战后国际秩序」再学本点。"
+  },
+  {
+    "topicId": "cnh_h057",
+    "prerequisiteId": "cnh_h054",
+    "strength": "soft",
+    "reason": "同一单元「第七单元 世界大战、十月革命与国际秩序的演变 第14课」内的并列知识点，先掌握「第一次世界大战与战后国际秩序」再学本点。"
+  },
+  {
+    "topicId": "cnh_h059",
+    "prerequisiteId": "cnh_h058",
+    "strength": "soft",
+    "reason": "同一单元「第八单元 20世纪下半叶世界的新变化 第18课」内的并列知识点，先掌握「冷战与国际格局的演变」再学本点。"
+  },
+  {
+    "topicId": "cnh_h060",
+    "prerequisiteId": "cnh_h058",
+    "strength": "soft",
+    "reason": "同一单元「第八单元 20世纪下半叶世界的新变化 第18课」内的并列知识点，先掌握「冷战与国际格局的演变」再学本点。"
+  },
+  {
+    "topicId": "cnh_h061",
+    "prerequisiteId": "cnh_h058",
+    "strength": "soft",
+    "reason": "同一单元「第八单元 20世纪下半叶世界的新变化 第18课」内的并列知识点，先掌握「冷战与国际格局的演变」再学本点。"
+  },
+  {
+    "topicId": "cnh_h063",
+    "prerequisiteId": "cnh_h062",
+    "strength": "soft",
+    "reason": "同一单元「第九单元 当代世界发展的特点与主要趋势 第22课」内的并列知识点，先掌握「世界多极化与经济全球化」再学本点。"
+  },
+  {
+    "topicId": "cnh_h065",
+    "prerequisiteId": "cnh_h064",
+    "strength": "soft",
+    "reason": "同一单元「第一单元 政治制度 第1课」内的并列知识点，先掌握「从分封制到中央集权制度的确立」再学本点。"
+  },
+  {
+    "topicId": "cnh_h066",
+    "prerequisiteId": "cnh_h064",
+    "strength": "soft",
+    "reason": "同一单元「第一单元 政治制度 第1课」内的并列知识点，先掌握「从分封制到中央集权制度的确立」再学本点。"
+  },
+  {
+    "topicId": "cnh_h067",
+    "prerequisiteId": "cnh_h064",
+    "strength": "soft",
+    "reason": "同一单元「第一单元 政治制度 第1课」内的并列知识点，先掌握「从分封制到中央集权制度的确立」再学本点。"
+  },
+  {
+    "topicId": "cnh_h068",
+    "prerequisiteId": "cnh_h064",
+    "strength": "soft",
+    "reason": "同一单元「第一单元 政治制度 第1课」内的并列知识点，先掌握「从分封制到中央集权制度的确立」再学本点。"
+  },
+  {
+    "topicId": "cnh_h069",
+    "prerequisiteId": "cnh_h064",
+    "strength": "soft",
+    "reason": "同一单元「第一单元 政治制度 第1课」内的并列知识点，先掌握「从分封制到中央集权制度的确立」再学本点。"
+  },
+  {
+    "topicId": "cnh_h071",
+    "prerequisiteId": "cnh_h070",
+    "strength": "soft",
+    "reason": "同一单元「第二单元 官员的选拔与管理 第5课」内的并列知识点，先掌握「中国古代官员的选拔与管理」再学本点。"
+  },
+  {
+    "topicId": "cnh_h072",
+    "prerequisiteId": "cnh_h070",
+    "strength": "soft",
+    "reason": "同一单元「第二单元 官员的选拔与管理 第5课」内的并列知识点，先掌握「中国古代官员的选拔与管理」再学本点。"
+  },
+  {
+    "topicId": "cnh_h074",
+    "prerequisiteId": "cnh_h073",
+    "strength": "soft",
+    "reason": "同一单元「第三单元 法律与教化 第8课」内的并列知识点，先掌握「中国古代的法治与教化」再学本点。"
+  },
+  {
+    "topicId": "cnh_h075",
+    "prerequisiteId": "cnh_h073",
+    "strength": "soft",
+    "reason": "同一单元「第三单元 法律与教化 第8课」内的并列知识点，先掌握「中国古代的法治与教化」再学本点。"
+  },
+  {
+    "topicId": "cnh_h076",
+    "prerequisiteId": "cnh_h078",
+    "strength": "soft",
+    "reason": "同一单元「第四单元 民族关系与国家关系 第11课」内的并列知识点，先掌握「当代中国的民族政策」再学本点。"
+  },
+  {
+    "topicId": "cnh_h077",
+    "prerequisiteId": "cnh_h078",
+    "strength": "soft",
+    "reason": "同一单元「第四单元 民族关系与国家关系 第11课」内的并列知识点，先掌握「当代中国的民族政策」再学本点。"
+  },
+  {
+    "topicId": "cnh_h079",
+    "prerequisiteId": "cnh_h078",
+    "strength": "soft",
+    "reason": "同一单元「第四单元 民族关系与国家关系 第11课」内的并列知识点，先掌握「当代中国的民族政策」再学本点。"
+  },
+  {
+    "topicId": "cnh_h081",
+    "prerequisiteId": "cnh_h080",
+    "strength": "soft",
+    "reason": "同一单元「第五单元 货币与赋税制度 第15课」内的并列知识点，先掌握「货币的使用与演变」再学本点。"
+  },
+  {
+    "topicId": "cnh_h082",
+    "prerequisiteId": "cnh_h080",
+    "strength": "soft",
+    "reason": "同一单元「第五单元 货币与赋税制度 第15课」内的并列知识点，先掌握「货币的使用与演变」再学本点。"
+  },
+  {
+    "topicId": "cnh_h083",
+    "prerequisiteId": "cnh_h084",
+    "strength": "soft",
+    "reason": "同一单元「第六单元 基层治理与社会保障 第17课」内的并列知识点，先掌握「世界主要国家的基层治理」再学本点。"
+  },
+  {
+    "topicId": "cnh_h085",
+    "prerequisiteId": "cnh_h084",
+    "strength": "soft",
+    "reason": "同一单元「第六单元 基层治理与社会保障 第17课」内的并列知识点，先掌握「世界主要国家的基层治理」再学本点。"
+  },
+  {
+    "topicId": "cnh_h087",
+    "prerequisiteId": "cnh_h086",
+    "strength": "soft",
+    "reason": "同一单元「第一单元 食物生产与社会生活 第1课」内的并列知识点，先掌握「从食物采集到食物生产」再学本点。"
+  },
+  {
+    "topicId": "cnh_h088",
+    "prerequisiteId": "cnh_h086",
+    "strength": "soft",
+    "reason": "同一单元「第一单元 食物生产与社会生活 第1课」内的并列知识点，先掌握「从食物采集到食物生产」再学本点。"
+  },
+  {
+    "topicId": "cnh_h090",
+    "prerequisiteId": "cnh_h089",
+    "strength": "soft",
+    "reason": "同一单元「第二单元 生产工具与劳作方式 第4课」内的并列知识点，先掌握「古代的生产工具与劳作」再学本点。"
+  },
+  {
+    "topicId": "cnh_h091",
+    "prerequisiteId": "cnh_h089",
+    "strength": "soft",
+    "reason": "同一单元「第二单元 生产工具与劳作方式 第4课」内的并列知识点，先掌握「古代的生产工具与劳作」再学本点。"
+  },
+  {
+    "topicId": "cnh_h092",
+    "prerequisiteId": "cnh_h089",
+    "strength": "soft",
+    "reason": "同一单元「第二单元 生产工具与劳作方式 第4课」内的并列知识点，先掌握「古代的生产工具与劳作」再学本点。"
+  },
+  {
+    "topicId": "cnh_h094",
+    "prerequisiteId": "cnh_h093",
+    "strength": "soft",
+    "reason": "同一单元「第三单元 商业贸易与日常生活 第7课」内的并列知识点，先掌握「古代的商业贸易」再学本点。"
+  },
+  {
+    "topicId": "cnh_h095",
+    "prerequisiteId": "cnh_h093",
+    "strength": "soft",
+    "reason": "同一单元「第三单元 商业贸易与日常生活 第7课」内的并列知识点，先掌握「古代的商业贸易」再学本点。"
+  },
+  {
+    "topicId": "cnh_h096",
+    "prerequisiteId": "cnh_h093",
+    "strength": "soft",
+    "reason": "同一单元「第三单元 商业贸易与日常生活 第7课」内的并列知识点，先掌握「古代的商业贸易」再学本点。"
+  },
+  {
+    "topicId": "cnh_h097",
+    "prerequisiteId": "cnh_h093",
+    "strength": "soft",
+    "reason": "同一单元「第三单元 商业贸易与日常生活 第7课」内的并列知识点，先掌握「古代的商业贸易」再学本点。"
+  },
+  {
+    "topicId": "cnh_h099",
+    "prerequisiteId": "cnh_h098",
+    "strength": "soft",
+    "reason": "同一单元「第四单元 村落、城镇与居住环境 第10课」内的并列知识点，先掌握「古代的村落、集镇和城市」再学本点。"
+  },
+  {
+    "topicId": "cnh_h100",
+    "prerequisiteId": "cnh_h098",
+    "strength": "soft",
+    "reason": "同一单元「第四单元 村落、城镇与居住环境 第10课」内的并列知识点，先掌握「古代的村落、集镇和城市」再学本点。"
+  },
+  {
+    "topicId": "cnh_h102",
+    "prerequisiteId": "cnh_h101",
+    "strength": "soft",
+    "reason": "同一单元「第五单元 交通与社会变迁 第12课」内的并列知识点，先掌握「水陆交通的变迁」再学本点。"
+  },
+  {
+    "topicId": "cnh_h104",
+    "prerequisiteId": "cnh_h103",
+    "strength": "soft",
+    "reason": "同一单元「第六单元 医疗与公共卫生 第14课」内的并列知识点，先掌握「历史上的疫病与医学成就」再学本点。"
+  },
+  {
+    "topicId": "cnh_h106",
+    "prerequisiteId": "cnh_h105",
+    "strength": "soft",
+    "reason": "同一单元「第一单元 源远流长的中华文化 第1课」内的并列知识点，先掌握「中华优秀传统文化的内涵与特点」再学本点。"
+  },
+  {
+    "topicId": "cnh_h108",
+    "prerequisiteId": "cnh_h107",
+    "strength": "soft",
+    "reason": "同一单元「第二单元 丰富多样的世界文化 第3课」内的并列知识点，先掌握「古代西亚、非洲文化」再学本点。"
+  },
+  {
+    "topicId": "cnh_h109",
+    "prerequisiteId": "cnh_h107",
+    "strength": "soft",
+    "reason": "同一单元「第二单元 丰富多样的世界文化 第3课」内的并列知识点，先掌握「古代西亚、非洲文化」再学本点。"
+  },
+  {
+    "topicId": "cnh_h110",
+    "prerequisiteId": "cnh_h107",
+    "strength": "soft",
+    "reason": "同一单元「第二单元 丰富多样的世界文化 第3课」内的并列知识点，先掌握「古代西亚、非洲文化」再学本点。"
+  },
+  {
+    "topicId": "cnh_h112",
+    "prerequisiteId": "cnh_h111",
+    "strength": "soft",
+    "reason": "同一单元「第三单元 人口迁徙、文化交融与认同 第6课」内的并列知识点，先掌握「古代人类的迁徙和区域文化的形成」再学本点。"
+  },
+  {
+    "topicId": "cnh_h113",
+    "prerequisiteId": "cnh_h111",
+    "strength": "soft",
+    "reason": "同一单元「第三单元 人口迁徙、文化交融与认同 第6课」内的并列知识点，先掌握「古代人类的迁徙和区域文化的形成」再学本点。"
+  },
+  {
+    "topicId": "cnh_h115",
+    "prerequisiteId": "cnh_h114",
+    "strength": "soft",
+    "reason": "同一单元「第四单元 商路、贸易与文化交流 第9课」内的并列知识点，先掌握「古代的商路、贸易与文化交流」再学本点。"
+  },
+  {
+    "topicId": "cnh_h117",
+    "prerequisiteId": "cnh_h116",
+    "strength": "soft",
+    "reason": "同一单元「第五单元 战争与文化交锋 第11课」内的并列知识点，先掌握「古代战争与地域文化的演变」再学本点。"
+  },
+  {
+    "topicId": "cnh_h118",
+    "prerequisiteId": "cnh_h116",
+    "strength": "soft",
+    "reason": "同一单元「第五单元 战争与文化交锋 第11课」内的并列知识点，先掌握「古代战争与地域文化的演变」再学本点。"
+  },
+  {
+    "topicId": "cnh_h120",
+    "prerequisiteId": "cnh_h119",
+    "strength": "soft",
+    "reason": "同一单元「第六单元 文化的传承与保护 第14课」内的并列知识点，先掌握「文化传承的多种载体及其发展」再学本点。"
+  },
+  {
     "topicId": "cnh_j004",
     "prerequisiteId": "cnh_j001",
     "strength": "soft",
@@ -26866,6 +28546,234 @@
     "prerequisiteId": "cnh_j128",
     "strength": "soft",
     "reason": "「世界现代史」的后续单元，先学「二战后资本主义的新变化」再进入本单元。"
+  },
+  {
+    "topicId": "cnh_h001",
+    "prerequisiteId": "cnh_j036",
+    "strength": "soft",
+    "reason": "「中国古代史」的后续单元，先学「明朝的统治」再进入本单元。"
+  },
+  {
+    "topicId": "cnh_h007",
+    "prerequisiteId": "cnh_h001",
+    "strength": "soft",
+    "reason": "「中国古代史」的后续单元，先学「中华文明的起源与早期国家」再进入本单元。"
+  },
+  {
+    "topicId": "cnh_h014",
+    "prerequisiteId": "cnh_h007",
+    "strength": "soft",
+    "reason": "「中国古代史」的后续单元，先学「三国两晋南北朝的政权更迭」再进入本单元。"
+  },
+  {
+    "topicId": "cnh_h018",
+    "prerequisiteId": "cnh_h014",
+    "strength": "soft",
+    "reason": "「中国古代史」的后续单元，先学「辽夏金元的统治」再进入本单元。"
+  },
+  {
+    "topicId": "cnh_h019",
+    "prerequisiteId": "cnh_j063",
+    "strength": "soft",
+    "reason": "「中国近代史」的后续单元，先学「国民党挑起内战」再进入本单元。"
+  },
+  {
+    "topicId": "cnh_h023",
+    "prerequisiteId": "cnh_h019",
+    "strength": "soft",
+    "reason": "「中国近代史」的后续单元，先学「两次鸦片战争」再进入本单元。"
+  },
+  {
+    "topicId": "cnh_h025",
+    "prerequisiteId": "cnh_h023",
+    "strength": "soft",
+    "reason": "「中国近代史」的后续单元，先学「辛亥革命」再进入本单元。"
+  },
+  {
+    "topicId": "cnh_h029",
+    "prerequisiteId": "cnh_h025",
+    "strength": "soft",
+    "reason": "「中国近代史」的后续单元，先学「五四运动与中国共产党的诞生」再进入本单元。"
+  },
+  {
+    "topicId": "cnh_h032",
+    "prerequisiteId": "cnh_j087",
+    "strength": "soft",
+    "reason": "「中国现代史」的后续单元，先学「实现第一个百年奋斗目标」再进入本单元。"
+  },
+  {
+    "topicId": "cnh_h035",
+    "prerequisiteId": "cnh_h032",
+    "strength": "soft",
+    "reason": "「中国现代史」的后续单元，先学「中华人民共和国成立和向社会主义的过渡」再进入本单元。"
+  },
+  {
+    "topicId": "cnh_h037",
+    "prerequisiteId": "cnh_h035",
+    "strength": "soft",
+    "reason": "「中国现代史」的后续单元，先学「改革开放以来的经济与社会成就」再进入本单元。"
+  },
+  {
+    "topicId": "cnh_h039",
+    "prerequisiteId": "cnh_j099",
+    "strength": "soft",
+    "reason": "「世界古代史」的后续单元，先学「封建时代的日本」再进入本单元。"
+  },
+  {
+    "topicId": "cnh_h042",
+    "prerequisiteId": "cnh_h039",
+    "strength": "soft",
+    "reason": "「世界古代史」的后续单元，先学「古代东方文明的产生与早期发展」再进入本单元。"
+  },
+  {
+    "topicId": "cnh_h045",
+    "prerequisiteId": "cnh_j116",
+    "strength": "soft",
+    "reason": "「世界近代史」的后续单元，先学「第二次工业革命」再进入本单元。"
+  },
+  {
+    "topicId": "cnh_h047",
+    "prerequisiteId": "cnh_h045",
+    "strength": "soft",
+    "reason": "「世界近代史」的后续单元，先学「全球航路的开辟」再进入本单元。"
+  },
+  {
+    "topicId": "cnh_h051",
+    "prerequisiteId": "cnh_h047",
+    "strength": "soft",
+    "reason": "「世界近代史」的后续单元，先学「欧洲的思想解放运动」再进入本单元。"
+  },
+  {
+    "topicId": "cnh_h053",
+    "prerequisiteId": "cnh_h051",
+    "strength": "soft",
+    "reason": "「世界近代史」的后续单元，先学「马克思主义的诞生与传播」再进入本单元。"
+  },
+  {
+    "topicId": "cnh_h054",
+    "prerequisiteId": "cnh_j131",
+    "strength": "soft",
+    "reason": "「世界现代史」的后续单元，先学「联合国与世界贸易组织」再进入本单元。"
+  },
+  {
+    "topicId": "cnh_h058",
+    "prerequisiteId": "cnh_h054",
+    "strength": "soft",
+    "reason": "「世界现代史」的后续单元，先学「第一次世界大战与战后国际秩序」再进入本单元。"
+  },
+  {
+    "topicId": "cnh_h062",
+    "prerequisiteId": "cnh_h058",
+    "strength": "soft",
+    "reason": "「世界现代史」的后续单元，先学「冷战与国际格局的演变」再进入本单元。"
+  },
+  {
+    "topicId": "cnh_h064",
+    "prerequisiteId": "cnh_h062",
+    "strength": "soft",
+    "reason": "进入「国家制度与社会治理」单元之前，先有「世界多极化与经济全球化」的学习经验。"
+  },
+  {
+    "topicId": "cnh_h070",
+    "prerequisiteId": "cnh_h064",
+    "strength": "soft",
+    "reason": "「国家制度与社会治理」的后续单元，先学「从分封制到中央集权制度的确立」再进入本单元。"
+  },
+  {
+    "topicId": "cnh_h073",
+    "prerequisiteId": "cnh_h070",
+    "strength": "soft",
+    "reason": "「国家制度与社会治理」的后续单元，先学「中国古代官员的选拔与管理」再进入本单元。"
+  },
+  {
+    "topicId": "cnh_h078",
+    "prerequisiteId": "cnh_h073",
+    "strength": "soft",
+    "reason": "「国家制度与社会治理」的后续单元，先学「中国古代的法治与教化」再进入本单元。"
+  },
+  {
+    "topicId": "cnh_h080",
+    "prerequisiteId": "cnh_h078",
+    "strength": "soft",
+    "reason": "「国家制度与社会治理」的后续单元，先学「当代中国的民族政策」再进入本单元。"
+  },
+  {
+    "topicId": "cnh_h084",
+    "prerequisiteId": "cnh_h080",
+    "strength": "soft",
+    "reason": "「国家制度与社会治理」的后续单元，先学「货币的使用与演变」再进入本单元。"
+  },
+  {
+    "topicId": "cnh_h086",
+    "prerequisiteId": "cnh_h084",
+    "strength": "soft",
+    "reason": "进入「经济与社会生活」单元之前，先有「世界主要国家的基层治理」的学习经验。"
+  },
+  {
+    "topicId": "cnh_h089",
+    "prerequisiteId": "cnh_h086",
+    "strength": "soft",
+    "reason": "「经济与社会生活」的后续单元，先学「从食物采集到食物生产」再进入本单元。"
+  },
+  {
+    "topicId": "cnh_h093",
+    "prerequisiteId": "cnh_h089",
+    "strength": "soft",
+    "reason": "「经济与社会生活」的后续单元，先学「古代的生产工具与劳作」再进入本单元。"
+  },
+  {
+    "topicId": "cnh_h098",
+    "prerequisiteId": "cnh_h093",
+    "strength": "soft",
+    "reason": "「经济与社会生活」的后续单元，先学「古代的商业贸易」再进入本单元。"
+  },
+  {
+    "topicId": "cnh_h101",
+    "prerequisiteId": "cnh_h098",
+    "strength": "soft",
+    "reason": "「经济与社会生活」的后续单元，先学「古代的村落、集镇和城市」再进入本单元。"
+  },
+  {
+    "topicId": "cnh_h103",
+    "prerequisiteId": "cnh_h101",
+    "strength": "soft",
+    "reason": "「经济与社会生活」的后续单元，先学「水陆交通的变迁」再进入本单元。"
+  },
+  {
+    "topicId": "cnh_h105",
+    "prerequisiteId": "cnh_h103",
+    "strength": "soft",
+    "reason": "进入「文化交流与传播」单元之前，先有「历史上的疫病与医学成就」的学习经验。"
+  },
+  {
+    "topicId": "cnh_h107",
+    "prerequisiteId": "cnh_h105",
+    "strength": "soft",
+    "reason": "「文化交流与传播」的后续单元，先学「中华优秀传统文化的内涵与特点」再进入本单元。"
+  },
+  {
+    "topicId": "cnh_h111",
+    "prerequisiteId": "cnh_h107",
+    "strength": "soft",
+    "reason": "「文化交流与传播」的后续单元，先学「古代西亚、非洲文化」再进入本单元。"
+  },
+  {
+    "topicId": "cnh_h114",
+    "prerequisiteId": "cnh_h111",
+    "strength": "soft",
+    "reason": "「文化交流与传播」的后续单元，先学「古代人类的迁徙和区域文化的形成」再进入本单元。"
+  },
+  {
+    "topicId": "cnh_h116",
+    "prerequisiteId": "cnh_h114",
+    "strength": "soft",
+    "reason": "「文化交流与传播」的后续单元，先学「古代的商路、贸易与文化交流」再进入本单元。"
+  },
+  {
+    "topicId": "cnh_h119",
+    "prerequisiteId": "cnh_h116",
+    "strength": "soft",
+    "reason": "「文化交流与传播」的后续单元，先学「古代战争与地域文化的演变」再进入本单元。"
   },
   {
     "topicId": "cng_j002",
@@ -27090,6 +28998,576 @@
     "reason": "同一单元「第10单元 青藏地区」内的并列知识点，先掌握「青藏地区的自然特征与农业」再学本点。"
   },
   {
+    "topicId": "cng_h002",
+    "prerequisiteId": "cng_h001",
+    "strength": "soft",
+    "reason": "同一单元「第一章 宇宙中的地球」内的并列知识点，先掌握「天体系统与八大行星」再学本点。"
+  },
+  {
+    "topicId": "cng_h003",
+    "prerequisiteId": "cng_h001",
+    "strength": "soft",
+    "reason": "同一单元「第一章 宇宙中的地球」内的并列知识点，先掌握「天体系统与八大行星」再学本点。"
+  },
+  {
+    "topicId": "cng_h004",
+    "prerequisiteId": "cng_h001",
+    "strength": "soft",
+    "reason": "同一单元「第一章 宇宙中的地球」内的并列知识点，先掌握「天体系统与八大行星」再学本点。"
+  },
+  {
+    "topicId": "cng_h005",
+    "prerequisiteId": "cng_h001",
+    "strength": "soft",
+    "reason": "同一单元「第一章 宇宙中的地球」内的并列知识点，先掌握「天体系统与八大行星」再学本点。"
+  },
+  {
+    "topicId": "cng_h006",
+    "prerequisiteId": "cng_h001",
+    "strength": "soft",
+    "reason": "同一单元「第一章 宇宙中的地球」内的并列知识点，先掌握「天体系统与八大行星」再学本点。"
+  },
+  {
+    "topicId": "cng_h007",
+    "prerequisiteId": "cng_h001",
+    "strength": "soft",
+    "reason": "同一单元「第一章 宇宙中的地球」内的并列知识点，先掌握「天体系统与八大行星」再学本点。"
+  },
+  {
+    "topicId": "cng_h008",
+    "prerequisiteId": "cng_h001",
+    "strength": "soft",
+    "reason": "同一单元「第一章 宇宙中的地球」内的并列知识点，先掌握「天体系统与八大行星」再学本点。"
+  },
+  {
+    "topicId": "cng_h010",
+    "prerequisiteId": "cng_h009",
+    "strength": "soft",
+    "reason": "同一单元「第二章 地球上的大气」内的并列知识点，先掌握「大气的组成与作用」再学本点。"
+  },
+  {
+    "topicId": "cng_h011",
+    "prerequisiteId": "cng_h009",
+    "strength": "soft",
+    "reason": "同一单元「第二章 地球上的大气」内的并列知识点，先掌握「大气的组成与作用」再学本点。"
+  },
+  {
+    "topicId": "cng_h012",
+    "prerequisiteId": "cng_h009",
+    "strength": "soft",
+    "reason": "同一单元「第二章 地球上的大气」内的并列知识点，先掌握「大气的组成与作用」再学本点。"
+  },
+  {
+    "topicId": "cng_h013",
+    "prerequisiteId": "cng_h009",
+    "strength": "soft",
+    "reason": "同一单元「第二章 地球上的大气」内的并列知识点，先掌握「大气的组成与作用」再学本点。"
+  },
+  {
+    "topicId": "cng_h015",
+    "prerequisiteId": "cng_h014",
+    "strength": "soft",
+    "reason": "同一单元「第三章 地球上的水」内的并列知识点，先掌握「水循环的类型与环节」再学本点。"
+  },
+  {
+    "topicId": "cng_h016",
+    "prerequisiteId": "cng_h014",
+    "strength": "soft",
+    "reason": "同一单元「第三章 地球上的水」内的并列知识点，先掌握「水循环的类型与环节」再学本点。"
+  },
+  {
+    "topicId": "cng_h017",
+    "prerequisiteId": "cng_h014",
+    "strength": "soft",
+    "reason": "同一单元「第三章 地球上的水」内的并列知识点，先掌握「水循环的类型与环节」再学本点。"
+  },
+  {
+    "topicId": "cng_h018",
+    "prerequisiteId": "cng_h014",
+    "strength": "soft",
+    "reason": "同一单元「第三章 地球上的水」内的并列知识点，先掌握「水循环的类型与环节」再学本点。"
+  },
+  {
+    "topicId": "cng_h019",
+    "prerequisiteId": "cng_h014",
+    "strength": "soft",
+    "reason": "同一单元「第三章 地球上的水」内的并列知识点，先掌握「水循环的类型与环节」再学本点。"
+  },
+  {
+    "topicId": "cng_h020",
+    "prerequisiteId": "cng_h022",
+    "strength": "soft",
+    "reason": "同一单元「第四章 地貌」内的并列知识点，先掌握「喀斯特、海岸与冰川地貌」再学本点。"
+  },
+  {
+    "topicId": "cng_h021",
+    "prerequisiteId": "cng_h022",
+    "strength": "soft",
+    "reason": "同一单元「第四章 地貌」内的并列知识点，先掌握「喀斯特、海岸与冰川地貌」再学本点。"
+  },
+  {
+    "topicId": "cng_h023",
+    "prerequisiteId": "cng_h022",
+    "strength": "soft",
+    "reason": "同一单元「第四章 地貌」内的并列知识点，先掌握「喀斯特、海岸与冰川地貌」再学本点。"
+  },
+  {
+    "topicId": "cng_h024",
+    "prerequisiteId": "cng_h025",
+    "strength": "soft",
+    "reason": "同一单元「第五章 植被与土壤」内的并列知识点，先掌握「主要植被类型及其分布」再学本点。"
+  },
+  {
+    "topicId": "cng_h026",
+    "prerequisiteId": "cng_h025",
+    "strength": "soft",
+    "reason": "同一单元「第五章 植被与土壤」内的并列知识点，先掌握「主要植被类型及其分布」再学本点。"
+  },
+  {
+    "topicId": "cng_h027",
+    "prerequisiteId": "cng_h025",
+    "strength": "soft",
+    "reason": "同一单元「第五章 植被与土壤」内的并列知识点，先掌握「主要植被类型及其分布」再学本点。"
+  },
+  {
+    "topicId": "cng_h029",
+    "prerequisiteId": "cng_h028",
+    "strength": "soft",
+    "reason": "同一单元「第六章 自然灾害」内的并列知识点，先掌握「气象灾害」再学本点。"
+  },
+  {
+    "topicId": "cng_h030",
+    "prerequisiteId": "cng_h028",
+    "strength": "soft",
+    "reason": "同一单元「第六章 自然灾害」内的并列知识点，先掌握「气象灾害」再学本点。"
+  },
+  {
+    "topicId": "cng_h031",
+    "prerequisiteId": "cng_h028",
+    "strength": "soft",
+    "reason": "同一单元「第六章 自然灾害」内的并列知识点，先掌握「气象灾害」再学本点。"
+  },
+  {
+    "topicId": "cng_h032",
+    "prerequisiteId": "cng_h028",
+    "strength": "soft",
+    "reason": "同一单元「第六章 自然灾害」内的并列知识点，先掌握「气象灾害」再学本点。"
+  },
+  {
+    "topicId": "cng_h033",
+    "prerequisiteId": "cng_h028",
+    "strength": "soft",
+    "reason": "同一单元「第六章 自然灾害」内的并列知识点，先掌握「气象灾害」再学本点。"
+  },
+  {
+    "topicId": "cng_h035",
+    "prerequisiteId": "cng_h034",
+    "strength": "soft",
+    "reason": "同一单元「第一章 人口」内的并列知识点，先掌握「世界人口分布特点」再学本点。"
+  },
+  {
+    "topicId": "cng_h036",
+    "prerequisiteId": "cng_h034",
+    "strength": "soft",
+    "reason": "同一单元「第一章 人口」内的并列知识点，先掌握「世界人口分布特点」再学本点。"
+  },
+  {
+    "topicId": "cng_h037",
+    "prerequisiteId": "cng_h034",
+    "strength": "soft",
+    "reason": "同一单元「第一章 人口」内的并列知识点，先掌握「世界人口分布特点」再学本点。"
+  },
+  {
+    "topicId": "cng_h038",
+    "prerequisiteId": "cng_h034",
+    "strength": "soft",
+    "reason": "同一单元「第一章 人口」内的并列知识点，先掌握「世界人口分布特点」再学本点。"
+  },
+  {
+    "topicId": "cng_h040",
+    "prerequisiteId": "cng_h039",
+    "strength": "soft",
+    "reason": "同一单元「第二章 乡村和城镇」内的并列知识点，先掌握「乡村聚落与空间结构」再学本点。"
+  },
+  {
+    "topicId": "cng_h041",
+    "prerequisiteId": "cng_h039",
+    "strength": "soft",
+    "reason": "同一单元「第二章 乡村和城镇」内的并列知识点，先掌握「乡村聚落与空间结构」再学本点。"
+  },
+  {
+    "topicId": "cng_h042",
+    "prerequisiteId": "cng_h039",
+    "strength": "soft",
+    "reason": "同一单元「第二章 乡村和城镇」内的并列知识点，先掌握「乡村聚落与空间结构」再学本点。"
+  },
+  {
+    "topicId": "cng_h043",
+    "prerequisiteId": "cng_h039",
+    "strength": "soft",
+    "reason": "同一单元「第二章 乡村和城镇」内的并列知识点，先掌握「乡村聚落与空间结构」再学本点。"
+  },
+  {
+    "topicId": "cng_h045",
+    "prerequisiteId": "cng_h044",
+    "strength": "soft",
+    "reason": "同一单元「第三章 产业区位因素」内的并列知识点，先掌握「农业区位因素」再学本点。"
+  },
+  {
+    "topicId": "cng_h046",
+    "prerequisiteId": "cng_h044",
+    "strength": "soft",
+    "reason": "同一单元「第三章 产业区位因素」内的并列知识点，先掌握「农业区位因素」再学本点。"
+  },
+  {
+    "topicId": "cng_h047",
+    "prerequisiteId": "cng_h044",
+    "strength": "soft",
+    "reason": "同一单元「第三章 产业区位因素」内的并列知识点，先掌握「农业区位因素」再学本点。"
+  },
+  {
+    "topicId": "cng_h048",
+    "prerequisiteId": "cng_h044",
+    "strength": "soft",
+    "reason": "同一单元「第三章 产业区位因素」内的并列知识点，先掌握「农业区位因素」再学本点。"
+  },
+  {
+    "topicId": "cng_h049",
+    "prerequisiteId": "cng_h044",
+    "strength": "soft",
+    "reason": "同一单元「第三章 产业区位因素」内的并列知识点，先掌握「农业区位因素」再学本点。"
+  },
+  {
+    "topicId": "cng_h051",
+    "prerequisiteId": "cng_h050",
+    "strength": "soft",
+    "reason": "同一单元「第四章 交通运输布局与区域发展」内的并列知识点，先掌握「区域发展对交通运输布局的影响」再学本点。"
+  },
+  {
+    "topicId": "cng_h052",
+    "prerequisiteId": "cng_h050",
+    "strength": "soft",
+    "reason": "同一单元「第四章 交通运输布局与区域发展」内的并列知识点，先掌握「区域发展对交通运输布局的影响」再学本点。"
+  },
+  {
+    "topicId": "cng_h054",
+    "prerequisiteId": "cng_h053",
+    "strength": "soft",
+    "reason": "同一单元「第五章 环境与发展」内的并列知识点，先掌握「人类面临的主要环境问题」再学本点。"
+  },
+  {
+    "topicId": "cng_h055",
+    "prerequisiteId": "cng_h053",
+    "strength": "soft",
+    "reason": "同一单元「第五章 环境与发展」内的并列知识点，先掌握「人类面临的主要环境问题」再学本点。"
+  },
+  {
+    "topicId": "cng_h057",
+    "prerequisiteId": "cng_h056",
+    "strength": "soft",
+    "reason": "同一单元「第一章 地球的运动」内的并列知识点，先掌握「地球自转的特征」再学本点。"
+  },
+  {
+    "topicId": "cng_h058",
+    "prerequisiteId": "cng_h056",
+    "strength": "soft",
+    "reason": "同一单元「第一章 地球的运动」内的并列知识点，先掌握「地球自转的特征」再学本点。"
+  },
+  {
+    "topicId": "cng_h059",
+    "prerequisiteId": "cng_h056",
+    "strength": "soft",
+    "reason": "同一单元「第一章 地球的运动」内的并列知识点，先掌握「地球自转的特征」再学本点。"
+  },
+  {
+    "topicId": "cng_h060",
+    "prerequisiteId": "cng_h056",
+    "strength": "soft",
+    "reason": "同一单元「第一章 地球的运动」内的并列知识点，先掌握「地球自转的特征」再学本点。"
+  },
+  {
+    "topicId": "cng_h061",
+    "prerequisiteId": "cng_h056",
+    "strength": "soft",
+    "reason": "同一单元「第一章 地球的运动」内的并列知识点，先掌握「地球自转的特征」再学本点。"
+  },
+  {
+    "topicId": "cng_h062",
+    "prerequisiteId": "cng_h056",
+    "strength": "soft",
+    "reason": "同一单元「第一章 地球的运动」内的并列知识点，先掌握「地球自转的特征」再学本点。"
+  },
+  {
+    "topicId": "cng_h064",
+    "prerequisiteId": "cng_h063",
+    "strength": "soft",
+    "reason": "同一单元「第二章 地表形态的塑造」内的并列知识点，先掌握「内力作用与地表形态」再学本点。"
+  },
+  {
+    "topicId": "cng_h065",
+    "prerequisiteId": "cng_h063",
+    "strength": "soft",
+    "reason": "同一单元「第二章 地表形态的塑造」内的并列知识点，先掌握「内力作用与地表形态」再学本点。"
+  },
+  {
+    "topicId": "cng_h066",
+    "prerequisiteId": "cng_h063",
+    "strength": "soft",
+    "reason": "同一单元「第二章 地表形态的塑造」内的并列知识点，先掌握「内力作用与地表形态」再学本点。"
+  },
+  {
+    "topicId": "cng_h067",
+    "prerequisiteId": "cng_h063",
+    "strength": "soft",
+    "reason": "同一单元「第二章 地表形态的塑造」内的并列知识点，先掌握「内力作用与地表形态」再学本点。"
+  },
+  {
+    "topicId": "cng_h068",
+    "prerequisiteId": "cng_h063",
+    "strength": "soft",
+    "reason": "同一单元「第二章 地表形态的塑造」内的并列知识点，先掌握「内力作用与地表形态」再学本点。"
+  },
+  {
+    "topicId": "cng_h069",
+    "prerequisiteId": "cng_h071",
+    "strength": "soft",
+    "reason": "同一单元「第三章 大气的运动」内的并列知识点，先掌握「三圈环流与气压带风带」再学本点。"
+  },
+  {
+    "topicId": "cng_h070",
+    "prerequisiteId": "cng_h071",
+    "strength": "soft",
+    "reason": "同一单元「第三章 大气的运动」内的并列知识点，先掌握「三圈环流与气压带风带」再学本点。"
+  },
+  {
+    "topicId": "cng_h072",
+    "prerequisiteId": "cng_h071",
+    "strength": "soft",
+    "reason": "同一单元「第三章 大气的运动」内的并列知识点，先掌握「三圈环流与气压带风带」再学本点。"
+  },
+  {
+    "topicId": "cng_h073",
+    "prerequisiteId": "cng_h071",
+    "strength": "soft",
+    "reason": "同一单元「第三章 大气的运动」内的并列知识点，先掌握「三圈环流与气压带风带」再学本点。"
+  },
+  {
+    "topicId": "cng_h074",
+    "prerequisiteId": "cng_h071",
+    "strength": "soft",
+    "reason": "同一单元「第三章 大气的运动」内的并列知识点，先掌握「三圈环流与气压带风带」再学本点。"
+  },
+  {
+    "topicId": "cng_h075",
+    "prerequisiteId": "cng_h071",
+    "strength": "soft",
+    "reason": "同一单元「第三章 大气的运动」内的并列知识点，先掌握「三圈环流与气压带风带」再学本点。"
+  },
+  {
+    "topicId": "cng_h077",
+    "prerequisiteId": "cng_h076",
+    "strength": "soft",
+    "reason": "同一单元「第四章 水的运动」内的并列知识点，先掌握「陆地水体类型及其相互关系」再学本点。"
+  },
+  {
+    "topicId": "cng_h078",
+    "prerequisiteId": "cng_h076",
+    "strength": "soft",
+    "reason": "同一单元「第四章 水的运动」内的并列知识点，先掌握「陆地水体类型及其相互关系」再学本点。"
+  },
+  {
+    "topicId": "cng_h079",
+    "prerequisiteId": "cng_h076",
+    "strength": "soft",
+    "reason": "同一单元「第四章 水的运动」内的并列知识点，先掌握「陆地水体类型及其相互关系」再学本点。"
+  },
+  {
+    "topicId": "cng_h080",
+    "prerequisiteId": "cng_h076",
+    "strength": "soft",
+    "reason": "同一单元「第四章 水的运动」内的并列知识点，先掌握「陆地水体类型及其相互关系」再学本点。"
+  },
+  {
+    "topicId": "cng_h081",
+    "prerequisiteId": "cng_h076",
+    "strength": "soft",
+    "reason": "同一单元「第四章 水的运动」内的并列知识点，先掌握「陆地水体类型及其相互关系」再学本点。"
+  },
+  {
+    "topicId": "cng_h083",
+    "prerequisiteId": "cng_h082",
+    "strength": "soft",
+    "reason": "同一单元「第五章 自然环境的整体性与差异性」内的并列知识点，先掌握「自然要素的相互作用」再学本点。"
+  },
+  {
+    "topicId": "cng_h084",
+    "prerequisiteId": "cng_h082",
+    "strength": "soft",
+    "reason": "同一单元「第五章 自然环境的整体性与差异性」内的并列知识点，先掌握「自然要素的相互作用」再学本点。"
+  },
+  {
+    "topicId": "cng_h085",
+    "prerequisiteId": "cng_h082",
+    "strength": "soft",
+    "reason": "同一单元「第五章 自然环境的整体性与差异性」内的并列知识点，先掌握「自然要素的相互作用」再学本点。"
+  },
+  {
+    "topicId": "cng_h087",
+    "prerequisiteId": "cng_h086",
+    "strength": "soft",
+    "reason": "同一单元「第一章 区域与区域发展」内的并列知识点，先掌握「区域的概念与尺度」再学本点。"
+  },
+  {
+    "topicId": "cng_h088",
+    "prerequisiteId": "cng_h086",
+    "strength": "soft",
+    "reason": "同一单元「第一章 区域与区域发展」内的并列知识点，先掌握「区域的概念与尺度」再学本点。"
+  },
+  {
+    "topicId": "cng_h089",
+    "prerequisiteId": "cng_h086",
+    "strength": "soft",
+    "reason": "同一单元「第一章 区域与区域发展」内的并列知识点，先掌握「区域的概念与尺度」再学本点。"
+  },
+  {
+    "topicId": "cng_h091",
+    "prerequisiteId": "cng_h090",
+    "strength": "soft",
+    "reason": "同一单元「第二章 资源、环境与区域发展」内的并列知识点，先掌握「自然环境对区域发展的影响」再学本点。"
+  },
+  {
+    "topicId": "cng_h092",
+    "prerequisiteId": "cng_h090",
+    "strength": "soft",
+    "reason": "同一单元「第二章 资源、环境与区域发展」内的并列知识点，先掌握「自然环境对区域发展的影响」再学本点。"
+  },
+  {
+    "topicId": "cng_h093",
+    "prerequisiteId": "cng_h090",
+    "strength": "soft",
+    "reason": "同一单元「第二章 资源、环境与区域发展」内的并列知识点，先掌握「自然环境对区域发展的影响」再学本点。"
+  },
+  {
+    "topicId": "cng_h094",
+    "prerequisiteId": "cng_h090",
+    "strength": "soft",
+    "reason": "同一单元「第二章 资源、环境与区域发展」内的并列知识点，先掌握「自然环境对区域发展的影响」再学本点。"
+  },
+  {
+    "topicId": "cng_h096",
+    "prerequisiteId": "cng_h095",
+    "strength": "soft",
+    "reason": "同一单元「第三章 城市、产业与区域发展」内的并列知识点，先掌握「城市的辐射功能」再学本点。"
+  },
+  {
+    "topicId": "cng_h097",
+    "prerequisiteId": "cng_h095",
+    "strength": "soft",
+    "reason": "同一单元「第三章 城市、产业与区域发展」内的并列知识点，先掌握「城市的辐射功能」再学本点。"
+  },
+  {
+    "topicId": "cng_h099",
+    "prerequisiteId": "cng_h098",
+    "strength": "soft",
+    "reason": "同一单元「第四章 区际联系与区域协调发展」内的并列知识点，先掌握「流域内协调发展」再学本点。"
+  },
+  {
+    "topicId": "cng_h100",
+    "prerequisiteId": "cng_h098",
+    "strength": "soft",
+    "reason": "同一单元「第四章 区际联系与区域协调发展」内的并列知识点，先掌握「流域内协调发展」再学本点。"
+  },
+  {
+    "topicId": "cng_h101",
+    "prerequisiteId": "cng_h098",
+    "strength": "soft",
+    "reason": "同一单元「第四章 区际联系与区域协调发展」内的并列知识点，先掌握「流域内协调发展」再学本点。"
+  },
+  {
+    "topicId": "cng_h103",
+    "prerequisiteId": "cng_h102",
+    "strength": "soft",
+    "reason": "同一单元「第一章 自然环境与人类社会」内的并列知识点，先掌握「自然环境的服务功能」再学本点。"
+  },
+  {
+    "topicId": "cng_h104",
+    "prerequisiteId": "cng_h102",
+    "strength": "soft",
+    "reason": "同一单元「第一章 自然环境与人类社会」内的并列知识点，先掌握「自然环境的服务功能」再学本点。"
+  },
+  {
+    "topicId": "cng_h105",
+    "prerequisiteId": "cng_h102",
+    "strength": "soft",
+    "reason": "同一单元「第一章 自然环境与人类社会」内的并列知识点，先掌握「自然环境的服务功能」再学本点。"
+  },
+  {
+    "topicId": "cng_h107",
+    "prerequisiteId": "cng_h106",
+    "strength": "soft",
+    "reason": "同一单元「第二章 资源安全与国家安全」内的并列知识点，先掌握「资源安全对国家安全的影响」再学本点。"
+  },
+  {
+    "topicId": "cng_h108",
+    "prerequisiteId": "cng_h106",
+    "strength": "soft",
+    "reason": "同一单元「第二章 资源安全与国家安全」内的并列知识点，先掌握「资源安全对国家安全的影响」再学本点。"
+  },
+  {
+    "topicId": "cng_h109",
+    "prerequisiteId": "cng_h106",
+    "strength": "soft",
+    "reason": "同一单元「第二章 资源安全与国家安全」内的并列知识点，先掌握「资源安全对国家安全的影响」再学本点。"
+  },
+  {
+    "topicId": "cng_h110",
+    "prerequisiteId": "cng_h106",
+    "strength": "soft",
+    "reason": "同一单元「第二章 资源安全与国家安全」内的并列知识点，先掌握「资源安全对国家安全的影响」再学本点。"
+  },
+  {
+    "topicId": "cng_h111",
+    "prerequisiteId": "cng_h106",
+    "strength": "soft",
+    "reason": "同一单元「第二章 资源安全与国家安全」内的并列知识点，先掌握「资源安全对国家安全的影响」再学本点。"
+  },
+  {
+    "topicId": "cng_h113",
+    "prerequisiteId": "cng_h112",
+    "strength": "soft",
+    "reason": "同一单元「第三章 环境安全与国家安全」内的并列知识点，先掌握「环境安全对国家安全的影响」再学本点。"
+  },
+  {
+    "topicId": "cng_h114",
+    "prerequisiteId": "cng_h112",
+    "strength": "soft",
+    "reason": "同一单元「第三章 环境安全与国家安全」内的并列知识点，先掌握「环境安全对国家安全的影响」再学本点。"
+  },
+  {
+    "topicId": "cng_h115",
+    "prerequisiteId": "cng_h112",
+    "strength": "soft",
+    "reason": "同一单元「第三章 环境安全与国家安全」内的并列知识点，先掌握「环境安全对国家安全的影响」再学本点。"
+  },
+  {
+    "topicId": "cng_h116",
+    "prerequisiteId": "cng_h112",
+    "strength": "soft",
+    "reason": "同一单元「第三章 环境安全与国家安全」内的并列知识点，先掌握「环境安全对国家安全的影响」再学本点。"
+  },
+  {
+    "topicId": "cng_h118",
+    "prerequisiteId": "cng_h117",
+    "strength": "soft",
+    "reason": "同一单元「第四章 保障国家安全的资源、环境战略与行动」内的并列知识点，先掌握「走向生态文明」再学本点。"
+  },
+  {
+    "topicId": "cng_h119",
+    "prerequisiteId": "cng_h117",
+    "strength": "soft",
+    "reason": "同一单元「第四章 保障国家安全的资源、环境战略与行动」内的并列知识点，先掌握「走向生态文明」再学本点。"
+  },
+  {
     "topicId": "cng_j004",
     "prerequisiteId": "cng_j001",
     "strength": "soft",
@@ -27214,6 +29692,150 @@
     "prerequisiteId": "cng_j057",
     "strength": "soft",
     "reason": "「中国地理」的后续单元，先学「青藏地区的自然特征与农业」再进入本单元。"
+  },
+  {
+    "topicId": "cng_h001",
+    "prerequisiteId": "cng_j059",
+    "strength": "soft",
+    "reason": "进入「自然地理基础」单元之前，先有「奋进中的中国」的学习经验。"
+  },
+  {
+    "topicId": "cng_h009",
+    "prerequisiteId": "cng_h001",
+    "strength": "soft",
+    "reason": "「自然地理基础」的后续单元，先学「天体系统与八大行星」再进入本单元。"
+  },
+  {
+    "topicId": "cng_h014",
+    "prerequisiteId": "cng_h009",
+    "strength": "soft",
+    "reason": "「自然地理基础」的后续单元，先学「大气的组成与作用」再进入本单元。"
+  },
+  {
+    "topicId": "cng_h022",
+    "prerequisiteId": "cng_h014",
+    "strength": "soft",
+    "reason": "「自然地理基础」的后续单元，先学「水循环的类型与环节」再进入本单元。"
+  },
+  {
+    "topicId": "cng_h025",
+    "prerequisiteId": "cng_h022",
+    "strength": "soft",
+    "reason": "「自然地理基础」的后续单元，先学「喀斯特、海岸与冰川地貌」再进入本单元。"
+  },
+  {
+    "topicId": "cng_h028",
+    "prerequisiteId": "cng_h025",
+    "strength": "soft",
+    "reason": "「自然地理基础」的后续单元，先学「主要植被类型及其分布」再进入本单元。"
+  },
+  {
+    "topicId": "cng_h034",
+    "prerequisiteId": "cng_h028",
+    "strength": "soft",
+    "reason": "进入「人文地理基础」单元之前，先有「气象灾害」的学习经验。"
+  },
+  {
+    "topicId": "cng_h039",
+    "prerequisiteId": "cng_h034",
+    "strength": "soft",
+    "reason": "「人文地理基础」的后续单元，先学「世界人口分布特点」再进入本单元。"
+  },
+  {
+    "topicId": "cng_h044",
+    "prerequisiteId": "cng_h039",
+    "strength": "soft",
+    "reason": "「人文地理基础」的后续单元，先学「乡村聚落与空间结构」再进入本单元。"
+  },
+  {
+    "topicId": "cng_h050",
+    "prerequisiteId": "cng_h044",
+    "strength": "soft",
+    "reason": "「人文地理基础」的后续单元，先学「农业区位因素」再进入本单元。"
+  },
+  {
+    "topicId": "cng_h053",
+    "prerequisiteId": "cng_h050",
+    "strength": "soft",
+    "reason": "「人文地理基础」的后续单元，先学「区域发展对交通运输布局的影响」再进入本单元。"
+  },
+  {
+    "topicId": "cng_h056",
+    "prerequisiteId": "cng_h028",
+    "strength": "soft",
+    "reason": "「自然地理基础」的后续单元，先学「气象灾害」再进入本单元。"
+  },
+  {
+    "topicId": "cng_h063",
+    "prerequisiteId": "cng_h056",
+    "strength": "soft",
+    "reason": "「自然地理基础」的后续单元，先学「地球自转的特征」再进入本单元。"
+  },
+  {
+    "topicId": "cng_h071",
+    "prerequisiteId": "cng_h063",
+    "strength": "soft",
+    "reason": "「自然地理基础」的后续单元，先学「内力作用与地表形态」再进入本单元。"
+  },
+  {
+    "topicId": "cng_h076",
+    "prerequisiteId": "cng_h071",
+    "strength": "soft",
+    "reason": "「自然地理基础」的后续单元，先学「三圈环流与气压带风带」再进入本单元。"
+  },
+  {
+    "topicId": "cng_h082",
+    "prerequisiteId": "cng_h076",
+    "strength": "soft",
+    "reason": "「自然地理基础」的后续单元，先学「陆地水体类型及其相互关系」再进入本单元。"
+  },
+  {
+    "topicId": "cng_h086",
+    "prerequisiteId": "cng_h082",
+    "strength": "soft",
+    "reason": "进入「区域发展」单元之前，先有「自然要素的相互作用」的学习经验。"
+  },
+  {
+    "topicId": "cng_h090",
+    "prerequisiteId": "cng_h086",
+    "strength": "soft",
+    "reason": "「区域发展」的后续单元，先学「区域的概念与尺度」再进入本单元。"
+  },
+  {
+    "topicId": "cng_h095",
+    "prerequisiteId": "cng_h090",
+    "strength": "soft",
+    "reason": "「区域发展」的后续单元，先学「自然环境对区域发展的影响」再进入本单元。"
+  },
+  {
+    "topicId": "cng_h098",
+    "prerequisiteId": "cng_h095",
+    "strength": "soft",
+    "reason": "「区域发展」的后续单元，先学「城市的辐射功能」再进入本单元。"
+  },
+  {
+    "topicId": "cng_h102",
+    "prerequisiteId": "cng_h098",
+    "strength": "soft",
+    "reason": "进入「资源环境与国家安全」单元之前，先有「流域内协调发展」的学习经验。"
+  },
+  {
+    "topicId": "cng_h106",
+    "prerequisiteId": "cng_h102",
+    "strength": "soft",
+    "reason": "「资源环境与国家安全」的后续单元，先学「自然环境的服务功能」再进入本单元。"
+  },
+  {
+    "topicId": "cng_h112",
+    "prerequisiteId": "cng_h106",
+    "strength": "soft",
+    "reason": "「资源环境与国家安全」的后续单元，先学「资源安全对国家安全的影响」再进入本单元。"
+  },
+  {
+    "topicId": "cng_h117",
+    "prerequisiteId": "cng_h112",
+    "strength": "soft",
+    "reason": "「资源环境与国家安全」的后续单元，先学「环境安全对国家安全的影响」再进入本单元。"
   },
   {
     "topicId": "cnk_j002",
@@ -28452,6 +31074,666 @@
     "reason": "同一单元「第6单元 生命的延续和发展」内的并列知识点，先掌握「无性生殖」再学本点。"
   },
   {
+    "topicId": "cnb_h002",
+    "prerequisiteId": "cnb_h001",
+    "strength": "soft",
+    "reason": "同一单元「第一章 走近细胞」内的并列知识点，先掌握「细胞学说及其建立过程」再学本点。"
+  },
+  {
+    "topicId": "cnb_h003",
+    "prerequisiteId": "cnb_h001",
+    "strength": "soft",
+    "reason": "同一单元「第一章 走近细胞」内的并列知识点，先掌握「细胞学说及其建立过程」再学本点。"
+  },
+  {
+    "topicId": "cnb_h005",
+    "prerequisiteId": "cnb_h004",
+    "strength": "soft",
+    "reason": "同一单元「第二章 组成细胞的分子」内的并列知识点，先掌握「细胞中的元素和化合物」再学本点。"
+  },
+  {
+    "topicId": "cnb_h006",
+    "prerequisiteId": "cnb_h004",
+    "strength": "soft",
+    "reason": "同一单元「第二章 组成细胞的分子」内的并列知识点，先掌握「细胞中的元素和化合物」再学本点。"
+  },
+  {
+    "topicId": "cnb_h007",
+    "prerequisiteId": "cnb_h004",
+    "strength": "soft",
+    "reason": "同一单元「第二章 组成细胞的分子」内的并列知识点，先掌握「细胞中的元素和化合物」再学本点。"
+  },
+  {
+    "topicId": "cnb_h008",
+    "prerequisiteId": "cnb_h004",
+    "strength": "soft",
+    "reason": "同一单元「第二章 组成细胞的分子」内的并列知识点，先掌握「细胞中的元素和化合物」再学本点。"
+  },
+  {
+    "topicId": "cnb_h009",
+    "prerequisiteId": "cnb_h004",
+    "strength": "soft",
+    "reason": "同一单元「第二章 组成细胞的分子」内的并列知识点，先掌握「细胞中的元素和化合物」再学本点。"
+  },
+  {
+    "topicId": "cnb_h010",
+    "prerequisiteId": "cnb_h004",
+    "strength": "soft",
+    "reason": "同一单元「第二章 组成细胞的分子」内的并列知识点，先掌握「细胞中的元素和化合物」再学本点。"
+  },
+  {
+    "topicId": "cnb_h011",
+    "prerequisiteId": "cnb_h004",
+    "strength": "soft",
+    "reason": "同一单元「第二章 组成细胞的分子」内的并列知识点，先掌握「细胞中的元素和化合物」再学本点。"
+  },
+  {
+    "topicId": "cnb_h013",
+    "prerequisiteId": "cnb_h012",
+    "strength": "soft",
+    "reason": "同一单元「第三章 细胞的基本结构」内的并列知识点，先掌握「细胞膜的结构」再学本点。"
+  },
+  {
+    "topicId": "cnb_h014",
+    "prerequisiteId": "cnb_h012",
+    "strength": "soft",
+    "reason": "同一单元「第三章 细胞的基本结构」内的并列知识点，先掌握「细胞膜的结构」再学本点。"
+  },
+  {
+    "topicId": "cnb_h015",
+    "prerequisiteId": "cnb_h012",
+    "strength": "soft",
+    "reason": "同一单元「第三章 细胞的基本结构」内的并列知识点，先掌握「细胞膜的结构」再学本点。"
+  },
+  {
+    "topicId": "cnb_h016",
+    "prerequisiteId": "cnb_h012",
+    "strength": "soft",
+    "reason": "同一单元「第三章 细胞的基本结构」内的并列知识点，先掌握「细胞膜的结构」再学本点。"
+  },
+  {
+    "topicId": "cnb_h018",
+    "prerequisiteId": "cnb_h017",
+    "strength": "soft",
+    "reason": "同一单元「第四章 细胞的物质输入和输出」内的并列知识点，先掌握「水进出细胞的原理」再学本点。"
+  },
+  {
+    "topicId": "cnb_h019",
+    "prerequisiteId": "cnb_h017",
+    "strength": "soft",
+    "reason": "同一单元「第四章 细胞的物质输入和输出」内的并列知识点，先掌握「水进出细胞的原理」再学本点。"
+  },
+  {
+    "topicId": "cnb_h020",
+    "prerequisiteId": "cnb_h017",
+    "strength": "soft",
+    "reason": "同一单元「第四章 细胞的物质输入和输出」内的并列知识点，先掌握「水进出细胞的原理」再学本点。"
+  },
+  {
+    "topicId": "cnb_h022",
+    "prerequisiteId": "cnb_h021",
+    "strength": "soft",
+    "reason": "同一单元「第五章 细胞的能量供应和利用」内的并列知识点，先掌握「酶的作用和本质」再学本点。"
+  },
+  {
+    "topicId": "cnb_h023",
+    "prerequisiteId": "cnb_h021",
+    "strength": "soft",
+    "reason": "同一单元「第五章 细胞的能量供应和利用」内的并列知识点，先掌握「酶的作用和本质」再学本点。"
+  },
+  {
+    "topicId": "cnb_h024",
+    "prerequisiteId": "cnb_h021",
+    "strength": "soft",
+    "reason": "同一单元「第五章 细胞的能量供应和利用」内的并列知识点，先掌握「酶的作用和本质」再学本点。"
+  },
+  {
+    "topicId": "cnb_h025",
+    "prerequisiteId": "cnb_h021",
+    "strength": "soft",
+    "reason": "同一单元「第五章 细胞的能量供应和利用」内的并列知识点，先掌握「酶的作用和本质」再学本点。"
+  },
+  {
+    "topicId": "cnb_h026",
+    "prerequisiteId": "cnb_h021",
+    "strength": "soft",
+    "reason": "同一单元「第五章 细胞的能量供应和利用」内的并列知识点，先掌握「酶的作用和本质」再学本点。"
+  },
+  {
+    "topicId": "cnb_h027",
+    "prerequisiteId": "cnb_h021",
+    "strength": "soft",
+    "reason": "同一单元「第五章 细胞的能量供应和利用」内的并列知识点，先掌握「酶的作用和本质」再学本点。"
+  },
+  {
+    "topicId": "cnb_h028",
+    "prerequisiteId": "cnb_h021",
+    "strength": "soft",
+    "reason": "同一单元「第五章 细胞的能量供应和利用」内的并列知识点，先掌握「酶的作用和本质」再学本点。"
+  },
+  {
+    "topicId": "cnb_h029",
+    "prerequisiteId": "cnb_h021",
+    "strength": "soft",
+    "reason": "同一单元「第五章 细胞的能量供应和利用」内的并列知识点，先掌握「酶的作用和本质」再学本点。"
+  },
+  {
+    "topicId": "cnb_h030",
+    "prerequisiteId": "cnb_h021",
+    "strength": "soft",
+    "reason": "同一单元「第五章 细胞的能量供应和利用」内的并列知识点，先掌握「酶的作用和本质」再学本点。"
+  },
+  {
+    "topicId": "cnb_h032",
+    "prerequisiteId": "cnb_h031",
+    "strength": "soft",
+    "reason": "同一单元「第六章 细胞的生命历程」内的并列知识点，先掌握「细胞不能无限长大与细胞周期」再学本点。"
+  },
+  {
+    "topicId": "cnb_h033",
+    "prerequisiteId": "cnb_h031",
+    "strength": "soft",
+    "reason": "同一单元「第六章 细胞的生命历程」内的并列知识点，先掌握「细胞不能无限长大与细胞周期」再学本点。"
+  },
+  {
+    "topicId": "cnb_h034",
+    "prerequisiteId": "cnb_h031",
+    "strength": "soft",
+    "reason": "同一单元「第六章 细胞的生命历程」内的并列知识点，先掌握「细胞不能无限长大与细胞周期」再学本点。"
+  },
+  {
+    "topicId": "cnb_h035",
+    "prerequisiteId": "cnb_h031",
+    "strength": "soft",
+    "reason": "同一单元「第六章 细胞的生命历程」内的并列知识点，先掌握「细胞不能无限长大与细胞周期」再学本点。"
+  },
+  {
+    "topicId": "cnb_h037",
+    "prerequisiteId": "cnb_h036",
+    "strength": "soft",
+    "reason": "同一单元「第一章 遗传因子的发现」内的并列知识点，先掌握「一对相对性状的杂交实验」再学本点。"
+  },
+  {
+    "topicId": "cnb_h038",
+    "prerequisiteId": "cnb_h036",
+    "strength": "soft",
+    "reason": "同一单元「第一章 遗传因子的发现」内的并列知识点，先掌握「一对相对性状的杂交实验」再学本点。"
+  },
+  {
+    "topicId": "cnb_h039",
+    "prerequisiteId": "cnb_h036",
+    "strength": "soft",
+    "reason": "同一单元「第一章 遗传因子的发现」内的并列知识点，先掌握「一对相对性状的杂交实验」再学本点。"
+  },
+  {
+    "topicId": "cnb_h041",
+    "prerequisiteId": "cnb_h040",
+    "strength": "soft",
+    "reason": "同一单元「第二章 基因和染色体的关系」内的并列知识点，先掌握「减数分裂的过程」再学本点。"
+  },
+  {
+    "topicId": "cnb_h042",
+    "prerequisiteId": "cnb_h040",
+    "strength": "soft",
+    "reason": "同一单元「第二章 基因和染色体的关系」内的并列知识点，先掌握「减数分裂的过程」再学本点。"
+  },
+  {
+    "topicId": "cnb_h043",
+    "prerequisiteId": "cnb_h040",
+    "strength": "soft",
+    "reason": "同一单元「第二章 基因和染色体的关系」内的并列知识点，先掌握「减数分裂的过程」再学本点。"
+  },
+  {
+    "topicId": "cnb_h044",
+    "prerequisiteId": "cnb_h046",
+    "strength": "soft",
+    "reason": "同一单元「第三章 基因的本质」内的并列知识点，先掌握「DNA的结构」再学本点。"
+  },
+  {
+    "topicId": "cnb_h045",
+    "prerequisiteId": "cnb_h046",
+    "strength": "soft",
+    "reason": "同一单元「第三章 基因的本质」内的并列知识点，先掌握「DNA的结构」再学本点。"
+  },
+  {
+    "topicId": "cnb_h047",
+    "prerequisiteId": "cnb_h046",
+    "strength": "soft",
+    "reason": "同一单元「第三章 基因的本质」内的并列知识点，先掌握「DNA的结构」再学本点。"
+  },
+  {
+    "topicId": "cnb_h048",
+    "prerequisiteId": "cnb_h046",
+    "strength": "soft",
+    "reason": "同一单元「第三章 基因的本质」内的并列知识点，先掌握「DNA的结构」再学本点。"
+  },
+  {
+    "topicId": "cnb_h050",
+    "prerequisiteId": "cnb_h049",
+    "strength": "soft",
+    "reason": "同一单元「第四章 基因的表达」内的并列知识点，先掌握「遗传信息的转录」再学本点。"
+  },
+  {
+    "topicId": "cnb_h051",
+    "prerequisiteId": "cnb_h049",
+    "strength": "soft",
+    "reason": "同一单元「第四章 基因的表达」内的并列知识点，先掌握「遗传信息的转录」再学本点。"
+  },
+  {
+    "topicId": "cnb_h052",
+    "prerequisiteId": "cnb_h049",
+    "strength": "soft",
+    "reason": "同一单元「第四章 基因的表达」内的并列知识点，先掌握「遗传信息的转录」再学本点。"
+  },
+  {
+    "topicId": "cnb_h053",
+    "prerequisiteId": "cnb_h049",
+    "strength": "soft",
+    "reason": "同一单元「第四章 基因的表达」内的并列知识点，先掌握「遗传信息的转录」再学本点。"
+  },
+  {
+    "topicId": "cnb_h055",
+    "prerequisiteId": "cnb_h054",
+    "strength": "soft",
+    "reason": "同一单元「第五章 基因突变及其他变异」内的并列知识点，先掌握「基因突变」再学本点。"
+  },
+  {
+    "topicId": "cnb_h056",
+    "prerequisiteId": "cnb_h054",
+    "strength": "soft",
+    "reason": "同一单元「第五章 基因突变及其他变异」内的并列知识点，先掌握「基因突变」再学本点。"
+  },
+  {
+    "topicId": "cnb_h057",
+    "prerequisiteId": "cnb_h054",
+    "strength": "soft",
+    "reason": "同一单元「第五章 基因突变及其他变异」内的并列知识点，先掌握「基因突变」再学本点。"
+  },
+  {
+    "topicId": "cnb_h058",
+    "prerequisiteId": "cnb_h054",
+    "strength": "soft",
+    "reason": "同一单元「第五章 基因突变及其他变异」内的并列知识点，先掌握「基因突变」再学本点。"
+  },
+  {
+    "topicId": "cnb_h059",
+    "prerequisiteId": "cnb_h054",
+    "strength": "soft",
+    "reason": "同一单元「第五章 基因突变及其他变异」内的并列知识点，先掌握「基因突变」再学本点。"
+  },
+  {
+    "topicId": "cnb_h061",
+    "prerequisiteId": "cnb_h060",
+    "strength": "soft",
+    "reason": "同一单元「第六章 生物的进化」内的并列知识点，先掌握「生物有共同祖先的证据」再学本点。"
+  },
+  {
+    "topicId": "cnb_h062",
+    "prerequisiteId": "cnb_h060",
+    "strength": "soft",
+    "reason": "同一单元「第六章 生物的进化」内的并列知识点，先掌握「生物有共同祖先的证据」再学本点。"
+  },
+  {
+    "topicId": "cnb_h063",
+    "prerequisiteId": "cnb_h060",
+    "strength": "soft",
+    "reason": "同一单元「第六章 生物的进化」内的并列知识点，先掌握「生物有共同祖先的证据」再学本点。"
+  },
+  {
+    "topicId": "cnb_h064",
+    "prerequisiteId": "cnb_h060",
+    "strength": "soft",
+    "reason": "同一单元「第六章 生物的进化」内的并列知识点，先掌握「生物有共同祖先的证据」再学本点。"
+  },
+  {
+    "topicId": "cnb_h066",
+    "prerequisiteId": "cnb_h065",
+    "strength": "soft",
+    "reason": "同一单元「第一章 人体的内环境与稳态」内的并列知识点，先掌握「内环境的组成」再学本点。"
+  },
+  {
+    "topicId": "cnb_h067",
+    "prerequisiteId": "cnb_h065",
+    "strength": "soft",
+    "reason": "同一单元「第一章 人体的内环境与稳态」内的并列知识点，先掌握「内环境的组成」再学本点。"
+  },
+  {
+    "topicId": "cnb_h069",
+    "prerequisiteId": "cnb_h068",
+    "strength": "soft",
+    "reason": "同一单元「第二章 神经调节」内的并列知识点，先掌握「神经系统的基本结构」再学本点。"
+  },
+  {
+    "topicId": "cnb_h070",
+    "prerequisiteId": "cnb_h068",
+    "strength": "soft",
+    "reason": "同一单元「第二章 神经调节」内的并列知识点，先掌握「神经系统的基本结构」再学本点。"
+  },
+  {
+    "topicId": "cnb_h071",
+    "prerequisiteId": "cnb_h068",
+    "strength": "soft",
+    "reason": "同一单元「第二章 神经调节」内的并列知识点，先掌握「神经系统的基本结构」再学本点。"
+  },
+  {
+    "topicId": "cnb_h072",
+    "prerequisiteId": "cnb_h068",
+    "strength": "soft",
+    "reason": "同一单元「第二章 神经调节」内的并列知识点，先掌握「神经系统的基本结构」再学本点。"
+  },
+  {
+    "topicId": "cnb_h073",
+    "prerequisiteId": "cnb_h068",
+    "strength": "soft",
+    "reason": "同一单元「第二章 神经调节」内的并列知识点，先掌握「神经系统的基本结构」再学本点。"
+  },
+  {
+    "topicId": "cnb_h074",
+    "prerequisiteId": "cnb_h068",
+    "strength": "soft",
+    "reason": "同一单元「第二章 神经调节」内的并列知识点，先掌握「神经系统的基本结构」再学本点。"
+  },
+  {
+    "topicId": "cnb_h076",
+    "prerequisiteId": "cnb_h075",
+    "strength": "soft",
+    "reason": "同一单元「第三章 体液调节」内的并列知识点，先掌握「激素与内分泌系统」再学本点。"
+  },
+  {
+    "topicId": "cnb_h077",
+    "prerequisiteId": "cnb_h075",
+    "strength": "soft",
+    "reason": "同一单元「第三章 体液调节」内的并列知识点，先掌握「激素与内分泌系统」再学本点。"
+  },
+  {
+    "topicId": "cnb_h078",
+    "prerequisiteId": "cnb_h075",
+    "strength": "soft",
+    "reason": "同一单元「第三章 体液调节」内的并列知识点，先掌握「激素与内分泌系统」再学本点。"
+  },
+  {
+    "topicId": "cnb_h079",
+    "prerequisiteId": "cnb_h075",
+    "strength": "soft",
+    "reason": "同一单元「第三章 体液调节」内的并列知识点，先掌握「激素与内分泌系统」再学本点。"
+  },
+  {
+    "topicId": "cnb_h080",
+    "prerequisiteId": "cnb_h075",
+    "strength": "soft",
+    "reason": "同一单元「第三章 体液调节」内的并列知识点，先掌握「激素与内分泌系统」再学本点。"
+  },
+  {
+    "topicId": "cnb_h082",
+    "prerequisiteId": "cnb_h081",
+    "strength": "soft",
+    "reason": "同一单元「第四章 免疫调节」内的并列知识点，先掌握「免疫系统的组成和功能」再学本点。"
+  },
+  {
+    "topicId": "cnb_h083",
+    "prerequisiteId": "cnb_h081",
+    "strength": "soft",
+    "reason": "同一单元「第四章 免疫调节」内的并列知识点，先掌握「免疫系统的组成和功能」再学本点。"
+  },
+  {
+    "topicId": "cnb_h084",
+    "prerequisiteId": "cnb_h081",
+    "strength": "soft",
+    "reason": "同一单元「第四章 免疫调节」内的并列知识点，先掌握「免疫系统的组成和功能」再学本点。"
+  },
+  {
+    "topicId": "cnb_h085",
+    "prerequisiteId": "cnb_h081",
+    "strength": "soft",
+    "reason": "同一单元「第四章 免疫调节」内的并列知识点，先掌握「免疫系统的组成和功能」再学本点。"
+  },
+  {
+    "topicId": "cnb_h086",
+    "prerequisiteId": "cnb_h081",
+    "strength": "soft",
+    "reason": "同一单元「第四章 免疫调节」内的并列知识点，先掌握「免疫系统的组成和功能」再学本点。"
+  },
+  {
+    "topicId": "cnb_h087",
+    "prerequisiteId": "cnb_h090",
+    "strength": "soft",
+    "reason": "同一单元「第五章 植物生命活动的调节」内的并列知识点，先掌握「其他植物激素」再学本点。"
+  },
+  {
+    "topicId": "cnb_h088",
+    "prerequisiteId": "cnb_h090",
+    "strength": "soft",
+    "reason": "同一单元「第五章 植物生命活动的调节」内的并列知识点，先掌握「其他植物激素」再学本点。"
+  },
+  {
+    "topicId": "cnb_h089",
+    "prerequisiteId": "cnb_h090",
+    "strength": "soft",
+    "reason": "同一单元「第五章 植物生命活动的调节」内的并列知识点，先掌握「其他植物激素」再学本点。"
+  },
+  {
+    "topicId": "cnb_h091",
+    "prerequisiteId": "cnb_h090",
+    "strength": "soft",
+    "reason": "同一单元「第五章 植物生命活动的调节」内的并列知识点，先掌握「其他植物激素」再学本点。"
+  },
+  {
+    "topicId": "cnb_h092",
+    "prerequisiteId": "cnb_h090",
+    "strength": "soft",
+    "reason": "同一单元「第五章 植物生命活动的调节」内的并列知识点，先掌握「其他植物激素」再学本点。"
+  },
+  {
+    "topicId": "cnb_h093",
+    "prerequisiteId": "cnb_h094",
+    "strength": "soft",
+    "reason": "同一单元「第一章 种群及其动态」内的并列知识点，先掌握「种群的其他数量特征」再学本点。"
+  },
+  {
+    "topicId": "cnb_h095",
+    "prerequisiteId": "cnb_h094",
+    "strength": "soft",
+    "reason": "同一单元「第一章 种群及其动态」内的并列知识点，先掌握「种群的其他数量特征」再学本点。"
+  },
+  {
+    "topicId": "cnb_h096",
+    "prerequisiteId": "cnb_h094",
+    "strength": "soft",
+    "reason": "同一单元「第一章 种群及其动态」内的并列知识点，先掌握「种群的其他数量特征」再学本点。"
+  },
+  {
+    "topicId": "cnb_h098",
+    "prerequisiteId": "cnb_h097",
+    "strength": "soft",
+    "reason": "同一单元「第二章 群落及其演替」内的并列知识点，先掌握「群落的物种组成与种间关系」再学本点。"
+  },
+  {
+    "topicId": "cnb_h099",
+    "prerequisiteId": "cnb_h097",
+    "strength": "soft",
+    "reason": "同一单元「第二章 群落及其演替」内的并列知识点，先掌握「群落的物种组成与种间关系」再学本点。"
+  },
+  {
+    "topicId": "cnb_h100",
+    "prerequisiteId": "cnb_h097",
+    "strength": "soft",
+    "reason": "同一单元「第二章 群落及其演替」内的并列知识点，先掌握「群落的物种组成与种间关系」再学本点。"
+  },
+  {
+    "topicId": "cnb_h101",
+    "prerequisiteId": "cnb_h097",
+    "strength": "soft",
+    "reason": "同一单元「第二章 群落及其演替」内的并列知识点，先掌握「群落的物种组成与种间关系」再学本点。"
+  },
+  {
+    "topicId": "cnb_h103",
+    "prerequisiteId": "cnb_h102",
+    "strength": "soft",
+    "reason": "同一单元「第三章 生态系统及其稳定性」内的并列知识点，先掌握「生态系统的组成成分」再学本点。"
+  },
+  {
+    "topicId": "cnb_h104",
+    "prerequisiteId": "cnb_h102",
+    "strength": "soft",
+    "reason": "同一单元「第三章 生态系统及其稳定性」内的并列知识点，先掌握「生态系统的组成成分」再学本点。"
+  },
+  {
+    "topicId": "cnb_h105",
+    "prerequisiteId": "cnb_h102",
+    "strength": "soft",
+    "reason": "同一单元「第三章 生态系统及其稳定性」内的并列知识点，先掌握「生态系统的组成成分」再学本点。"
+  },
+  {
+    "topicId": "cnb_h106",
+    "prerequisiteId": "cnb_h102",
+    "strength": "soft",
+    "reason": "同一单元「第三章 生态系统及其稳定性」内的并列知识点，先掌握「生态系统的组成成分」再学本点。"
+  },
+  {
+    "topicId": "cnb_h107",
+    "prerequisiteId": "cnb_h102",
+    "strength": "soft",
+    "reason": "同一单元「第三章 生态系统及其稳定性」内的并列知识点，先掌握「生态系统的组成成分」再学本点。"
+  },
+  {
+    "topicId": "cnb_h108",
+    "prerequisiteId": "cnb_h102",
+    "strength": "soft",
+    "reason": "同一单元「第三章 生态系统及其稳定性」内的并列知识点，先掌握「生态系统的组成成分」再学本点。"
+  },
+  {
+    "topicId": "cnb_h109",
+    "prerequisiteId": "cnb_h102",
+    "strength": "soft",
+    "reason": "同一单元「第三章 生态系统及其稳定性」内的并列知识点，先掌握「生态系统的组成成分」再学本点。"
+  },
+  {
+    "topicId": "cnb_h111",
+    "prerequisiteId": "cnb_h110",
+    "strength": "soft",
+    "reason": "同一单元「第四章 人与环境」内的并列知识点，先掌握「人类活动对生态环境的影响」再学本点。"
+  },
+  {
+    "topicId": "cnb_h112",
+    "prerequisiteId": "cnb_h110",
+    "strength": "soft",
+    "reason": "同一单元「第四章 人与环境」内的并列知识点，先掌握「人类活动对生态环境的影响」再学本点。"
+  },
+  {
+    "topicId": "cnb_h113",
+    "prerequisiteId": "cnb_h118",
+    "strength": "soft",
+    "reason": "同一单元「第一章 发酵工程」内的并列知识点，先掌握「发酵工程的应用」再学本点。"
+  },
+  {
+    "topicId": "cnb_h114",
+    "prerequisiteId": "cnb_h118",
+    "strength": "soft",
+    "reason": "同一单元「第一章 发酵工程」内的并列知识点，先掌握「发酵工程的应用」再学本点。"
+  },
+  {
+    "topicId": "cnb_h115",
+    "prerequisiteId": "cnb_h118",
+    "strength": "soft",
+    "reason": "同一单元「第一章 发酵工程」内的并列知识点，先掌握「发酵工程的应用」再学本点。"
+  },
+  {
+    "topicId": "cnb_h116",
+    "prerequisiteId": "cnb_h118",
+    "strength": "soft",
+    "reason": "同一单元「第一章 发酵工程」内的并列知识点，先掌握「发酵工程的应用」再学本点。"
+  },
+  {
+    "topicId": "cnb_h117",
+    "prerequisiteId": "cnb_h118",
+    "strength": "soft",
+    "reason": "同一单元「第一章 发酵工程」内的并列知识点，先掌握「发酵工程的应用」再学本点。"
+  },
+  {
+    "topicId": "cnb_h119",
+    "prerequisiteId": "cnb_h123",
+    "strength": "soft",
+    "reason": "同一单元「第二章 细胞工程」内的并列知识点，先掌握「动物体细胞核移植与克隆动物」再学本点。"
+  },
+  {
+    "topicId": "cnb_h120",
+    "prerequisiteId": "cnb_h123",
+    "strength": "soft",
+    "reason": "同一单元「第二章 细胞工程」内的并列知识点，先掌握「动物体细胞核移植与克隆动物」再学本点。"
+  },
+  {
+    "topicId": "cnb_h121",
+    "prerequisiteId": "cnb_h123",
+    "strength": "soft",
+    "reason": "同一单元「第二章 细胞工程」内的并列知识点，先掌握「动物体细胞核移植与克隆动物」再学本点。"
+  },
+  {
+    "topicId": "cnb_h122",
+    "prerequisiteId": "cnb_h123",
+    "strength": "soft",
+    "reason": "同一单元「第二章 细胞工程」内的并列知识点，先掌握「动物体细胞核移植与克隆动物」再学本点。"
+  },
+  {
+    "topicId": "cnb_h124",
+    "prerequisiteId": "cnb_h123",
+    "strength": "soft",
+    "reason": "同一单元「第二章 细胞工程」内的并列知识点，先掌握「动物体细胞核移植与克隆动物」再学本点。"
+  },
+  {
+    "topicId": "cnb_h125",
+    "prerequisiteId": "cnb_h123",
+    "strength": "soft",
+    "reason": "同一单元「第二章 细胞工程」内的并列知识点，先掌握「动物体细胞核移植与克隆动物」再学本点。"
+  },
+  {
+    "topicId": "cnb_h126",
+    "prerequisiteId": "cnb_h123",
+    "strength": "soft",
+    "reason": "同一单元「第二章 细胞工程」内的并列知识点，先掌握「动物体细胞核移植与克隆动物」再学本点。"
+  },
+  {
+    "topicId": "cnb_h128",
+    "prerequisiteId": "cnb_h127",
+    "strength": "soft",
+    "reason": "同一单元「第三章 基因工程」内的并列知识点，先掌握「重组DNA技术的基本工具」再学本点。"
+  },
+  {
+    "topicId": "cnb_h129",
+    "prerequisiteId": "cnb_h127",
+    "strength": "soft",
+    "reason": "同一单元「第三章 基因工程」内的并列知识点，先掌握「重组DNA技术的基本工具」再学本点。"
+  },
+  {
+    "topicId": "cnb_h130",
+    "prerequisiteId": "cnb_h127",
+    "strength": "soft",
+    "reason": "同一单元「第三章 基因工程」内的并列知识点，先掌握「重组DNA技术的基本工具」再学本点。"
+  },
+  {
+    "topicId": "cnb_h131",
+    "prerequisiteId": "cnb_h127",
+    "strength": "soft",
+    "reason": "同一单元「第三章 基因工程」内的并列知识点，先掌握「重组DNA技术的基本工具」再学本点。"
+  },
+  {
+    "topicId": "cnb_h132",
+    "prerequisiteId": "cnb_h127",
+    "strength": "soft",
+    "reason": "同一单元「第三章 基因工程」内的并列知识点，先掌握「重组DNA技术的基本工具」再学本点。"
+  },
+  {
+    "topicId": "cnb_h134",
+    "prerequisiteId": "cnb_h133",
+    "strength": "soft",
+    "reason": "同一单元「第四章 生物技术的安全性与伦理问题」内的并列知识点，先掌握「转基因产品的安全性」再学本点。"
+  },
+  {
+    "topicId": "cnb_h135",
+    "prerequisiteId": "cnb_h133",
+    "strength": "soft",
+    "reason": "同一单元「第四章 生物技术的安全性与伦理问题」内的并列知识点，先掌握「转基因产品的安全性」再学本点。"
+  },
+  {
     "topicId": "cnb_j011",
     "prerequisiteId": "cnb_j001",
     "strength": "soft",
@@ -28488,6 +31770,156 @@
     "reason": "进入「遗传与进化」单元之前，先有「生物与环境的相互作用」的学习经验。"
   },
   {
+    "topicId": "cnb_h001",
+    "prerequisiteId": "cnb_j054",
+    "strength": "soft",
+    "reason": "进入「分子与细胞」单元之前，先有「无性生殖」的学习经验。"
+  },
+  {
+    "topicId": "cnb_h004",
+    "prerequisiteId": "cnb_h001",
+    "strength": "soft",
+    "reason": "「分子与细胞」的后续单元，先学「细胞学说及其建立过程」再进入本单元。"
+  },
+  {
+    "topicId": "cnb_h012",
+    "prerequisiteId": "cnb_h004",
+    "strength": "soft",
+    "reason": "「分子与细胞」的后续单元，先学「细胞中的元素和化合物」再进入本单元。"
+  },
+  {
+    "topicId": "cnb_h017",
+    "prerequisiteId": "cnb_h012",
+    "strength": "soft",
+    "reason": "「分子与细胞」的后续单元，先学「细胞膜的结构」再进入本单元。"
+  },
+  {
+    "topicId": "cnb_h021",
+    "prerequisiteId": "cnb_h017",
+    "strength": "soft",
+    "reason": "「分子与细胞」的后续单元，先学「水进出细胞的原理」再进入本单元。"
+  },
+  {
+    "topicId": "cnb_h031",
+    "prerequisiteId": "cnb_h021",
+    "strength": "soft",
+    "reason": "「分子与细胞」的后续单元，先学「酶的作用和本质」再进入本单元。"
+  },
+  {
+    "topicId": "cnb_h036",
+    "prerequisiteId": "cnb_j054",
+    "strength": "soft",
+    "reason": "「遗传与进化」的后续单元，先学「无性生殖」再进入本单元。"
+  },
+  {
+    "topicId": "cnb_h040",
+    "prerequisiteId": "cnb_h036",
+    "strength": "soft",
+    "reason": "「遗传与进化」的后续单元，先学「一对相对性状的杂交实验」再进入本单元。"
+  },
+  {
+    "topicId": "cnb_h046",
+    "prerequisiteId": "cnb_h040",
+    "strength": "soft",
+    "reason": "「遗传与进化」的后续单元，先学「减数分裂的过程」再进入本单元。"
+  },
+  {
+    "topicId": "cnb_h049",
+    "prerequisiteId": "cnb_h046",
+    "strength": "soft",
+    "reason": "「遗传与进化」的后续单元，先学「DNA的结构」再进入本单元。"
+  },
+  {
+    "topicId": "cnb_h054",
+    "prerequisiteId": "cnb_h049",
+    "strength": "soft",
+    "reason": "「遗传与进化」的后续单元，先学「遗传信息的转录」再进入本单元。"
+  },
+  {
+    "topicId": "cnb_h060",
+    "prerequisiteId": "cnb_h054",
+    "strength": "soft",
+    "reason": "「遗传与进化」的后续单元，先学「基因突变」再进入本单元。"
+  },
+  {
+    "topicId": "cnb_h065",
+    "prerequisiteId": "cnb_h060",
+    "strength": "soft",
+    "reason": "进入「稳态与调节」单元之前，先有「生物有共同祖先的证据」的学习经验。"
+  },
+  {
+    "topicId": "cnb_h068",
+    "prerequisiteId": "cnb_h065",
+    "strength": "soft",
+    "reason": "「稳态与调节」的后续单元，先学「内环境的组成」再进入本单元。"
+  },
+  {
+    "topicId": "cnb_h075",
+    "prerequisiteId": "cnb_h068",
+    "strength": "soft",
+    "reason": "「稳态与调节」的后续单元，先学「神经系统的基本结构」再进入本单元。"
+  },
+  {
+    "topicId": "cnb_h081",
+    "prerequisiteId": "cnb_h075",
+    "strength": "soft",
+    "reason": "「稳态与调节」的后续单元，先学「激素与内分泌系统」再进入本单元。"
+  },
+  {
+    "topicId": "cnb_h090",
+    "prerequisiteId": "cnb_h081",
+    "strength": "soft",
+    "reason": "「稳态与调节」的后续单元，先学「免疫系统的组成和功能」再进入本单元。"
+  },
+  {
+    "topicId": "cnb_h094",
+    "prerequisiteId": "cnb_j049",
+    "strength": "soft",
+    "reason": "「生物与环境」的后续单元，先学「生物与环境的相互作用」再进入本单元。"
+  },
+  {
+    "topicId": "cnb_h097",
+    "prerequisiteId": "cnb_h094",
+    "strength": "soft",
+    "reason": "「生物与环境」的后续单元，先学「种群的其他数量特征」再进入本单元。"
+  },
+  {
+    "topicId": "cnb_h102",
+    "prerequisiteId": "cnb_h097",
+    "strength": "soft",
+    "reason": "「生物与环境」的后续单元，先学「群落的物种组成与种间关系」再进入本单元。"
+  },
+  {
+    "topicId": "cnb_h110",
+    "prerequisiteId": "cnb_h102",
+    "strength": "soft",
+    "reason": "「生物与环境」的后续单元，先学「生态系统的组成成分」再进入本单元。"
+  },
+  {
+    "topicId": "cnb_h118",
+    "prerequisiteId": "cnb_h110",
+    "strength": "soft",
+    "reason": "进入「生物技术与工程」单元之前，先有「人类活动对生态环境的影响」的学习经验。"
+  },
+  {
+    "topicId": "cnb_h123",
+    "prerequisiteId": "cnb_h118",
+    "strength": "soft",
+    "reason": "「生物技术与工程」的后续单元，先学「发酵工程的应用」再进入本单元。"
+  },
+  {
+    "topicId": "cnb_h127",
+    "prerequisiteId": "cnb_h123",
+    "strength": "soft",
+    "reason": "「生物技术与工程」的后续单元，先学「动物体细胞核移植与克隆动物」再进入本单元。"
+  },
+  {
+    "topicId": "cnb_h133",
+    "prerequisiteId": "cnb_h127",
+    "strength": "soft",
+    "reason": "「生物技术与工程」的后续单元，先学「重组DNA技术的基本工具」再进入本单元。"
+  },
+  {
     "topicId": "cnc_p494",
     "prerequisiteId": "cnc_p120",
     "strength": "hard",
@@ -28498,12 +31930,6 @@
     "prerequisiteId": "cnd_j106",
     "strength": "soft",
     "reason": "按教材顺序，先学完「民族复兴梦要靠每个人追梦」，再进入九年级下册「第1单元 我们共同的世界」的学习。"
-  },
-  {
-    "topicId": "cnd_j112",
-    "prerequisiteId": "cnd_j111",
-    "strength": "soft",
-    "reason": "同一单元「第1单元 我们共同的世界」内的并列知识点，先掌握「当今世界开放互动又紧密联系」再学本点。"
   },
   {
     "topicId": "cnd_j113",
@@ -28534,12 +31960,6 @@
     "prerequisiteId": "cnd_j116",
     "strength": "soft",
     "reason": "按教材单元顺序，先学完「第1单元 我们共同的世界」，再进入「第2单元 建设美好世界」。"
-  },
-  {
-    "topicId": "cnd_j118",
-    "prerequisiteId": "cnd_j117",
-    "strength": "soft",
-    "reason": "同一单元「第2单元 建设美好世界」内的并列知识点，先掌握「深度联动的「两个大局」」再学本点。"
   },
   {
     "topicId": "cnd_j119",
@@ -28584,12 +32004,6 @@
     "reason": "按教材单元顺序，先学完「第2单元 建设美好世界」，再进入「第3单元 争做时代新人」。"
   },
   {
-    "topicId": "cnd_j126",
-    "prerequisiteId": "cnd_j125",
-    "strength": "soft",
-    "reason": "同一单元「第3单元 争做时代新人」内的并列知识点，先掌握「理想信念关乎国家未来」再学本点。"
-  },
-  {
     "topicId": "cnd_j127",
     "prerequisiteId": "cnd_j126",
     "strength": "soft",
@@ -28612,245 +32026,5 @@
     "prerequisiteId": "cnd_j129",
     "strength": "soft",
     "reason": "同一单元「第3单元 争做时代新人」内的并列知识点，先掌握「担当成就事业」再学本点。"
-  },
-  {
-    "topicId": "cne_j258",
-    "prerequisiteId": "cne_j257",
-    "strength": "soft",
-    "reason": "按教材顺序，先学完「体育赛事词汇」，再进入九年级下册「第1单元 Let's Celebrate!」的学习。"
-  },
-  {
-    "topicId": "cne_j259",
-    "prerequisiteId": "cne_j258",
-    "strength": "soft",
-    "reason": "同一单元「第1单元 Let's Celebrate!」内的并列知识点，先掌握「节日的核心词」再学本点。"
-  },
-  {
-    "topicId": "cne_j260",
-    "prerequisiteId": "cne_j259",
-    "strength": "soft",
-    "reason": "同一单元「第1单元 Let's Celebrate!」内的并列知识点，先掌握「谈论团圆与象征」再学本点。"
-  },
-  {
-    "topicId": "cne_j261",
-    "prerequisiteId": "cne_j260",
-    "strength": "hard",
-    "reason": "「并列句」要用到「简单句」的知识，先掌握「简单句」再学本点。"
-  },
-  {
-    "topicId": "cne_j262",
-    "prerequisiteId": "cne_j261",
-    "strength": "hard",
-    "reason": "「复合句与宾语从句语序」要用到「并列句」的知识，先掌握「并列句」再学本点。"
-  },
-  {
-    "topicId": "cne_j263",
-    "prerequisiteId": "cne_j262",
-    "strength": "soft",
-    "reason": "同一单元「第1单元 Let's Celebrate!」内的并列知识点，先掌握「复合句与宾语从句语序」再学本点。"
-  },
-  {
-    "topicId": "cne_j264",
-    "prerequisiteId": "cne_j263",
-    "strength": "soft",
-    "reason": "同一单元「第1单元 Let's Celebrate!」内的并列知识点，先掌握「谈论节日习俗」再学本点。"
-  },
-  {
-    "topicId": "cne_j265",
-    "prerequisiteId": "cne_j264",
-    "strength": "soft",
-    "reason": "同一单元「第1单元 Let's Celebrate!」内的并列知识点，先掌握「读节日短文找细节」再学本点。"
-  },
-  {
-    "topicId": "cne_j266",
-    "prerequisiteId": "cne_j265",
-    "strength": "soft",
-    "reason": "按教材单元顺序，先学完「第1单元 Let's Celebrate!」，再进入「第2单元 A Look into the Past」。"
-  },
-  {
-    "topicId": "cne_j267",
-    "prerequisiteId": "cne_j266",
-    "strength": "soft",
-    "reason": "同一单元「第2单元 A Look into the Past」内的并列知识点，先掌握「考古与遗迹的核心词」再学本点。"
-  },
-  {
-    "topicId": "cne_j268",
-    "prerequisiteId": "cne_j267",
-    "strength": "soft",
-    "reason": "同一单元「第2单元 A Look into the Past」内的并列知识点，先掌握「修复与重现」再学本点。"
-  },
-  {
-    "topicId": "cne_j269",
-    "prerequisiteId": "cne_j268",
-    "strength": "soft",
-    "reason": "同一单元「第2单元 A Look into the Past」内的并列知识点，先掌握「情态动词表可能性的梯度」再学本点。"
-  },
-  {
-    "topicId": "cne_j270",
-    "prerequisiteId": "cne_j269",
-    "strength": "soft",
-    "reason": "同一单元「第2单元 A Look into the Past」内的并列知识点，先掌握「被动语态里的 by 短语」再学本点。"
-  },
-  {
-    "topicId": "cne_j271",
-    "prerequisiteId": "cne_j270",
-    "strength": "soft",
-    "reason": "同一单元「第2单元 A Look into the Past」内的并列知识点，先掌握「invent 与 discover 的区别」再学本点。"
-  },
-  {
-    "topicId": "cne_j272",
-    "prerequisiteId": "cne_j271",
-    "strength": "soft",
-    "reason": "同一单元「第2单元 A Look into the Past」内的并列知识点，先掌握「询问和描述历史」再学本点。"
-  },
-  {
-    "topicId": "cne_j273",
-    "prerequisiteId": "cne_j272",
-    "strength": "soft",
-    "reason": "同一单元「第2单元 A Look into the Past」内的并列知识点，先掌握「读说明性短文的时间线」再学本点。"
-  },
-  {
-    "topicId": "cne_j274",
-    "prerequisiteId": "cne_j273",
-    "strength": "soft",
-    "reason": "按教材单元顺序，先学完「第2单元 A Look into the Past」，再进入「第3单元 A Taste of Art」。"
-  },
-  {
-    "topicId": "cne_j275",
-    "prerequisiteId": "cne_j274",
-    "strength": "soft",
-    "reason": "同一单元「第3单元 A Taste of Art」内的并列知识点，先掌握「艺术与美感的核心词」再学本点。"
-  },
-  {
-    "topicId": "cne_j276",
-    "prerequisiteId": "cne_j275",
-    "strength": "soft",
-    "reason": "同一单元「第3单元 A Taste of Art」内的并列知识点，先掌握「艺术创作与复制」再学本点。"
-  },
-  {
-    "topicId": "cne_j277",
-    "prerequisiteId": "cne_j276",
-    "strength": "soft",
-    "reason": "同一单元「第3单元 A Taste of Art」内的并列知识点，先掌握「不定式与动名词的取舍」再学本点。"
-  },
-  {
-    "topicId": "cne_j278",
-    "prerequisiteId": "cne_j277",
-    "strength": "soft",
-    "reason": "同一单元「第3单元 A Taste of Art」内的并列知识点，先掌握「动词不定式作宾语补足语」再学本点。"
-  },
-  {
-    "topicId": "cne_j279",
-    "prerequisiteId": "cne_j278",
-    "strength": "soft",
-    "reason": "同一单元「第3单元 A Taste of Art」内的并列知识点，先掌握「疑问词加不定式」再学本点。"
-  },
-  {
-    "topicId": "cne_j280",
-    "prerequisiteId": "cne_j279",
-    "strength": "soft",
-    "reason": "同一单元「第3单元 A Taste of Art」内的并列知识点，先掌握「谈论和评价艺术作品」再学本点。"
-  },
-  {
-    "topicId": "cne_j281",
-    "prerequisiteId": "cne_j280",
-    "strength": "soft",
-    "reason": "同一单元「第3单元 A Taste of Art」内的并列知识点，先掌握「读艺术家介绍」再学本点。"
-  },
-  {
-    "topicId": "cne_j282",
-    "prerequisiteId": "cne_j281",
-    "strength": "soft",
-    "reason": "按教材单元顺序，先学完「第3单元 A Taste of Art」，再进入「第4单元 Reduce, Reuse, Recycle」。"
-  },
-  {
-    "topicId": "cne_j283",
-    "prerequisiteId": "cne_j282",
-    "strength": "soft",
-    "reason": "同一单元「第4单元 Reduce, Reuse, Recycle」内的并列知识点，先掌握「三个 R 与环保动作」再学本点。"
-  },
-  {
-    "topicId": "cne_j284",
-    "prerequisiteId": "cne_j283",
-    "strength": "soft",
-    "reason": "同一单元「第4单元 Reduce, Reuse, Recycle」内的并列知识点，先掌握「环保描述词」再学本点。"
-  },
-  {
-    "topicId": "cne_j285",
-    "prerequisiteId": "cne_j284",
-    "strength": "soft",
-    "reason": "同一单元「第4单元 Reduce, Reuse, Recycle」内的并列知识点，先掌握「not everything 部分否定」再学本点。"
-  },
-  {
-    "topicId": "cne_j286",
-    "prerequisiteId": "cne_j285",
-    "strength": "soft",
-    "reason": "同一单元「第4单元 Reduce, Reuse, Recycle」内的并列知识点，先掌握「情态动词表建议与义务」再学本点。"
-  },
-  {
-    "topicId": "cne_j287",
-    "prerequisiteId": "cne_j286",
-    "strength": "soft",
-    "reason": "同一单元「第4单元 Reduce, Reuse, Recycle」内的并列知识点，先掌握「环保语境里的一般现在时被动语态」再学本点。"
-  },
-  {
-    "topicId": "cne_j288",
-    "prerequisiteId": "cne_j287",
-    "strength": "soft",
-    "reason": "同一单元「第4单元 Reduce, Reuse, Recycle」内的并列知识点，先掌握「宾语从句在环保话题中的用法」再学本点。"
-  },
-  {
-    "topicId": "cne_j289",
-    "prerequisiteId": "cne_j288",
-    "strength": "soft",
-    "reason": "同一单元「第4单元 Reduce, Reuse, Recycle」内的并列知识点，先掌握「提出环保建议」再学本点。"
-  },
-  {
-    "topicId": "cne_j290",
-    "prerequisiteId": "cne_j289",
-    "strength": "soft",
-    "reason": "按教材单元顺序，先学完「第4单元 Reduce, Reuse, Recycle」，再进入「第5单元 Open to New Beginnings」。"
-  },
-  {
-    "topicId": "cne_j291",
-    "prerequisiteId": "cne_j290",
-    "strength": "soft",
-    "reason": "同一单元「第5单元 Open to New Beginnings」内的并列知识点，先掌握「毕业与成长的核心词」再学本点。"
-  },
-  {
-    "topicId": "cne_j292",
-    "prerequisiteId": "cne_j291",
-    "strength": "soft",
-    "reason": "同一单元「第5单元 Open to New Beginnings」内的并列知识点，先掌握「构词法 un- re- -tion -ist」再学本点。"
-  },
-  {
-    "topicId": "cne_j293",
-    "prerequisiteId": "cne_j292",
-    "strength": "soft",
-    "reason": "同一单元「第5单元 Open to New Beginnings」内的并列知识点，先掌握「形容词与副词后缀 -able -ful -ly」再学本点。"
-  },
-  {
-    "topicId": "cne_j294",
-    "prerequisiteId": "cne_j293",
-    "strength": "soft",
-    "reason": "同一单元「第5单元 Open to New Beginnings」内的并列知识点，先掌握「宾语从句的语序与时态呼应」再学本点。"
-  },
-  {
-    "topicId": "cne_j295",
-    "prerequisiteId": "cne_j294",
-    "strength": "soft",
-    "reason": "同一单元「第5单元 Open to New Beginnings」内的并列知识点，先掌握「一般将来时的两种表达」再学本点。"
-  },
-  {
-    "topicId": "cne_j296",
-    "prerequisiteId": "cne_j295",
-    "strength": "hard",
-    "reason": "「读毕业演讲稿」要用到「谈论毕业感受与未来规划」的知识，先掌握「谈论毕业感受与未来规划」再学本点。"
-  },
-  {
-    "topicId": "cne_j297",
-    "prerequisiteId": "cne_j296",
-    "strength": "hard",
-    "reason": "「写毕业演讲稿」要用到「读毕业演讲稿」的知识，先掌握「读毕业演讲稿」再学本点。"
   }
 ]
